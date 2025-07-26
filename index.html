@@ -14,8 +14,6 @@
         transform: translateX(100%);
       }
 
-
-      
       100% {
         transform: translateX(-100%);
       }
@@ -157,27 +155,34 @@
 
 
     <!-- middle strip -->
-    <div class="w-full bg-white flex flex-col md:flex-row items-center justify-between px-2 gap-4">
+    <div class="w-full bg-white flex flex-col md:flex-row items-center justify-between px-4 gap-4">
+
 
       <!-- Left Logo -->
-      <div class="flex-shrink-0 md:w-28 flex justify-center md:justify-start">
+      <div class="flex-shrink-0 w-full md:w-[120px] flex justify-center md:justify-start">
         <img src="./assets/img/logo Mm.jpg.png" alt="Main Logo" class="w-24 h-auto" />
       </div>
 
       <!-- Marquee Center Text -->
-      <div class="flex-1 overflow-hidden h-12 flex justify-center items-center">
+      <!-- <div class="flex-1 overflow-hidden h-12 flex justify-center items-center">
         <div id="marquee-text"
           class="whitespace-nowrap text-blue-900 font-semibold sm:text-xl md:text-3xl leading-relaxed text-left">
         </div>
+      </div> -->
+      <div
+        class="flex-1 h-16 overflow-hidden flex flex-col justify-center items-center leading-[1.1] text-center text-green-800 text-xs sm:text-sm md:text-base font-semibold space-y-0.5">
+        <p>Maulana Mazharul Haque Teachers’ Training College</p>
+        <p style="margin: 0 !important;">مولانا مظہر الحق ٹیچرز ٹریننگ کالج</p>
+        <p style="margin: 0 !important;">मौलाना मज़हरुल हक़ शिक्षक प्रशिक्षण महाविद्यालय</p>
       </div>
 
       <!-- Affiliation Logos -->
-      <div class="flex flex-wrap items-center justify-center md:justify-end gap-2 md:w-90">
+      <div class="flex flex-wrap items-center justify-center md:justify-end gap-5 md:w-auto">
         <img src="./assets/img/ncte.jpg" alt="NCTE" class="w-12 h-12 object-contain" />
         <img src="./assets/img/aicte.jpeg" alt="AICTE" class="w-12 h-12 object-contain" />
         <img src="./assets/img/LNMU.jpg" alt="LNMU" class="w-12 h-12 object-contain" />
         <img src="./assets/img/BSEB.jpg" alt="BSEB" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/ugc2.jpg" alt="INF" class="w-12 h-12 object-contain" />
+        <img src="./assets/img/ugc2.jpg" alt="UGC" class="w-12 h-12 object-contain" />
         <img src="./assets/img/nac.jpeg" alt="NAAC" class="w-14 h-14 object-contain" />
       </div>
 
@@ -209,7 +214,8 @@
               <summary class="cursor-pointer"> About Us</summary>
               <ul
                 class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="http://mmhttc.com/About_Us.html" class="block hover:bg-gray-100 px-2 py-1">About us</a></li>
+                <li><a href="http://mmhttc.com/About_Us.html" class="block hover:bg-gray-100 px-2 py-1">About us</a>
+                </li>
                 <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Overview</a></li>
                 <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Act and Statutes or MoA</a></li>
                 <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Institutional Development Plan</a></li>
