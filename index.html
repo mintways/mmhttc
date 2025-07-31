@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="./assets/css/style.css" rel="stylesheet">
+  <title>MMHTTC</title>
   <style>
     /* marguee */
     @keyframes slideMarquee {
@@ -14,8 +15,6 @@
         transform: translateX(100%);
       }
 
-
-      
       100% {
         transform: translateX(-100%);
       }
@@ -40,6 +39,14 @@
     .animate-marquee {
       display: inline-block;
       animation: marquee 15s linear infinite;
+    }
+
+
+    /* nav */
+    details.active summary {
+      background-color: #1e40af;
+      /* Tailwind blue-800 */
+      color: white;
     }
 
 
@@ -108,6 +115,152 @@
     .group-hover\:pause:hover {
       animation-play-state: paused;
     }
+
+    /* Custom CSS for the new design */
+    .nav-dropdown {
+      position: fixed !important;
+      z-index: 999999 !important;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      min-width: 200px;
+      display: none;
+    }
+
+    .nav-dropdown.show {
+      display: block;
+    }
+
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 15px;
+      color: #374151;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+
+    .nav-dropdown a:hover {
+      background-color: #f3f4f6;
+    }
+
+    .hero-slider {
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-container {
+      position: relative;
+      z-index: 999999;
+    }
+
+    .scroll-btn {
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      width: 35px;
+      height: 35px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: none;
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+
+    .scroll-btn:hover {
+      background: #1e40af;
+      transform: scale(1.05);
+    }
+
+    .scroll-btn.show {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Hide scrollbar for navigation */
+    .nav-menu-container {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .nav-menu-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .announcement-bar {
+      background: linear-gradient(90deg, #1e40af, #3b82f6, #1e40af);
+      background-size: 200% 100%;
+      animation: gradient-shift 3s ease infinite;
+      color: white;
+      padding: 10px 0;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes gradient-shift {
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .announcement-content {
+      animation: scroll-announcement 30s linear infinite;
+      white-space: nowrap;
+    }
+
+    @keyframes scroll-announcement {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .academic-card {
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+
+    .academic-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+      border-color: #3b82f6;
+    }
+
+    .academic-card img {
+      transition: transform 0.3s ease;
+    }
+
+    .academic-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .notice-scroll {
+      animation: scroll-notice 20s linear infinite;
+    }
+
+    @keyframes scroll-notice {
+      0% {
+        transform: translateY(100%);
+      }
+
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+
+    .notice-scroll:hover {
+      animation-play-state: paused;
+    }
   </style>
 
   <!-- for google search -->
@@ -157,31 +310,29 @@
 
 
     <!-- middle strip -->
-    <div class="w-full bg-white flex flex-col md:flex-row items-center justify-between px-2 gap-4">
+    <div class="w-full bg-white flex flex-col md:flex-row items-center justify-between px-4 gap-4">
 
       <!-- Left Logo -->
-      <div class="flex-shrink-0 md:w-28 flex justify-center md:justify-start">
+      <div class="flex-shrink-0 w-full md:w-[120px] flex justify-center md:justify-start">
         <img src="./assets/img/logo Mm.jpg.png" alt="Main Logo" class="w-24 h-auto" />
       </div>
+      <div
+        class="flex-1 h-18 overflow-hidden flex flex-col justify-center  leading-[1.1] text-center text-green-800 text-xs sm:text-sm md:text-base font-semibold  items-start">
+        <img src="./assets/img/MMHTTC Name for Website.png" alt="" srcset="">
 
-      <!-- Marquee Center Text -->
-      <div class="flex-1 overflow-hidden h-12 flex justify-center items-center">
-        <div id="marquee-text"
-          class="whitespace-nowrap text-blue-900 font-semibold sm:text-xl md:text-3xl leading-relaxed text-left">
-        </div>
       </div>
-
       <!-- Affiliation Logos -->
-      <div class="flex flex-wrap items-center justify-center md:justify-end gap-2 md:w-90">
+      <div class="flex flex-wrap items-center justify-center md:justify-end gap-5 md:w-auto">
         <img src="./assets/img/ncte.jpg" alt="NCTE" class="w-12 h-12 object-contain" />
         <img src="./assets/img/aicte.jpeg" alt="AICTE" class="w-12 h-12 object-contain" />
         <img src="./assets/img/LNMU.jpg" alt="LNMU" class="w-12 h-12 object-contain" />
         <img src="./assets/img/BSEB.jpg" alt="BSEB" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/ugc2.jpg" alt="INF" class="w-12 h-12 object-contain" />
+        <img src="./assets/img/ugc2.jpg" alt="UGC" class="w-12 h-12 object-contain" />
         <img src="./assets/img/nac.jpeg" alt="NAAC" class="w-14 h-14 object-contain" />
       </div>
 
     </div>
+
 
     <!-- middle strip end -->
 
@@ -189,203 +340,189 @@
 
     <!-- nav bar strip -->
     <div class="w-full bg-blue-950 ">
-      <nav class="flex justify-center h-auto px-4 ">
-        <div class="flex items-center justify-between py-3 md:hidden">
-          <span class="text-white text-lg font-semibold">MMHTTC</span>
-          <button id="mobile-menu-toggle" class="text-white text-2xl focus:outline-none">
-            &#9776;
-          </button>
+      <nav class="nav-container bg-blue-950  text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex items-center gap-3">
+            <!-- Left Scroll Button -->
+            <button class="scroll-btn" id="left-scroll-btn" onclick="scrollNav('left')">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- Navigation Menu -->
+            <div class="flex-1 nav-menu-container overflow-x-auto" id="nav-menu">
+              <ul class="flex items-center gap-6 py-4 whitespace-nowrap">
+                <li><a href="./index.html" class="hover:underline transition-colors">Home</a></li>
+
+                <!-- About Us Dropdown -->
+                <li class="relative group">
+                  <button class="hover:underline transition-colors flex items-center gap-1">
+                    About Us <i class="fas fa-chevron-down text-xs"></i>
+                  </button>
+                  <div class="nav-dropdown" data-dropdown="about">
+                    <a href="./about_us.html">About Us</a>
+                    <a href="./overview.html">Overview</a>
+                    <a href="./act_and_statutes.html">Act and Statutes</a>
+                    <a href="./institutional_development_plan.html">Development Plan</a>
+                    <a href="./accreditation_naac.html">NAAC Accreditation</a>
+                    <a href="./recognition_approval.html">Recognition/Approval</a>
+                    <a href="./annual_reports.html">Annual Reports</a>
+                    <a href="./annual_accounts_audit_report.html">Audit Reports</a>
+                  </div>
+                </li>
+
+                <!-- Administration Dropdown -->
+                <li class="relative group">
+                  <button class="hover:underline transition-colors flex items-center gap-1">
+                    Administration <i class="fas fa-chevron-down text-xs"></i>
+                  </button>
+                  <div class="nav-dropdown" data-dropdown="admin">
+                    <a href="./principal.html">Principal</a>
+                    <a href="./controller_of_examination.html">Controller of Examination</a>
+                    <a href="./management_committee.html">Management Committee</a>
+                    <a href="./board_of_studies.html">Board of Studies</a>
+                    <a href="./examination_result.html">Examination Result</a>
+                    <a href="./hod_of_departments.html">HoD of Departments</a>
+                  </div>
+                </li>
+
+                <!-- Academics Dropdown -->
+                <li class="relative group">
+                  <button class="hover:underline transition-colors flex items-center gap-1">
+                    Academics <i class="fas fa-chevron-down text-xs"></i>
+                  </button>
+                  <div class="nav-dropdown" data-dropdown="academics">
+                    <a href="./academic_programs.html">Academic Programs</a>
+                    <a href="./academic_calendar.html">Academic Calendar</a>
+                    <a href="./statutes_ordinances.html">Statutes/Ordinances</a>
+                    <a href="./departments.html">Departments</a>
+                    <a href="./faculty_staff_details.html">Faculty/Staff Details</a>
+                    <a href="./iqac.html">IQAC</a>
+                    <a href="./library.html">Library</a>
+                    <a href="./academic_collaborations.html">Academic Collaborations</a>
+                  </div>
+                </li>
+
+                <!-- Admissions & Fee Dropdown -->
+                <li class="relative group">
+                  <button class="hover:underline transition-colors flex items-center gap-1">
+                    Admissions & Fee <i class="fas fa-chevron-down text-xs"></i>
+                  </button>
+                  <div class="nav-dropdown" data-dropdown="admissions">
+                    <a href="./prospectus.html">Prospectus</a>
+                    <a href="./admission_process_guidelines.html">Admission Process</a>
+                    <a href="./fee_refund_policy.html">Fee Refund Policy</a>
+                  </div>
+                </li>
+
+                <!-- NAAC Dropdown -->
+                <li class="relative group">
+                  <button class="hover:underline transition-colors flex items-center gap-1">
+                    NAAC <i class="fas fa-chevron-down text-xs"></i>
+                  </button>
+                  <div class="nav-dropdown" data-dropdown="naac">
+                    <a href="./dvv_clarification.html">DVV Clarification</a>
+                    <div class="border-t border-gray-200 my-1"></div>
+                    <div class="px-3 py-1 text-sm font-semibold text-gray-600">AQAR</div>
+                    <a href="AQAR1.html">AQAR 1</a>
+                    <a href="AQAR2.html">AQAR 2</a>
+                    <a href="AQAR3.html">AQAR 3</a>
+                    <a href="AQAR4.html">AQAR 4</a>
+                    <a href="AQAR5.html">AQAR 5</a>
+                    <a href="AQAR6.html">AQAR 6</a>
+                    <a href="AQAR7.html">AQAR 7</a>
+                  </div>
+                </li>
+
+                <!-- Infrastructure Research Dropdown -->
+                <li class="relative group">
+                  <button class="hover:underline transition-colors flex items-center gap-1">
+                    Research <i class="fas fa-chevron-down text-xs"></i>
+                  </button>
+                  <div class="nav-dropdown" data-dropdown="infrastructure">
+                    <a href="./research_development_cell.html">Research & Development Cell</a>
+                    <a href="./incubation_entrepreneurship_cell.html">Incubation Centre</a>
+                    <a href="./central_facilities.html">Central Facilities</a>
+                  </div>
+                </li>
+
+                <!-- Student Life Dropdown -->
+                <li class="relative group">
+                  <button class="hover:underline transition-colors flex items-center gap-1">
+                    Student Life <i class="fas fa-chevron-down text-xs"></i>
+                  </button>
+                  <div class="nav-dropdown" data-dropdown="student-life">
+                    <a href="./sports_facilities.html">Sports Facilities</a>
+                    <a href="./placement_cell.html">Placement Cell</a>
+                    <a href="./student_grievance_redressal_committee.html">Student Grievance Committee</a>
+                    <a href="./health_facilities.html">Health Facilities</a>
+                    <a href="./internal_complaint_committee.html">Internal Complaint Committee</a>
+                    <a href="./anti_ragging_cell.html">Anti-Ragging Cell</a>
+                    <a href="./equal_opportunity_cell.html">Equal Opportunity Cell</a>
+                    <a href="./grievance_redressal_cell.html">Grievance Redressal Cell</a>
+                    <a href="./sedg_cell.html">SEDG Cell</a>
+                    <a href="./facilities_for_differently_abled.html">Facilities for Differently Abled</a>
+                    <a href="./feedback_mechanism.html">Feedback Mechanism</a>
+                    <!-- <a href="./Elearning.php">E-Learning</a> -->
+                  </div>
+                </li>
+
+                <!-- Alumni Dropdown -->
+                <li class="relative group">
+                  <button class="hover:underline  transition-colors flex items-center gap-1">
+                    Alumni <i class="fas fa-chevron-down text-xs"></i>
+                  </button>
+                  <div class="nav-dropdown" data-dropdown="alumni">
+                    <a href="./alumni.html">Alumni</a>
+                    <a href="./alumni_association.html">Alumni Association</a>
+                  </div>
+                </li>
+
+                <!-- Information Corner Dropdown -->
+                <li class="relative group">
+                  <button class="hover:underline  transition-colors flex items-center gap-1">
+                    Information Corner <i class="fas fa-chevron-down text-xs"></i>
+                  </button>
+                  <div class="nav-dropdown" data-dropdown="info">
+                    <a href="./rti.html">RTI</a>
+                    <a href="./circulars_notices.html">Circulars & Notices</a>
+                    <a href="./announcements.html">Announcements</a>
+                    <a href="./newsletters.html">Newsletters</a>
+                    <a href="./news_recent_events_achievements.html">News & Events</a>
+                    <a href="./job_openings.html">Job Openings</a>
+                    <a href="./reservation_roster.html">Reservation Roster</a>
+                  </div>
+                </li>
+
+                <!-- Staff Dropdown -->
+                <li class="relative group">
+                  <button class="hover:underline transition-colors flex items-center gap-1">
+                    Staff <i class="fas fa-chevron-down text-xs"></i>
+                  </button>
+                  <div class="nav-dropdown" data-dropdown="staff">
+                    <a href="./administrative_staff.html">Administrative Staff</a>
+                    <a href="./teaching.html">Teaching</a>
+                    <a href="./non_teaching.html">Non Teaching</a>
+                    <a href="./library_staff.html">Library Staff</a>
+                    <a href="./employee_zone.html">Employee Zone</a>
+                  </div>
+                </li>
+
+                <!-- Disclosure Dropdown -->
+                <li><a href="./mandatory_disclosure.html" class="hover:underline transition-colors">Mandatory
+                    Disclosure</a></li>
+
+
+                <li><a href="./picture_gallery.html" class="hover:underline transition-colors">Picture Gallery</a></li>
+                <li><a href="./contact_us.html" class="hover:underline transition-colors">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- Right Scroll Button -->
+            <button class="scroll-btn" id="right-scroll-btn" onclick="scrollNav('right')">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
         </div>
-        <ul
-          class="hidden md:flex md:flex-wrap md:items-center gap-4 text-white py-3 flex-col md:flex-row md:justify-center "
-          id="main-menu">
-
-          <!-- 1. Home -->
-          <li><a href="http://mmhttc.com/index.html" class="hover:underline block px-2 py-1">Home</a></li>
-
-          <!-- 2. About Us -->
-          <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"> About Us</summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="http://mmhttc.com/About_Us.html" class="block hover:bg-gray-100 px-2 py-1">About us</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Overview</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Act and Statutes or MoA</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Institutional Development Plan</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Accreditation / Ranking status (NAAC)</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Recognition / Approval (2(f), 12B, etc.)</a>
-                </li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Annual Reports</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Annual Accounts and Audit Report</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!--3. Administration -->
-          <li class="relative group w-full md:w-auto">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Administration</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Principal</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Controller of Examination</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Management Committee</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Board of Studies</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Internal Complaint Committee</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">HoD of Departments</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!--4. academics -->
-          <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Academics</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Details of Academic Programs</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Academic Calendar</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Statutes/Ordinances pertaining to
-                    Academics/Examinations</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Departments</li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Departments Wise faculty/staff details with
-                    photographs</li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">IQAC</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Librarya></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Academic Collorations</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!--5. Admission & Fee -->
-          <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Admissions & Fee</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Prospectus</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Admission process and guidelines</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Fee refund policy</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!-- 6. NAAC -->
-          <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer text-white">NAAC</summary>
-              <ul
-                class="md:absolute md:left-full md:top-0 md:ml-2 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-30 group-open:block">
-
-                <!-- DVV Clarification -->
-                <li>
-                  <a href="#" class="block hover:bg-gray-100 px-2 py-1">DVV Clarification</a>
-                </li>
-
-                <!-- AQAR (Nested Dropdown) -->
-                <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-                  <details class="group">
-                    <summary class="cursor-pointer hover:bg-gray-100 px-2 py-1 rounded">AQAR</summary>
-                    <ul
-                      class="md:absolute md:left-full md:top-0 md:ml-2 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-30 group-open:block">
-
-                      <li><a href="AQAR1.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 1</a></li>
-                      <li><a href="AQAR2.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 2</a></li>
-                      <li><a href="AQAR3.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 3</a></li>
-                      <li><a href="AQAR4.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 4</a></li>
-                      <li><a href="AQAR5.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 5</a></li>
-                      <li><a href="AQAR6.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 6</a></li>
-                      <li><a href="AQAR7.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 7</a></li>
-
-                    </ul>
-                  </details>
-                </li>
-              </ul>
-            </details>
-          </li>
-
-
-
-          <!--10. Infrastructure  -->
-          <!-- <li><a href="#">Infrastructure Research</li> -->
-
-          <!--7. Research -->
-          <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Infrastructure Research</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Research and Development Cell</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Incubation Centre/Start-ups/Entrepreneurship
-                    Cell</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Central Facilities</a></li>
-              </ul>
-            </details>
-          </li>
-
-
-          <!--8. Student Life -->
-          <li class="relative group w-full md:w-auto transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Student Life</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Sports facilities</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Placement Cell and its activities</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Details of Student Grievance Redressal
-                    Committee (SGRC) and Ombudsperson</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Health facilities</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Internal Complaint Committee</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Anti-Ragging Cell</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Equal Opportunity Cell</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Grievance Redressal Cell</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Socio-Economically Disadvantaged Groups Cell
-                    (SEDG)</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Facilities for differently abled</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Feedback Mechanism</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">E-Leaning</a></li>
-              </ul>
-            </details>
-          </li>
-
-
-          <!--9. Alumni -->
-          <li class="relative group w-full md:w-auto transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Alumni</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Alumni</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Alumni Association with details</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!--10. Information Corner -->
-          <li class="relative group w-full md:w-auto transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Information Corner</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">RTI</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Circulars and Notices</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Announcements</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Newsletters</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">News, Recent events & Achievements</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Job openings</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Reservation Roster</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!--11. Contact us -->
-          <li><a>Picture Gallery</a></li>
-
-          <!--12. Contact us -->
-          <li><a>Contact Us</a></li>
-
-        </ul>
       </nav>
     </div>
 
@@ -396,18 +533,20 @@
 
 
 
+
+
   <!-- hero -->
   <section class="w-full">
-    <div class="w-[100%] h-[90vh] relative  mx-auto overflow-hidden">
+    <div class="w-[100%] h-[70vh] relative  mx-auto overflow-hidden">
       <div id="slider" class="flex w-full h-full transition-transform duration-700 ease-in-out">
         <!-- sliding images -->
-        <img src="./assets/img/1.jpg" alt="" class="w-full h-full object-cover flex-shrink-0">
-        <img src="./assets/img/3.jpg" alt="" class="w-full h-full object-cover flex-shrink-0">
-        <img src="./assets/img/2.jpg" alt="" class="w-full h-full object-cover flex-shrink-0">
-        <img src="./assets/img/4.jpg" alt="" class="w-full h-full object-cover flex-shrink-0">
-        <img src="./assets/img/5.jpg" alt="" class="w-full h-full object-cover flex-shrink-0">
-        <img src="./assets/img/6.jpg" alt="" class="w-full h-full object-cover flex-shrink-0">
-        <img src="./assets/img/7.jpg" alt="" class="w-full h-full object-cover flex-shrink-0">
+        <img src="./assets/img/1.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
+        <img src="./assets/img/3.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
+        <img src="./assets/img/2.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
+        <img src="./assets/img/4.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
+        <img src="./assets/img/5.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
+        <img src="./assets/img/6.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
+        <img src="./assets/img/7.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
       </div>
 
       <!-- sliding images button -->
@@ -425,6 +564,28 @@
     </div>
   </section>
   <!-- hero end -->
+
+  <!-- floating social link -->
+
+  <div class="fixed top-1/2 right-0 transform -translate-y-1/2 hidden md:flex flex-col space-y-2 z-50">
+
+    <a href="https://www.facebook.com/MMHTTCollege" target="_blank"
+      class="w-12 h-12 flex items-center justify-center bg-[#3b5998] text-white rounded-l hover:translate-x-[-5px] transition-transform duration-300 "
+      style="margin-bottom: 0;" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://x.com/MMHTTCollege" target="_blank"
+      class="w-12 h-12 flex items-center justify-center bg-[#1da1f2] text-white rounded-l hover:translate-x-[-5px] transition-transform duration-300"
+      title="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.youtube.com/@MMHTTCollege" target="_blank"
+      class="w-12 h-12 flex items-center justify-center bg-[#ff0000] text-white rounded-l hover:translate-x-[-5px] transition-transform duration-300"
+      title="YouTube">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+
 
 
 
@@ -516,6 +677,46 @@
     </div>
   </section>
   <!-- welcome section end -->
+
+
+  <!-- tarana and personalities -->
+  <section class="max-w-full mx-auto px-4 py-8 flex flex-col md:flex-row items-center gap-6 bg-blue-950">
+    <!-- Image Slider -->
+    <div class="relative w-full md:w-1/2 h-[60vh] overflow-hidden rounded-lg shadow-lg">
+      <div id="peopleSlider" class="flex w-full h-full transition-transform duration-700 ease-in-out">
+        <img src="./assets/img/droupadi.png" alt="President" class="w-full h-full object-fill flex-shrink-0" />
+        <img src="./assets/img/arif.png" alt="Governor" class="w-full h-full object-fill flex-shrink-0" />
+        <img src="./assets/img/nitish.png" alt="CM" class="w-full h-full object-fill flex-shrink-0" />
+        <img src="./assets/img/sunil.png" alt="Education Minister" class="w-full h-full object-fill flex-shrink-0" />
+        <img src="./assets/img/sanjay.png" alt="Vice Chancellor" class="w-full h-full object-fill flex-shrink-0" />
+      </div>
+
+      <!-- Slider Dots -->
+      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+        <span class="people-slider-dot bg-white w-4 h-2 rounded-full cursor-pointer"
+          onclick="goToPeopleSlide(0)"></span>
+        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
+          onclick="goToPeopleSlide(1)"></span>
+        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
+          onclick="goToPeopleSlide(2)"></span>
+        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
+          onclick="goToPeopleSlide(3)"></span>
+        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
+          onclick="goToPeopleSlide(4)"></span>
+      </div>
+    </div>
+
+    <!-- Video -->
+    <div class="w-full md:w-1/2">
+      <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+        <video controls autoplay muted loop class="w-full h-full object-cover">
+          <source src="./assets/video/intro.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
 
 
   <!-- acdemic -->
@@ -870,14 +1071,14 @@
           </div>
         </div>
 
-        <!-- Right: All Links Grouped -->
+        <!-- footer link start -->
         <div
           class="lg:w-2/3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-h-[500px] overflow-y-auto pr-2 custom-scroll">
           <div>
             <h4 class="text-lg font-bold mb-2">Home</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="index.html" class="hover:text-cyan-400">Home</a></li>
+              <li><a href="./index.html" class="hover:text-cyan-400">Home</a></li>
             </ul>
           </div>
 
@@ -886,13 +1087,13 @@
             <h4 class="text-lg font-bold mb-2">About Us</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Overview</a></li>
-              <li><a href="#" class="hover:text-cyan-400">MoA / Statutes</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Development Plan</a></li>
-              <li><a href="#" class="hover:text-cyan-400">NAAC</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Approvals</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Annual Reports</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Audit Reports</a></li>
+              <li><a href="./overview.html" class="hover:text-cyan-400">Overview</a></li>
+              <li><a href="./moa_statutes.html" class="hover:text-cyan-400">MoA / Statutes</a></li>
+              <li><a href="./development_plan.html" class="hover:text-cyan-400">Development Plan</a></li>
+              <li><a href="./naac.html" class="hover:text-cyan-400">NAAC</a></li>
+              <li><a href="./approvals.html" class="hover:text-cyan-400">Approvals</a></li>
+              <li><a href="./annual_reports.html" class="hover:text-cyan-400">Annual Reports</a></li>
+              <li><a href="./audit_reports.html" class="hover:text-cyan-400">Audit Reports</a></li>
             </ul>
           </div>
 
@@ -901,12 +1102,12 @@
             <h4 class="text-lg font-bold mb-2">Administration</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Principal</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Controller of Examination</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Management Committee</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Board of Studies</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Internal Complaint Committee</a></li>
-              <li><a href="#" class="hover:text-cyan-400">HoDs of Departments</a></li>
+              <li><a href="./principal.html" class="hover:text-cyan-400">Principal</a></li>
+              <li><a href="./controller_of_examination.html" class="hover:text-cyan-400">Controller of Examination</a></li>
+              <li><a href="./management_committee.html" class="hover:text-cyan-400">Management Committee</a></li>
+              <li><a href="./board_of_studies.html" class="hover:text-cyan-400">Board of Studies</a></li>
+              <li><a href="./examination_result.html" class="hover:text-cyan-400">Examination Result</a></li>
+              <li><a href="./hod_of_departments.html" class="hover:text-cyan-400">HoDs of Departments</a></li>
             </ul>
           </div>
 
@@ -915,14 +1116,14 @@
             <h4 class="text-lg font-bold mb-2">Academics</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Academic Programs</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Academic Calendar</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Statutes/Ordinances</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Departments</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Department Wise faculty/staff detail with photographs</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Library</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Academic Collaboration</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Partnership</a></li>
+              <li><a href="./academic_programs.html" class="hover:text-cyan-400">Academic Programs</a></li>
+              <li><a href="./academic_calendar.html" class="hover:text-cyan-400">Academic Calendar</a></li>
+              <li><a href="./statutes_ordinances.html" class="hover:text-cyan-400">Statutes/Ordinances</a></li>
+              <li><a href="./departments.html" class="hover:text-cyan-400">Departments</a></li>
+              <li><a href="./department_wise_faculty_photos.html" class="hover:text-cyan-400">Department Wise faculty/staff detail with photographs</a></li>
+              <li><a href="./library.html" class="hover:text-cyan-400">Library</a></li>
+              <li><a href="./academic_collaborations.html" class="hover:text-cyan-400">Academic Collaboration</a></li>
+              <li><a href="./partnership.html" class="hover:text-cyan-400">Partnership</a></li>
             </ul>
           </div>
 
@@ -940,18 +1141,18 @@
             <h4 class="text-lg font-bold mb-2">IQAC</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Internal Quality Assurance Cell</a></li>
+              <li><a href="./iqac.html" class="hover:text-cyan-400">Internal Quality Assurance Cell</a></li>
             </ul>
           </div>
 
           <!-- Library -->
-          <div>
+          <!-- <div>
             <h4 class="text-lg font-bold mb-2">Library</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
               <li><a href="#" class="hover:text-cyan-400">Library Info</a></li>
             </ul>
-          </div>
+          </div> -->
 
           <!-- Academic Collaborations -->
           <!-- <div>
@@ -967,9 +1168,9 @@
             <h4 class="text-lg font-bold mb-2">Admissions & Fee</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Prospectus</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Admission Process</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Refund Policy</a></li>
+              <li><a href="./prospectus.html" class="hover:text-cyan-400">Prospectus</a></li>
+              <li><a href="./admission_process_guidelines.html" class="hover:text-cyan-400">Admission Process</a></li>
+              <li><a href="./refund_policy.html" class="hover:text-cyan-400">Refund Policy</a></li>
             </ul>
           </div>
 
@@ -978,7 +1179,7 @@
             <h4 class="text-lg font-bold mb-2">Infrastructure</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Campus Infrastructure</a></li>
+              <li><a href="./campus_infrastructure.html" class="hover:text-cyan-400">Campus Infrastructure</a></li>
             </ul>
           </div>
 
@@ -987,8 +1188,8 @@
             <h4 class="text-lg font-bold mb-2">Research</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">R&D & Collaborations</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Incubation/Startups</a></li>
+              <li><a href="./rnd_collaborations.html" class="hover:text-cyan-400">R&D & Collaborations</a></li>
+              <li><a href="./incubation_startups.html" class="hover:text-cyan-400">Incubation/Startups</a></li>
             </ul>
           </div>
 
@@ -997,7 +1198,7 @@
             <h4 class="text-lg font-bold mb-2">Central Facilities</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Facility List</a></li>
+              <li><a href="./facility_list.html" class="hover:text-cyan-400">Facility List</a></li>
             </ul>
           </div>
 
@@ -1006,10 +1207,10 @@
             <h4 class="text-lg font-bold mb-2">Student Life</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Sports</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Placement</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Grievance Committee</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Health Facilities</a></li>
+              <li><a href="./sports_facilities.html" class="hover:text-cyan-400">Sports Facilitiesa></li>
+              <li><a href="./placement_cell.html" class="hover:text-cyan-400">Placement Cell</a></li>
+              <li><a href="./grievance_committee.html" class="hover:text-cyan-400">Grievance Committee</a></li>
+              <li><a href="./health_facilities.html" class="hover:text-cyan-400">Health Facilities</a></li>
             </ul>
           </div>
 
@@ -1018,12 +1219,11 @@
             <h4 class="text-lg font-bold mb-2">Support Cells</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Anti-Ragging</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Equal Opportunity</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Grievance Cell</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Differently Abled</a></li>
-              <li><a href="#" class="hover:text-cyan-400">SEDG</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Feedback Mechanism</a></li>
+              <li><a href="./anti_ragging_cell.html" class="hover:text-cyan-400">Anti-Ragging</a></li>
+              <li><a href="./equal_opportunity_cell.html" class="hover:text-cyan-400">Equal Opportunity</a></li>
+              <li><a href="./differently_abled.html" class="hover:text-cyan-400">Differently Abled</a></li>
+              <li><a href="./sedg_cell.html" class="hover:text-cyan-400">SEDG</a></li>
+              <li><a href="./feedback_mechanism.html" class="hover:text-cyan-400">Feedback Mechanism</a></li>
             </ul>
           </div>
 
@@ -1032,7 +1232,7 @@
             <h4 class="text-lg font-bold mb-2">E-learning</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">E-learning Platform</a></li>
+              <li><a href="ELearning.php" class="hover:text-cyan-400">E-learning Platform</a></li>
             </ul>
           </div>
 
@@ -1041,8 +1241,8 @@
             <h4 class="text-lg font-bold mb-2">Alumni</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Alumni</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Alumni Association</a></li>
+              <li><a href="./alumni.html" class="hover:text-cyan-400">Alumni</a></li>
+              <li><a href="./alumni_association.html" class="hover:text-cyan-400">Alumni Association</a></li>
             </ul>
           </div>
 
@@ -1051,14 +1251,14 @@
             <h4 class="text-lg font-bold mb-2">Information Corner</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">RTI Details</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Notices & Circulars</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Announcements</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Newsletters</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Achievements</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Job Openings</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Reservation Roster</a></li>
-              <li><a href="#" class="hover:text-cyan-400">Gallery</a></li>
+              <li><a href="./rti.html" class="hover:text-cyan-400">RTI Details</a></li>
+              <li><a href="./notices_and_circulars.html" class="hover:text-cyan-400">Notices & Circulars</a></li>
+              <li><a href="./announcements.html" class="hover:text-cyan-400">Announcements</a></li>
+              <li><a href="./newsletters.html" class="hover:text-cyan-400">Newsletters</a></li>
+              <li><a href="./achievements.html" class="hover:text-cyan-400">Achievements</a></li>
+              <li><a href="./job_openings.html" class="hover:text-cyan-400">Job Openings</a></li>
+              <li><a href="./reservation_roster.html" class="hover:text-cyan-400">Reservation Roster</a></li>
+              <li><a href="./picture_gallery.html" class="hover:text-cyan-400">Gallery</a></li>
             </ul>
           </div>
 
@@ -1067,10 +1267,12 @@
             <h4 class="text-lg font-bold mb-2">Contact Us</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="Contact Us.html" class="hover:text-cyan-400">Get in Touch</a></li>
+              <li><a href="./contact_us.html" class="hover:text-cyan-400">Get in Touch</a></li>
             </ul>
           </div>
         </div>
+        <!-- link end -->
+
       </div>
     </div>
 
@@ -1083,9 +1285,10 @@
           <span>Designed by Mintways Technology</span>
         </div>
         <div class="flex space-x-4">
-          <a href="#" class="hover:text-cyan-400" style="margin: 0 !important; "><img src="./assets/img/facebook.png"
+          <a href="https://www.facebook.com/MMHTTCollege" class="hover:text-cyan-400"
+            style="margin: 0 !important; "><img src="./assets/img/facebook.png" class="h-7 w-7" alt=""></a>
+          <a href="https://x.com/MMHTTCollege" class="hover:text-cyan-400"><img src="./assets/img/twitter.png"
               class="h-7 w-7" alt=""></a>
-          <a href="#" class="hover:text-cyan-400"><img src="./assets/img/twitter.png" class="h-7 w-7" alt=""></a>
           <a href="#" class="hover:text-cyan-400"><img src="./assets/img/instagram.png" class="h-7 w-7" alt=""></a>
           <a href="#" class="hover:text-cyan-400"><img src="./assets/img/linkedin.png" class="h-7 w-7" alt=""></a>
         </div>
@@ -1105,28 +1308,6 @@
 
 
 <script>
-
-  // text marquee
-  const texts = [
-    "Maulana Mazharul Haque Teachers' Training College ",
-    "مولانا مظہر الحق ٹیچرز ٹریننگ کالج ",
-    "मौलाना मज़हरुल हक़ शिक्षक प्रशिक्षण महाविद्यालय "
-  ];
-
-  let currentIndex = 0;
-  const marqueeEl = document.getElementById("marquee-text");
-
-  function startScroll() {
-    marqueeEl.innerHTML = `<span class="marquee-animate">${texts[currentIndex]}</span>`;
-
-    // Duration must match animation-duration in CSS (10s here)
-    setTimeout(() => {
-      currentIndex = (currentIndex + 1) % texts.length;
-      startScroll();
-    }, 10000); // 10s = duration of animation
-  }
-
-  startScroll();
 
   // image slider
   let current = 0;
@@ -1181,11 +1362,119 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // mobile view nav bar
-  document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
-    const menu = document.getElementById('main-menu');
-    menu.classList.toggle('hidden');
+  //people slider
+  let peopleCurrent = 0;
+  const peopleSlider = document.getElementById("peopleSlider");
+  const peopleDots = document.querySelectorAll(".people-slider-dot");
+
+  function goToPeopleSlide(index) {
+    const slideWidth = peopleSlider.clientWidth;
+    peopleSlider.style.transform = `translateX(-${index * slideWidth}px)`;
+    peopleCurrent = index;
+    updatePeopleDots();
+  }
+
+  function updatePeopleDots() {
+    peopleDots.forEach((dot, i) => {
+      dot.classList.toggle("bg-white", i === peopleCurrent);
+      dot.classList.toggle("bg-green-700", i !== peopleCurrent);
+    });
+  }
+
+  setInterval(() => {
+    peopleCurrent = (peopleCurrent + 1) % peopleDots.length;
+    goToPeopleSlide(peopleCurrent);
+  }, 5000);
+
+  // new scrpipt
+
+  // Navigation dropdown functionality
+  document.addEventListener('DOMContentLoaded', function () {
+    const dropdownButtons = document.querySelectorAll('.group button');
+    const dropdowns = document.querySelectorAll('.nav-dropdown');
+    let activeDropdown = null;
+
+    dropdownButtons.forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const dropdown = this.nextElementSibling;
+
+        // Close other dropdowns
+        if (activeDropdown && activeDropdown !== dropdown) {
+          activeDropdown.classList.remove('show');
+        }
+
+        // Toggle current dropdown
+        dropdown.classList.toggle('show');
+        activeDropdown = dropdown.classList.contains('show') ? dropdown : null;
+
+        // Position the dropdown
+        if (dropdown.classList.contains('show')) {
+          const rect = this.getBoundingClientRect();
+          dropdown.style.top = (rect.bottom + 5) + 'px';
+          dropdown.style.left = rect.left + 'px';
+          dropdown.style.minWidth = rect.width + 'px';
+        }
+      });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.group')) {
+        dropdowns.forEach(dropdown => {
+          dropdown.classList.remove('show');
+        });
+        activeDropdown = null;
+      }
+    });
+
+    // Close dropdowns on scroll
+    window.addEventListener('scroll', function () {
+      dropdowns.forEach(dropdown => {
+        dropdown.classList.remove('show');
+      });
+      activeDropdown = null;
+    });
+
+    // Navigation scroll functionality
+    updateScrollButtons();
+    window.addEventListener('resize', updateScrollButtons);
   });
+
+  function updateScrollButtons() {
+    const navMenu = document.getElementById('nav-menu');
+    const leftBtn = document.getElementById('left-scroll-btn');
+    const rightBtn = document.getElementById('right-scroll-btn');
+
+    if (navMenu.scrollLeft > 0) {
+      leftBtn.classList.add('show');
+    } else {
+      leftBtn.classList.remove('show');
+    }
+
+    if (navMenu.scrollLeft < (navMenu.scrollWidth - navMenu.clientWidth)) {
+      rightBtn.classList.add('show');
+    } else {
+      rightBtn.classList.remove('show');
+    }
+  }
+
+  function scrollNav(direction) {
+    const navMenu = document.getElementById('nav-menu');
+    const scrollAmount = 200;
+
+    if (direction === 'left') {
+      navMenu.scrollLeft -= scrollAmount;
+    } else {
+      navMenu.scrollLeft += scrollAmount;
+    }
+
+    setTimeout(updateScrollButtons, 100);
+  }
+
+
+
+
 </script>
 
 </html>
