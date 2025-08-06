@@ -166,6 +166,16 @@
         .notice-scroll:hover {
             animation-play-state: paused;
         }
+
+        /* NEW NAAC */
+        .aqar:hover .aqar-submenu {
+            display: block;
+        }
+
+        /* Show AQAR 2023-24 submenu on hover */
+        .aqar23-24:hover .aqar23-24-submenu {
+            display: block;
+        }
     </style>
 </head>
 
@@ -196,9 +206,9 @@
                     </ul>
 
                     <!-- Search Box -->
-                    <div class="text-black w-full md:w-auto">
+                    <!-- <div class="text-black w-full md:w-auto">
                         <div class="gcse-search"></div>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -309,26 +319,81 @@
                                     <div class="nav-dropdown" data-dropdown="admissions">
                                         <a href="./prospectus.html">Prospectus</a>
                                         <a href="./admission_process_guidelines.html">Admission Process</a>
-                                        <a href="./fee_refund_policy.html">Fee Refund Policy</a>
+                                        <a href="./fee_refund_policy.html">Fee Structure and Refund Policy</a>
                                     </div>
                                 </li>
 
-                                <!-- NAAC Dropdown -->
+                                <!--NEW NAAC Dropdown -->
                                 <li class="relative group">
                                     <button class="hover:underline transition-colors flex items-center gap-1">
                                         NAAC <i class="fas fa-chevron-down text-xs"></i>
                                     </button>
+
+                                    <!-- Main dropdown  -->
                                     <div class="nav-dropdown" data-dropdown="naac">
-                                        <a href="./dvv_clarification.html">DVV Clarification</a>
-                                        <div class="border-t border-gray-200 my-1"></div>
-                                        <div class="px-3 py-1 text-sm font-semibold text-gray-600">AQAR</div>
-                                        <a href="AQAR1.html">AQAR 1</a>
-                                        <a href="AQAR2.html">AQAR 2</a>
-                                        <a href="AQAR3.html">AQAR 3</a>
-                                        <a href="AQAR4.html">AQAR 4</a>
-                                        <a href="AQAR5.html">AQAR 5</a>
-                                        <a href="AQAR6.html">AQAR 6</a>
-                                        <a href="AQAR7.html">AQAR 7</a>
+                                        <!-- <a href="./dvv_clarification.html">DVV Clarification</a> -->
+                                        <a href="./aqar_report.html">AQAR Report</a>
+
+                                        <!-- AQAR submenu  -->
+                                        <div class="relative aqar text-black">
+                                            <div
+                                                class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
+                                                AQAR <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                                            </div>
+                                            <div
+                                                class="aqar-submenu absolute left-full top-0 hidden bg-white text-black shadow-lg min-w-[180px] z-50">
+                                                <a href="AQAR1.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                    1</a>
+                                                <a href="AQAR2.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                    2</a>
+                                                <a href="AQAR3.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                    3</a>
+                                                <a href="AQAR4.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                    4</a>
+                                                <a href="AQAR5.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                    5</a>
+                                                <a href="AQAR6.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                    6</a>
+                                                <a href="AQAR7.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                    7</a>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- AQAR 2023-2024 -->
+                                        <div class="relative aqar23-24 text-black">
+                                            <div
+                                                class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
+                                                AQAR 2023–2024 <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                                            </div>
+                                            <div
+                                                class="aqar23-24-submenu absolute left-full top-0 hidden bg-white text-black shadow-lg min-w-[200px] z-50">
+                                                <a href="AQAR23_24_1.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.1</a>
+                                                <a href="AQAR23_24_2.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.2</a>
+                                                <a href="AQAR23_24_3.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.3</a>
+                                                <a href="AQAR23_24_4.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.4</a>
+                                                <a href="AQAR23_24_5.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.5</a>
+                                                <a href="AQAR23_24_6.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.6</a>
+                                                <a href="AQAR23_24_7.html"
+                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.7</a>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Other criteria -->
+                                        <!-- <a href="criteria1.html">Criteria 1</a>
+                                        <a href="criteria2.html">Criteria 2</a>
+                                        <a href="criteria3.html">Criteria 3</a>
+                                        <a href="criteria4.html">Criteria 4</a>
+                                        <a href="criteria5.html">Criteria 5</a>
+                                        <a href="criteria6.html">Criteria 6</a>
+                                        <a href="criteria7.html">Criteria 7</a> -->
                                     </div>
                                 </li>
 
@@ -502,14 +567,86 @@
                 </div>
 
                 <!-- Mission Section -->
-                <div class="bg-sky-200 max-w-2xl mx-auto p-8 rounded-lg text-center shadow-md">
-                    <h2 class="text-2xl font-semibold mb-4">Mission</h2>
+                <div class="bg-sky-200 max-w-4xl mx-auto p-8 rounded-xl text-center shadow-md">
+                    <h2 class="text-2xl font-semibold mb-4">Features Of College Management</h2>
                     <p class="text-justify text-gray-800 leading-relaxed">
-                        The mission of the college is to create an environment of learning totally filled
-                        with resourcefulness enabling the teacher to become an example in the arena of education.
-                        That focused endeavor of the college is to equip our student teachers with skills in their
-                        respective
-                        fields.
+
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <div class="text-left space-y-4">
+
+                            <div>
+                                <h3 class="text-lg font-semibold">1. Smart Timetables</h3>
+                                <p class="text-gray-700">Teachers can effortlessly create and manage class timetables.
+                                </p>
+                                <hr class="border-yellow-400 border-t-2 mt-2">
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold">2. Attendance Management</h3>
+                                <p class="text-gray-700">Teachers can mark attendance on the go using the app and access
+                                    detailed attendance analytics with a single click.</p>
+                                <hr class="border-yellow-400 border-t-2 mt-2">
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold">3. Assignments</h3>
+                                <p class="text-gray-700">Colleges and institutions can assign tasks to students.
+                                    Students can submit their responses in the form of images, videos, PDFs, documents,
+                                    slides, and more.</p>
+                                <hr class="border-yellow-400 border-t-2 mt-2">
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold">4. Report Cards</h3>
+                                <p class="text-gray-700">Educators can generate and manage report cards, certificates,
+                                    and ID cards. Each report card includes QR code verification for security and
+                                    tamper-proof validation.</p>
+                                <hr class="border-yellow-400 border-t-2 mt-2">
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold">5. Fees Management</h3>
+                                <p class="text-gray-700">Institutions can define fee structures, maintain records, and
+                                    collect payments online. Features include automatic receipt generation, payment
+                                    gateway integration, and access to detailed fee analytics.</p>
+                                <hr class="border-yellow-400 border-t-2 mt-2">
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold">6. Enquiry & Admission Management</h3>
+                                <p class="text-gray-700">Manage enquiries and streamline the admission process with
+                                    custom online admission and enquiry forms. Includes integrated online fee payment
+                                    options.</p>
+                                <hr class="border-yellow-400 border-t-2 mt-2">
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold">7. Academic Planning</h3>
+                                <p class="text-gray-700">Teachers can plan lesson schedules in advance to ensure better
+                                    tracking and syllabus coverage. Detailed lesson plans are shared with students in
+                                    real-time.</p>
+                                <hr class="border-yellow-400 border-t-2 mt-2">
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold">8. Online Learning</h3>
+                                <p class="text-gray-700">Conduct virtual classes using integrated Google Meet and Zoom.
+                                    Students can attend sessions directly from their apps.</p>
+                                <hr class="border-yellow-400 border-t-2 mt-2">
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-semibold">9. Learning Material Management</h3>
+                                <p class="text-gray-700">Share educational content in various formats including
+                                    documents, images, videos (including private ones), web and drive links, and more.
+                                </p>
+                                <hr class="border-yellow-400 border-t-2 mt-2">
+                            </div>
+
+                        </div>
+                    </div>
+
+
                     </p>
                 </div>
 
@@ -798,7 +935,7 @@
 
         <!-- Scroll to Top Button -->
         <a href="#" id="scrollTopBtn"
-            class="hidden fixed bottom-6 right-6 z-50 w-10 h-10 bg-cyan-600 hover:bg-cyan-700 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300">
+            class=" fixed bottom-6 right-6 z-50 w-10 h-10 bg-cyan-600 hover:bg-cyan-700 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300">
             <i class="fa-solid fa-arrow-up"></i>
         </a>
     </footer>
