@@ -7,84 +7,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="./assets/css/style.css" rel="stylesheet">
-  <title>MMHTTC</title>
+  <title> library services</title>
   <style>
-    /* marguee */
-    @keyframes slideMarquee {
-      0% {
-        transform: translateX(100%);
-      }
-
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    .marquee-animate {
-      display: inline-block;
-      animation: slideMarquee 10s linear forwards;
-    }
-
-
-    @keyframes marquee {
-      0% {
-        transform: translateX(100%);
-      }
-
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    .animate-marquee {
-      display: inline-block;
-      animation: marquee 15s linear infinite;
-    }
-
-
-    /* nav */
-    details.active summary {
-      background-color: #1e40af;
-      /* Tailwind blue-800 */
-      color: white;
-    }
-
-
-    /* notice */
-    @keyframes announcement {
-      0% {
-        transform: translateX(100%);
-      }
-
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    .animate-announcement {
-      animation: announcement 25s linear infinite;
-    }
-
-
-    /* academic parallax */
-    .academic-parallax::before {
-      content: '';
-      background-image:
-        linear-gradient(to bottom, rgba(191, 219, 254, 0.764), rgba(147, 196, 253, 0.622)),
-        url('./assets/img/small-chalkboard-near-stationery-table.jpg');
-
-      background-attachment: fixed;
-      background-position: center;
-      background-size: cover;
-      opacity: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: 0;
-    }
-
     /* footer scroll */
     .custom-scroll::-webkit-scrollbar {
       width: 6px;
@@ -96,27 +20,8 @@
     }
 
 
-    /* notice section */
+    /* new css for navbar*/
 
-    @keyframes scroll {
-      0% {
-        transform: translateY(100%);
-      }
-
-      100% {
-        transform: translateY(-100%);
-      }
-    }
-
-    .animate-scroll {
-      animation: scroll 15s linear infinite;
-    }
-
-    .group-hover\:pause:hover {
-      animation-play-state: paused;
-    }
-
-    /* Custom CSS for the new design */
     .nav-dropdown {
       position: fixed !important;
       z-index: 999999 !important;
@@ -311,10 +216,6 @@
 
     <!-- middle strip -->
     <div class="w-full bg-white flex flex-col md:flex-row items-center justify-between px-4 gap-4">
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
 
       <!-- Left Logo -->
       <div class="flex-shrink-0 w-full md:w-[120px] flex justify-center md:justify-start">
@@ -324,20 +225,6 @@
         class="flex-1 h-18 overflow-hidden flex flex-col justify-center  leading-[1.1] text-center text-green-800 text-xs sm:text-sm md:text-base font-semibold  items-start">
         <img src="./assets/img/MMHTTC Name for Website.png" alt="" srcset="">
 
-<<<<<<< HEAD
-      <!-- Marquee Center Text -->
-      <!-- <div class="flex-1 overflow-hidden h-12 flex justify-center items-center">
-        <div id="marquee-text"
-          class="whitespace-nowrap text-blue-900 font-semibold sm:text-xl md:text-3xl leading-relaxed text-left">
-        </div>
-      </div> -->
-      <div
-        class="flex-1 h-16 overflow-hidden flex flex-col justify-center items-center leading-[1.1] text-center text-green-800 text-xs sm:text-sm md:text-base font-semibold space-y-0.5">
-        <p>Maulana Mazharul Haque Teachers’ Training College</p>
-        <p style="margin: 0 !important;">مولانا مظہر الحق ٹیچرز ٹریننگ کالج</p>
-        <p style="margin: 0 !important;">मौलाना मज़हरुल हक़ शिक्षक प्रशिक्षण महाविद्यालय</p>
-=======
->>>>>>> origin/main
       </div>
       <!-- Affiliation Logos -->
       <div class="flex flex-wrap items-center justify-center md:justify-end gap-5 md:w-auto">
@@ -350,7 +237,6 @@
       </div>
 
     </div>
-
 
     <!-- middle strip end -->
 
@@ -369,6 +255,7 @@
             <!-- Navigation Menu -->
             <div class="flex-1 nav-menu-container overflow-x-auto" id="nav-menu">
               <ul class="flex items-center gap-6 py-4 whitespace-nowrap">
+                <!-- home -->
                 <li><a href="./index.html" class="hover:underline transition-colors">Home</a></li>
 
                 <!-- About Us Dropdown -->
@@ -480,7 +367,7 @@
                     <a href="./sedg_cell.html">SEDG Cell</a>
                     <a href="./facilities_for_differently_abled.html">Facilities for Differently Abled</a>
                     <a href="./feedback_mechanism.html">Feedback Mechanism</a>
-                    <!-- <a href="./Elearning.php">E-Learning</a> -->
+                    <a href="./Elearning.php">E-Learning</a>
                   </div>
                 </li>
 
@@ -541,200 +428,6 @@
             </button>
           </div>
         </div>
-<<<<<<< HEAD
-        <ul
-          class="hidden md:flex md:flex-wrap md:items-center gap-4 text-white py-3 flex-col md:flex-row md:justify-center "
-          id="main-menu">
-
-          <!-- 1. Home -->
-          <li><a href="http://mmhttc.com/index.html" class="hover:underline block px-2 py-1">Home</a></li>
-
-          <!-- 2. About Us -->
-          <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"> About Us</summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="http://mmhttc.com/About_Us.html" class="block hover:bg-gray-100 px-2 py-1">About us</a>
-                </li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Overview</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Act and Statutes or MoA</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Institutional Development Plan</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Accreditation / Ranking status (NAAC)</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Recognition / Approval (2(f), 12B, etc.)</a>
-                </li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Annual Reports</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Annual Accounts and Audit Report</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!--3. Administration -->
-          <li class="relative group w-full md:w-auto">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Administration</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Principal</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Controller of Examination</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Management Committee</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Board of Studies</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Internal Complaint Committee</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">HoD of Departments</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!--4. academics -->
-          <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Academics</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Details of Academic Programs</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Academic Calendar</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Statutes/Ordinances pertaining to
-                    Academics/Examinations</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Departments</li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Departments Wise faculty/staff details with
-                    photographs</li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">IQAC</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Librarya></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Academic Collorations</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!--5. Admission & Fee -->
-          <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Admissions & Fee</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Prospectus</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Admission process and guidelines</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Fee refund policy</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!-- 6. NAAC -->
-          <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer text-white">NAAC</summary>
-              <ul
-                class="md:absolute md:left-full md:top-0 md:ml-2 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-30 group-open:block">
-
-                <!-- DVV Clarification -->
-                <li>
-                  <a href="#" class="block hover:bg-gray-100 px-2 py-1">DVV Clarification</a>
-                </li>
-
-                <!-- AQAR (Nested Dropdown) -->
-                <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-                  <details class="group">
-                    <summary class="cursor-pointer hover:bg-gray-100 px-2 py-1 rounded">AQAR</summary>
-                    <ul
-                      class="md:absolute md:left-full md:top-0 md:ml-2 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-30 group-open:block">
-
-                      <li><a href="AQAR1.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 1</a></li>
-                      <li><a href="AQAR2.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 2</a></li>
-                      <li><a href="AQAR3.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 3</a></li>
-                      <li><a href="AQAR4.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 4</a></li>
-                      <li><a href="AQAR5.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 5</a></li>
-                      <li><a href="AQAR6.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 6</a></li>
-                      <li><a href="AQAR7.html" class="block hover:bg-gray-100 px-2 py-1">AQAR 7</a></li>
-
-                    </ul>
-                  </details>
-                </li>
-              </ul>
-            </details>
-          </li>
-
-
-
-          <!--10. Infrastructure  -->
-          <!-- <li><a href="#">Infrastructure Research</li> -->
-
-          <!--7. Research -->
-          <li class="relative group w-full md:w-auto  transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Infrastructure Research</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Research and Development Cell</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Incubation Centre/Start-ups/Entrepreneurship
-                    Cell</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Central Facilities</a></li>
-              </ul>
-            </details>
-          </li>
-
-
-          <!--8. Student Life -->
-          <li class="relative group w-full md:w-auto transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Student Life</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Sports facilities</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Placement Cell and its activities</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Details of Student Grievance Redressal
-                    Committee (SGRC) and Ombudsperson</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Health facilities</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Internal Complaint Committee</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Anti-Ragging Cell</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Equal Opportunity Cell</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Grievance Redressal Cell</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Socio-Economically Disadvantaged Groups Cell
-                    (SEDG)</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Facilities for differently abled</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Feedback Mechanism</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">E-Leaning</a></li>
-              </ul>
-            </details>
-          </li>
-
-
-          <!--9. Alumni -->
-          <li class="relative group w-full md:w-auto transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Alumni</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Alumni</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Alumni Association with details</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!--10. Information Corner -->
-          <li class="relative group w-full md:w-auto transition-all duration-300 ease-in-out">
-            <details class="group">
-              <summary class="cursor-pointer"><a href="#">Information Corner</a></summary>
-              <ul
-                class="md:absolute md:left-0 mt-2 w-full md:w-max bg-white text-black rounded shadow-md p-2 space-y-1 z-10 group-open:block">
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">RTI</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Circulars and Notices</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Announcements</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Newsletters</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">News, Recent events & Achievements</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Job openings</a></li>
-                <li><a href="#" class="block hover:bg-gray-100 px-2 py-1">Reservation Roster</a></li>
-              </ul>
-            </details>
-          </li>
-
-          <!--11. Contact us -->
-          <li><a>Picture Gallery</a></li>
-
-          <!--12. Contact us -->
-          <li><a>Contact Us</a></li>
-
-        </ul>
-=======
->>>>>>> origin/main
       </nav>
     </div>
 
@@ -742,446 +435,221 @@
 
   </header>
 
+  <!-- inpage nav -->
+  <section
+    class="flex w-full max-w-full font-bold bg-red-200 h-auto py-4  md:gap-8 sm::text-sm  lg:gap-12 font-source justify-center">
 
+    <div class="cursor-pointer transform transition duration-200 hover:scale-105"><a href="./index.html">HOME</a>
+    </div>
+    <div class="cursor-pointer transform transition duration-100 hover:scale-105 "><a href="./library.html">ABOUT
+        LIBRARY</a></div>
+    <div class="cursor-pointer transform transition duration-100 hover:scale-105 "><a href="./book_details.html">BOOK
+        DETAILS</a></div>
+    <div class="cursor-pointer transform transition duration-100 hover:scale-105 "><a
+        href="./library_rules_regulation.html">LIBRARY RULES AND REGULATIONS</a></div>
+    <div class="cursor-pointer transform transition duration-100 hover:scale-105 underline text-gray-600"><a
+        href="./library_services.html">LIBRARY SERVICES</a></div>
+  </section>
 
-
-
+  <!-- heading -->
+  <h1 class="font-montserrat sm:text-xl text-center underline py-4 text-green-800 font-bold md:text-3xl lg:text-4xl">
+    LIBRARY STATISTICS</h1>
 
   <!-- hero -->
-  <section class="w-full">
-    <div class="w-[100%] h-[70vh] relative  mx-auto overflow-hidden">
-      <div id="slider" class="flex w-full h-full transition-transform duration-700 ease-in-out">
-        <!-- sliding images -->
-        <img src="./assets/img/1.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
-        <img src="./assets/img/3.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
-        <img src="./assets/img/2.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
-        <img src="./assets/img/4.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
-        <img src="./assets/img/5.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
-        <img src="./assets/img/6.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
-        <img src="./assets/img/7.jpg" alt="" class="w-full h-full object-fill flex-shrink-0">
-      </div>
 
-      <!-- sliding images button -->
-      <div
-        class="absolute bottom-5 left-[55%] transform -translate-x-1/2 flex gap-2 w-[calc(7*1.5rem+6*0.5rem)] justify-center">
-        <span class="slider-dot bg-white w-6 h-3 rounded-full cursor-pointer" onclick="goToSlide(0)"></span>
-        <span class="slider-dot bg-green-700 w-6 h-3 rounded-full cursor-pointer" onclick="goToSlide(1)"></span>
-        <span class="slider-dot bg-green-700 w-6 h-3 rounded-full cursor-pointer" onclick="goToSlide(2)"></span>
-        <span class="slider-dot bg-green-700 w-6 h-3 rounded-full cursor-pointer" onclick="goToSlide(3)"></span>
-        <span class="slider-dot bg-green-700 w-6 h-3 rounded-full cursor-pointer" onclick="goToSlide(4)"></span>
-        <span class="slider-dot bg-green-700 w-6 h-3 rounded-full cursor-pointer" onclick="goToSlide(5)"></span>
-        <span class="slider-dot bg-green-700 w-6 h-3 rounded-full cursor-pointer" onclick="goToSlide(6)"></span>
-      </div>
+  <!-- tables -->
+  <section class="max-w-full py-5 bg-gray-300">
+    <!-- library hours -->
+    <div class="max-w-[80%] mx-auto">
+      <table class="min-w-full border-2 border-green-200 bg-background rounded-lg shadow">
+        <thead class="bg-green-200 text-green-800">
+          <tr>
+            <th class="p-2 border-2 border-green-500" colspan="2">Library Hours (10.00 am - 03.00 pm)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-2 border-2 border-black">Saturday’s to Thursday</td>
+            <td class="p-2 border-2 border-black">10.30 am - 03.00 pm</td>
+          </tr>
+          <tr>
+            <td class="p-2 border-2 border-black">Friday</td>
+            <td class="p-2 border-2 border-black">Holiday</td>
+          </tr>
+
+          <tr>
+            <td class="p-2 border-2 border-black">Summer Vacation</td>
+            <td class="p-2 border-2 border-black">Holiday</td>
+          </tr>
+        </tbody>
+      </table>
 
     </div>
-  </section>
-  <!-- hero end -->
 
-  <!-- floating social link -->
+    <hr class="max-w-[80%] mx-auto border-t-2 border-black my-6">
 
-  <div class="fixed top-1/2 right-0 transform -translate-y-1/2 hidden md:flex flex-col space-y-2 z-50">
+    <div class="max-w-[80%] mx-auto">
+      <table class="min-w-full border-2 bg-background border-green-200 rounded shadow">
+        <thead class="bg-green-200 text-green-800">
+          <tr>
+            <th class="p-2 border-2 border-green-500" colspan="4">Borrowing Members</th>
+          </tr>
+          <tr>
+            <th class="p-2 border-2 border-green-500">SL. NO</th>
+            <th class="p-2 border-2 border-green-500">DESIGNATION</th>
+            <th class="p-2 border-2 border-green-500">NO OF BOOKS</th>
+            <th class="p-2 border-2 border-green-500">PERIOD</th>
+          </tr>
 
-    <a href="https://www.facebook.com/MMHTTCollege" target="_blank"
-      class="w-12 h-12 flex items-center justify-center bg-[#3b5998] text-white rounded-l hover:translate-x-[-5px] transition-transform duration-300 "
-      style="margin-bottom: 0;" title="Facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://x.com/MMHTTCollege" target="_blank"
-      class="w-12 h-12 flex items-center justify-center bg-[#1da1f2] text-white rounded-l hover:translate-x-[-5px] transition-transform duration-300"
-      title="Twitter">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="https://www.youtube.com/@MMHTTCollege" target="_blank"
-      class="w-12 h-12 flex items-center justify-center bg-[#ff0000] text-white rounded-l hover:translate-x-[-5px] transition-transform duration-300"
-      title="YouTube">
-      <i class="fab fa-youtube"></i>
-    </a>
-  </div>
+        </thead>
 
+        <tbody>
+          <tr>
+            <td class="p-2 border-2 border-black">01</td>
+            <td class="p-2 border-2 border-black">Board Members</td>
+            <td class="p-2 border-2 border-black">05 Books</td>
+            <td class="p-2 border-2 border-black">02 Months</td>
+          </tr>
 
-
-
-  <!-- Announcement Bar -->
-  <section>
-    <div class="flex items-center bg-white shadow-md px-4 py-2 overflow-hidden whitespace-nowrap">
-      <!-- Icon -->
-      <div>
-        <i class="fa-solid fa-volume-low text-black"></i>
-      </div>
-
-      <!-- Marquee Container -->
-      <div class="relative flex-1 overflow-hidden" onmouseover="pauseAnnouncement()" onmouseout="resumeAnnouncement()">
-        <div id="announcementContent" class="inline-block whitespace-nowrap animate-announcement"
-          style="animation-play-state: running;">
-          <!-- Announcement 1 -->
-          <a href="#" class="text-blue-600 text-sm mr-6 hover:underline">
-            <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 mr-2">New</span>
-            B.ED. 1ST YEAR Session (2024-26) Examination Programme 2025
-            <span class="text-red-600 font-semibold ml-1">Click Here</span>
-          </a>
-
-          <!-- Separator -->
-          <span class="mx-2 text-gray-400">|</span>
-
-          <!-- Announcement 2 -->
-          <a href="#" class="text-blue-600 text-sm mr-6 hover:underline ">
-            <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 mr-2">New</span>
-            MA. in EDUCATION, 1ST SEMESTER, Session (2024-26) Examination Programme 2025
-            <span class="text-red-600 font-semibold ml-1">Click Here</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- announcement bar end -->
+          <tr>
+            <td class="p-2 border-2 border-black">02</td>
+            <td class="p-2 border-2 border-black">Principle</td>
+            <td class="p-2 border-2 border-black">04 Books</td>
+            <td class="p-2 border-2 border-black">02 Months</td>
+          </tr>
 
 
-  <!-- welcome section -->
-  <section class="w-full bg-white py-10 px-4 md:px-16">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 items-center">
-
-      <!-- Image Section -->
-      <div class="w-full md:w-1/2">
-        <img src="./assets/img/college_building.jpg" alt="College Building"
-          class="rounded-lg shadow-md w-full h-auto object-cover" />
-      </div>
-      <!-- paragrpah -->
-      <div class="w-full md:w-1/2 text-gray-800 space-y-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-          Welcome to MMHTTC
-        </h2>
-
-        <p>
-          <strong>Maulana Mazharul Haque Teachers' Training College</strong>, located in Samastipur, Bihar, was
-          established with the vision of becoming a pioneer in the field of teacher education. The college is not just
-          an institution for
-          academic learning but a center for nurturing values, discipline, and a deep sense of responsibility among
-          future
-          educators.
-        </p>
-
-        <p>
-          Run by the <strong>Maulana Mazharul Haque Welfare Society</strong>, the college aims to integrate modern
-          educational practices with rich cultural and ethical traditions. Our mission is to prepare highly skilled,
-          competent, and
-          compassionate teachers who can meet the challenges of the ever-evolving educational landscape.
-        </p>
-
-        <p>
-          We believe that teaching is not just a profession, but a commitment to shaping young minds and building the
-          future of the nation. To fulfill this mission, we provide a supportive and intellectually stimulating
-          environment where students are encouraged to think critically, act ethically, and contribute meaningfully to
-          society.
-        </p>
-
-        <p>
-          The college emphasizes innovation, research, and practical training to ensure that our graduates are
-          well-equipped to handle diverse classroom situations. Through a combination of rigorous coursework, hands-on
-          teaching practice, and continuous mentorship, we strive to develop educators who are not only academically
-          strong but also emotionally intelligent and socially aware.
-        </p>
-
-        <p>
-          At Maulana Mazharul Haque Teachers' Training College, we are dedicated to fostering a learning community that
-          values <strong>academic integrity, inclusion, creativity, and lifelong learning.</strong>
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- welcome section end -->
+          <tr>
+            <td class="p-2 border-2 border-black">03</td>
+            <td class="p-2 border-2 border-black">Faculty Members</td>
+            <td class="p-2 border-2 border-black">03 Books</td>
+            <td class="p-2 border-2 border-black">01 months</td>
+          </tr>
 
 
-  <!-- tarana and personalities -->
-  <section class="max-w-full mx-auto px-4 py-8 flex flex-col md:flex-row items-center gap-6 bg-blue-950">
-    <!-- Image Slider -->
-    <div class="relative w-full md:w-1/2 h-[60vh] overflow-hidden rounded-lg shadow-lg">
-      <div id="peopleSlider" class="flex w-full h-full transition-transform duration-700 ease-in-out">
-        <img src="./assets/img/droupadi.png" alt="President" class="w-full h-full object-fill flex-shrink-0" />
-        <img src="./assets/img/arif.png" alt="Governor" class="w-full h-full object-fill flex-shrink-0" />
-        <img src="./assets/img/nitish.png" alt="CM" class="w-full h-full object-fill flex-shrink-0" />
-        <img src="./assets/img/sunil.png" alt="Education Minister" class="w-full h-full object-fill flex-shrink-0" />
-        <img src="./assets/img/sanjay.png" alt="Vice Chancellor" class="w-full h-full object-fill flex-shrink-0" />
-      </div>
+          <tr>
+            <td class="p-2 border-2 border-black">04</td>
+            <td class="p-2 border-2 border-black">Co-curricular Staff</td>
+            <td class="p-2 border-2 border-black">02 Books</td>
+            <td class="p-2 border-2 border-black">01 months</td>
+          </tr>
 
-      <!-- Slider Dots -->
-      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
-        <span class="people-slider-dot bg-white w-4 h-2 rounded-full cursor-pointer"
-          onclick="goToPeopleSlide(0)"></span>
-        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
-          onclick="goToPeopleSlide(1)"></span>
-        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
-          onclick="goToPeopleSlide(2)"></span>
-        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
-          onclick="goToPeopleSlide(3)"></span>
-        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
-          onclick="goToPeopleSlide(4)"></span>
-      </div>
+          <tr>
+            <td class="p-2 border-2 border-black">05</td>
+            <td class="p-2 border-2 border-black">Students</td>
+            <td class="p-2 border-2 border-black">02 Books</td>
+            <td class="p-2 border-2 border-black">15+15 Days</td>
+          </tr>
+
+
+          <tr>
+            <td class="p-2 border-2 border-black">06</td>
+            <td class="p-2 border-2 border-black">Non-Teaching Staff</td>
+            <td class="p-2 border-2 border-black">02 Books</td>
+            <td class="p-2 border-2 border-black">15+15 Days</td>
+          </tr>
+
+
+          <!-- <tr>
+                <td class="p-2 border-2 border-black">01</td>
+                <td class="p-2 border-2 border-black"></td>
+                <td class="p-2 border-2 border-black"></td>
+                <td class="p-2 border-2 border-black"></td>
+              </tr> -->
+
+        </tbody>
+      </table>
     </div>
 
-    <!-- Video -->
-    <div class="w-full md:w-1/2">
-      <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
-        <video controls autoplay muted loop class="w-full h-full object-cover">
-          <source src="./assets/video/intro.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
   </section>
 
+  <section class="max-w-full bg-lime-100 font-montserrat py-6 mx-auto">
 
+    <div class="w-[90%] mx-auto bg-white py-6 px-4 rounded-lg shadow-md">
+      <div class="flex justify-center items-center">
+        <img src="./assets/img/Library1.jpg" alt="Library" class="max-w-full h-auto rounded-md shadow">
+      </div>
+    </div>
 
-  <!-- acdemic -->
-  <section id="academic" class="relative  academic-parallax py-16">
-    <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+    <hr class="border-2 border-black w-[90%] mx-auto my-6">
 
-      <!-- Section Header -->
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-blue-900">Academic</h2>
-        <p class="mt-4 text-gray-700 max-w-3xl mx-auto md:text-2xl">
-          We launched Academic Info with a mission to provide free, independent and accurate information and resources
-          for prospective and current students.
+    <div class="w-[90%] mx-auto bg-background  py-3 px-3  p-6  rounded-lg shadow-md">
+      <h2
+        class="text-xl md:text-2xl lg:text-3xl font-semibold text-blue-800 mb-4 text-center md:text-left font-poppins">
+        PCs are available in the following locations
+      </h2>
+      <ol class="list-decimal list-inside space-y-2 text-gray-700 text-base md:text-lg font-montserrat">
+        <li>Digital Library</li>
+        <li>Lending Counter</li>
+        <li>Technical Processing Unit</li>
+        <li>Library Office</li>
+        <li>Reprography Section</li>
+      </ol>
+
+    </div>
+
+    <hr class="border-2 border-black w-[90%] mx-auto my-6">
+
+    <div class="w-[90%] mx-auto bg-background flex flex-col md:flex-row gap-3 py-2 px-3">
+      <div class="w-full md:w-[40%] h-60 md:h-72 flex items-center justify-center">
+        <img src="./assets/img/studentInLab.jpg" alt="Student in Lab" class="h-full w-full object-fill">
+      </div>
+      <div class="w-full md:w-[60%]">
+        <h3 class="font-poppins text-blue-800 font-bold sm:text-xl md:text-3xl mb-2">Reading Services</h3>
+        <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+          The Central Library of the college has a well-equipped and spacious reading room with seating capacity of 100
+          people. The reference, periodical and current awareness sections also function from reading room for reader’s
+          convenience. Some rare collections of the college are displayed in the reading room.
         </p>
       </div>
+    </div>
 
-      <!-- Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-        <!-- Card 1 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300 overflow-hidden hover:scale-105">
-          <img src="./assets/img/copy.jpg" alt="Courses" class="w-full h-56 object-cover">
-          <div class="p-6">
-            <div class="text-cyan-600 text-3xl mb-3">
-              <i class="bi bi-activity"></i>
-            </div>
-            <a href="Courses.html" class="text-xl font-semibold text-blue-800 hover:underline">Courses</a>
-            <p class="text-gray-600 mt-2">Complete details of courses, seats, duration etc. available here.</p>
-            <p class="text-cyan-600 text-sm font-semibold mt-2">B.ED, D.EL.ED, BCA, BBA, BMS, MA (Education)</p>
-          </div>
-        </div>
+    <hr class="border-2 border-black w-[90%] mx-auto my-6">
 
-        <!-- Card 2 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300 overflow-hidden hover:scale-105">
-          <img src="./assets/img/book.jpg" alt="Syllabus" class="w-full h-56 object-cover">
-          <div class="p-6">
-            <div class="text-cyan-600 text-3xl mb-3">
-              <i class="bi bi-broadcast"></i>
-            </div>
-            <a href="Syllabus.html" class="text-xl font-semibold text-blue-800 hover:underline">Syllabus</a>
-            <p class="text-gray-600 mt-2">Courses' latest syllabus in detail available for student support.</p>
-          </div>
-        </div>
+    <div class="w-[90%] mx-auto bg-background flex flex-col md:flex-row gap-3 py-2 px-3">
 
-        <!-- Card 3 -->
-        <div class="bg-white rounded-lg shadow hover:shadow-xl transition duration-300 overflow-hidden hover:scale-105">
-          <img src="./assets/img/graduete_logo.jpg" alt="Admission" class="w-full h-56 object-cover">
-          <div class="p-6">
-            <div class="text-cyan-600 text-3xl mb-3">
-              <i class="bi bi-easel"></i>
-            </div>
-            <a href="Admission.html" class="text-xl font-semibold text-blue-800 hover:underline">Admission</a>
-            <p class="text-gray-600 mt-2">Admission process and other important information collection.</p>
-          </div>
-        </div>
+      <div class="w-[60%]">
+        <h3 class="font-poppins text-blue-800 font-bold  sm:text-xl  md:text-3xl">Guidelines for Reading Section</h3>
+        <ul class="list-disc pl-5 space-y-2 text-sm">
+          <li>he books marked as “REFERENCE” and periodicals (both journals and magazines) are meant only for reading
+            consultation inside READING ROOM ONLY.</li>
+          <li>You will be allowed to take maximum THREE BOOKS at a time for study in the Reading Room.</li>
+          <li>Do not scatter the pages of newspaper when reading.</li>
+          <li>DO NOT misplace books while selecting from the shelves. After consulting books return them at the counter.
+          </li>
+          <li>Books newly acquired are displayed in the New Arrival Section.</li>
 
+
+      </div>
+
+      <div class="w-[40%]">
+        <img src="./assets/img/confrense.jpg" alt="" class="object-fill">
       </div>
     </div>
-  </section>
+
+    <hr class="border-2 border-black w-[90%] mx-auto my-6">
 
 
-  <!-- notice section -->
+    <div class="w-[90%] mx-auto bg-background py-6 px-6 rounded-lg shadow-md">
+      <h2
+        class="text-xl md:text-2xl lg:text-3xl font-semibold text-blue-800 mb-4 text-center md:text-left font-poppins">
+        Lending Services
+      </h2>
 
-  <section class="py-10 bg-blue-950">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        <!-- Recent News -->
-        <div class="bg-white shadow rounded p-4">
-          <h3 class="text-center font-semibold text-xl mb-4">Recent News</h3>
-          <div class="h-64 overflow-hidden relative group">
-            <div class="absolute inset-0 animate-scroll group-hover:pause">
-              <ul class="space-y-4 text-sm">
-                <li>
-                  <h6 class="font-bold">E-news 11th Edition</h6>
-                  <p class="text-gray-500">16-Nov-2024</p>
-                  <a href="#" class="text-blue-600 underline">Click Here</a>
-                </li>
-                <li>
-                  <h6 class="font-bold">E-news 12th Edition</h6>
-                  <p class="text-gray-500">26-Jan-2025</p>
-                  <a href="#" class="text-blue-600 underline">Click Here</a>
-                </li>
-                <li>
-                  <h6 class="font-bold">Bihar Diwas Programme</h6>
-                  <p class="text-gray-500">8-March-2025</p>
-                  <a href="#" class="text-blue-600 underline">Click Here</a>
-                </li>
-                <li>
-                  <h6 class="font-bold">Registration: D.El.Ed. 2024-26</h6>
-                  <p class="text-gray-500">24-Jan-2025</p>
-                  <a href="#" class="text-blue-600 underline">Click Here</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="text-center mt-4">
-            <button class="bg-blue-600 text-white px-4 py-1 rounded-full hover:bg-blue-700">View All</button>
-          </div>
-        </div>
-
-        <!-- Upcoming Events -->
-        <div class="bg-white shadow rounded p-4">
-          <h3 class="text-center font-semibold text-xl mb-4">Upcoming Events</h3>
-          <ul class="space-y-4 text-sm">
-            <li>
-              <h6 class="font-bold">
-                <a href="https://docs.google.com/forms/..." class="text-blue-600">
-                  <img src="./assets/img/new.gif" class="inline h-4"> National Seminar Registration (18-19 Apr 2025)
-                </a>
-              </h6>
-              <p class="text-gray-500">From 01-03-2025</p>
-              <a href="#" class="text-blue-600 underline">Click Here</a>
-            </li>
-            <li>
-              <h6 class="font-bold">Saraswati Puja 2025</h6>
-              <p class="text-gray-500">01-Feb-2025</p>
-              <a href="#" class="text-blue-600 underline">Click
-                Here</a>
-            </li>
-          </ul>
-          <div class="text-center mt-4">
-            <button class="bg-blue-600 text-white px-4 py-1 rounded-full hover:bg-blue-700">View All</button>
-          </div>
-        </div>
-
-        <!-- Important Notification -->
-        <div class="bg-white shadow rounded p-4">
-          <h3 class="text-center font-semibold text-xl mb-4">Important Notification</h3>
-          <div class="h-64 overflow-hidden relative group">
-            <div class="absolute inset-0 animate-scroll group-hover:pause">
-              <ul class="space-y-4 text-sm text-red-700">
-                <li>
-                  <img src="./assets/img/new.gif" class="inline h-4">
-                  <a href="#" class="underline">Notice for external exam admit card</a>
-                  <p class="text-gray-500 text-xs">27-Jan-2025</p>
-                </li>
-                <li>
-                  <img src="./assets/img/new.gif" class="inline h-4">
-                  <a href="#" class="underline">Exam schedule on notice board & WhatsApp group</a>
-                  <p class="text-gray-500 text-xs">27-Jan-2025</p>
-                </li>
-                <li>
-                  <img src="./assets/img/new.gif" class="inline h-4">
-                  <a href="#" class="underline">Practical/viva exam on 3rd Jan 2025</a>
-                  <p class="text-gray-500 text-xs">27-Jan-2025</p>
-                </li>
-                <!-- Add more notifications -->
-              </ul>
-            </div>
-          </div>
-          <div class="text-center mt-4">
-            <button class="bg-blue-600 text-white px-4 py-1 rounded-full hover:bg-blue-700">View All</button>
-          </div>
-        </div>
-      </div>
+      <p class="text-gray-700 text-base md:text-lg leading-relaxed text-justify">
+        The book borrowing facility is available to faculty members, current students, and staff members of the college.
+        Students can borrow at most two books, and faculty members can borrow up to five books depending on availability
+        in the library.
+        The borrowing period is 10 days for students and 30 days for faculty members, with one-time renewal allowed — 10
+        days for students and 30 days for faculty. A delay in return is charged at ₹2 (Rupees two only) per day, per
+        book.
+      </p>
     </div>
+
+
+
   </section>
-  <!-- notice section end -->
-
-
-  <!-- certificates -->
-  <section class="px-2 py-6">
-    <div class="flex flex-col md:flex-row justify-center gap-4 flex-wrap">
-
-      <!-- Image 1 -->
-      <div class="w-full md:w-auto h-90 overflow-hidden rounded shadow">
-        <img src="./assets/img/NAAC_Certificate.jpg" alt="NAAC Certificate" class="w-full h-full object-cover" />
-      </div>
-
-      <!-- Image 2 -->
-      <div class="w-full md:w-auto h-90 overflow-hidden rounded shadow">
-        <img src="./assets/img/UGC.jpeg" alt="UGC" class="w-full h-full object-cover" />
-      </div>
-
-      <!-- Image 3 -->
-      <div class="w-full md:w-auto h-90 overflow-hidden rounded shadow">
-        <img src="./assets/img/certificate_of_establishment.jpeg" alt="Establishment Certificate"
-          class="w-full h-full object-cover" />
-      </div>
-
-      <!-- Image 4 -->
-      <div class="w-full md:w-auto h-90 overflow-hidden rounded shadow">
-        <img src="./assets/img/Certificate 2022.jpg" alt="Certificate 2022" class="w-full h-full object-cover" />
-      </div>
-
-    </div>
-  </section>
-  <!-- certification end -->
-
-
-
-
-
-
-  <!-- Infrastructure and facilities -->
-  <section id="onfocus" class="py-3 bg-black">
-    <div class="max-w-dvw px-1 mx-auto ">
-
-      <div class="flex flex-col lg:flex-row overflow-hidden rounded-lg shadow-lg">
-
-        <!-- Left Image Section -->
-        <div
-          class="w-full lg:w-1/2 min-h-[600px] bg-[url('./assets/img/onfocus-video-bg.jpg')] bg-cover bg-center relative">
-          <div class="absolute inset-0 "></div>
-        </div>
-
-        <!-- Right Content Section -->
-        <div class="w-full lg:w-1/2 bg-blue-100 text-black flex items-center">
-          <div class="w-full p-6 sm:p-10 lg:p-12 space-y-6">
-
-            <!-- Heading -->
-            <h3 class="text-2xl md:text-3xl font-bold text-blue-900">Infrastructure &amp; Facility</h3>
-
-            <!-- Paragraph -->
-            <p class="italic text-base md:text-lg leading-relaxed text-gray-800">
-              MMHTTC has all modern facilities and infrastructure to serve the students best.
-            </p>
-
-            <!-- List -->
-            <ul class="space-y-3 text-gray-800 text-sm md:text-base">
-              <li class="flex items-start gap-2">
-                <i class="fa-regular fa-circle-check text-cyan-600 text-lg mt-1"></i>
-                <span>Total land area of College - 9322.92 SQM</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fa-regular fa-circle-check text-cyan-600 text-lg mt-1"></i>
-                <span>Built-up area of B.Ed &amp; D.El.Ed Section - 4058.08 SQM</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fa-regular fa-circle-check text-cyan-600 text-lg mt-1"></i>
-                <span>Language Lab</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i class="fa-regular fa-circle-check text-cyan-600 text-lg mt-1"></i>
-                <span>ICT Resource Centre</span>
-              </li>
-            </ul>
-
-            <!-- Read More Button -->
-            <a href="#"
-              class="inline-flex items-center bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold px-6 py-3 rounded-md transition duration-300">
-              <span>Read More</span>
-              <i class="fa-solid fa-arrow-right ml-2"></i>
-            </a>
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-  <!-- Infrastructure and facilities end-->
 
 
   <!-- logos -->
@@ -1516,46 +984,11 @@
 
 
 
+
 </body>
 
 
 <script>
-
-  // image slider
-  let current = 0;
-  const slider = document.getElementById("slider");
-  const dots = document.querySelectorAll(".slider-dot");
-
-  function goToSlide(index) {
-    const slideWidth = slider.clientWidth;
-    slider.style.transform = `translateX(-${index * slideWidth}px)`;
-    current = index;
-    updateDots();
-  }
-
-  function updateDots() {
-    dots.forEach((dot, i) => {
-      dot.classList.toggle("bg-white", i === current);
-      dot.classList.toggle("bg-green-700", i !== current);
-    });
-  }
-
-  setInterval(() => {
-    current = (current + 1) % dots.length;
-    goToSlide(current);
-  }, 5000);
-
-
-  // announcement 
-  const announcement = document.getElementById("announcementContent");
-
-  function pauseAnnouncement() {
-    announcement.style.animationPlayState = "paused";
-  }
-
-  function resumeAnnouncement() {
-    announcement.style.animationPlayState = "running";
-  }
 
 
   // top button
@@ -1574,33 +1007,9 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  //people slider
-  let peopleCurrent = 0;
-  const peopleSlider = document.getElementById("peopleSlider");
-  const peopleDots = document.querySelectorAll(".people-slider-dot");
 
-  function goToPeopleSlide(index) {
-    const slideWidth = peopleSlider.clientWidth;
-    peopleSlider.style.transform = `translateX(-${index * slideWidth}px)`;
-    peopleCurrent = index;
-    updatePeopleDots();
-  }
 
-  function updatePeopleDots() {
-    peopleDots.forEach((dot, i) => {
-      dot.classList.toggle("bg-white", i === peopleCurrent);
-      dot.classList.toggle("bg-green-700", i !== peopleCurrent);
-    });
-  }
-
-  setInterval(() => {
-    peopleCurrent = (peopleCurrent + 1) % peopleDots.length;
-    goToPeopleSlide(peopleCurrent);
-  }, 5000);
-
-  // new scrpipt
-
-  // Navigation dropdown functionality
+  // new script for nav bar
   document.addEventListener('DOMContentLoaded', function () {
     const dropdownButtons = document.querySelectorAll('.group button');
     const dropdowns = document.querySelectorAll('.nav-dropdown');
@@ -1683,9 +1092,6 @@
 
     setTimeout(updateScrollButtons, 100);
   }
-
-
-
 
 </script>
 
