@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About us</title>
@@ -166,6 +167,16 @@
     .notice-scroll:hover {
       animation-play-state: paused;
     }
+    /* NEW NAAC */
+    .aqar:hover .aqar-submenu {
+      display: block;
+    }
+
+    /* Show AQAR 2023-24 submenu on hover */
+    .aqar23-24:hover .aqar23-24-submenu {
+      display: block;
+    }
+    
   </style>
 </head>
 
@@ -194,9 +205,9 @@
           </ul>
 
           <!-- Search Box -->
-          <div class="text-black w-full md:w-auto">
+          <!-- <div class="text-black w-full md:w-auto">
             <div class="gcse-search"></div>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -307,26 +318,65 @@
                   <div class="nav-dropdown" data-dropdown="admissions">
                     <a href="./prospectus.html">Prospectus</a>
                     <a href="./admission_process_guidelines.html">Admission Process</a>
-                    <a href="./fee_refund_policy.html">Fee Refund Policy</a>
+                    <a href="./fee_refund_policy.html">Fee Structure and Refund Policy</a>
                   </div>
                 </li>
 
-                <!-- NAAC Dropdown -->
+                <!--NEW NAAC Dropdown -->
                 <li class="relative group">
                   <button class="hover:underline transition-colors flex items-center gap-1">
                     NAAC <i class="fas fa-chevron-down text-xs"></i>
                   </button>
+
+                  <!-- Main dropdown  -->
                   <div class="nav-dropdown" data-dropdown="naac">
-                    <a href="./dvv_clarification.html">DVV Clarification</a>
-                    <div class="border-t border-gray-200 my-1"></div>
-                    <div class="px-3 py-1 text-sm font-semibold text-gray-600">AQAR</div>
-                    <a href="AQAR1.html">AQAR 1</a>
-                    <a href="AQAR2.html">AQAR 2</a>
-                    <a href="AQAR3.html">AQAR 3</a>
-                    <a href="AQAR4.html">AQAR 4</a>
-                    <a href="AQAR5.html">AQAR 5</a>
-                    <a href="AQAR6.html">AQAR 6</a>
-                    <a href="AQAR7.html">AQAR 7</a>
+                    <!-- <a href="./dvv_clarification.html">DVV Clarification</a> -->
+                    <a href="./aqar_report.html">AQAR Report</a>
+
+                    <!-- AQAR submenu  -->
+                    <div class="relative aqar text-black">
+                      <div class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
+                        AQAR <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                      </div>
+                      <div
+                        class="aqar-submenu absolute left-full top-0 hidden bg-white text-black shadow-lg min-w-[180px] z-50">
+                        <a href="AQAR1.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 1</a>
+                        <a href="AQAR2.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 2</a>
+                        <a href="AQAR3.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 3</a>
+                        <a href="AQAR4.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 4</a>
+                        <a href="AQAR5.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 5</a>
+                        <a href="AQAR6.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 6</a>
+                        <a href="AQAR7.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 7</a>
+                      </div>
+                    </div>
+
+
+                    <!-- AQAR 2023-2024 -->
+                    <div class="relative aqar23-24 text-black">
+                      <div class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
+                        AQAR 2023–2024 <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                      </div>
+                      <div
+                        class="aqar23-24-submenu absolute left-full top-0 hidden bg-white text-black shadow-lg min-w-[200px] z-50">
+                        <a href="AQAR23_24_1.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.1</a>
+                        <a href="AQAR23_24_2.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.2</a>
+                        <a href="AQAR23_24_3.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.3</a>
+                        <a href="AQAR23_24_4.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.4</a>
+                        <a href="AQAR23_24_5.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.5</a>
+                        <a href="AQAR23_24_6.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.6</a>
+                        <a href="AQAR23_24_7.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.7</a>
+                      </div>
+                    </div>
+
+
+                    <!-- Other criteria -->
+                    <!-- <a href="criteria1.html">Criteria 1</a>
+                    <a href="criteria2.html">Criteria 2</a>
+                    <a href="criteria3.html">Criteria 3</a>
+                    <a href="criteria4.html">Criteria 4</a>
+                    <a href="criteria5.html">Criteria 5</a>
+                    <a href="criteria6.html">Criteria 6</a>
+                    <a href="criteria7.html">Criteria 7</a> -->
                   </div>
                 </li>
 
@@ -488,7 +538,7 @@
         </div>
 
         <!-- Mission Section -->
-        <div class="bg-sky-200 max-w-2xl mx-auto p-8 rounded-lg text-center shadow-md">
+        <div class="bg-sky-200 max-w-4xl mx-auto p-8 rounded-xl text-center shadow-md">
           <h2 class="text-2xl font-semibold mb-4">Mission</h2>
           <p class="text-justify text-gray-800 leading-relaxed">
             The mission of the college is to create an environment of learning totally filled
@@ -497,6 +547,131 @@
             respective
             fields.
           </p>
+
+          <hr class="border-t-2 border-yellow-400 my-4">
+
+          <!-- Facilities List -->
+          <div class="w-full max-w-[80%] mx-auto bg-red-100 overflow-x-auto">
+            <table class="w-full border border-green-300 bg-white rounded-lg text-sm md:text-lg">
+              <thead class="bg-green-200 text-green-800">
+                <tr>
+                  <th class="p-2 border-2 border-green-500 font-poppins text-2xl" colspan="2">Details Of College
+                  </th>
+                </tr>
+                <tr>
+                  <th class="p-2 border-2 border-green-500"></th>
+                  <th class="p-2 border-2 border-green-500"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-2 border-2 border-black">Land</td>
+                  <td class="p-2 border-2 border-black">Total Land Area of the College - 9322.92 SQM <ul>
+                    <li>Whether the title of the land is on Ownership basis - YES</li>
+                    <li>Land Use Certificate obtained for Education Institution - YES</li>
+                    
+                  </ul></td>
+                </tr>
+
+                <tr>
+                  <td class="p-2 border-2 border-black"> Building</td>
+                  <td class="p-2 border-2 border-black"><ul>
+                    <li>Built Up Area of B.Ed. & D.El.Ed. Section - 4058.08 SQM</li>
+                    <li>Construction of the building is complete - YES</li>
+                    <li>Year of completion of the building - 2015</li>
+                    <li>Building is fire safety-proof-YES</li>
+                    <li>Building is disabled friendly - YES</li>
+                    <li>No of Classrooms - 08</li>
+                    <li>Multipurpose hall - 01</li>
+                    <li>Library-cum-resource Centre - 01</li>
+                    <li>ICT Resource Centre - YES</li>
+                    <li>Curriculum Resource Centre - 01</li>
+                    <li>Arts and Crafts Resource centre - 01</li>
+                    <li>Health and physical education Resource Centre - 01</li>
+                    <li>Language Lab - 01</li>
+                    <li>Common room for boys/girls available - 01</li>
+                    <li>Separate Toilet facility for men and women student-teachers, staff and for PWD - 02</li>
+                    <li>Visitors room - 01</li>
+                    <li>Seminar room - 01</li>
+                    <li>Playground - YES</li>
+                  </ul></td>
+                </tr>
+
+                <tr>
+                  <td class="p-2 border-2 border-black">  Facilities Available in Library   </td>
+                  <td class="p-2 border-2 border-black"><ul>
+                    <li>No. of Books available in the library - 7700</li>
+                    <li>No. of Books added during the current Academic Session (2021-22) - 500</li>
+                    <li>No. of Reference Books - 150</li>
+                    <li>No. of Titles of Encyclopaedia - 30</li>
+                    <li>Educational CD's - 46</li>
+                    <li>E-Library Facility - Yes Currently Subscribed Education Journals - 16</li>
+                    <li>Journal of Educational Planning and Administration</li>
+                    <li>No. of Referred Research Journals - 16</li>
+                    <li>No. of International Research Journals - 03</li>
+                    <li>Currently Subscribed other Periodicals - 23</li>
+                    <li>Kurukshetra (English)</li>
+                    <li>Currently Subscribed Newspapers - 08</li>
+                    <li>Hindustan</li>
+                    <li>Hindustan Times</li>
+                    <li>Prabhat Khabar</li>
+                    <li>Dainik Jagran</li>
+                    <li>Dainik Bhaskar</li>
+                    <li>Times of India</li>
+                    <li>Qaumi Tanzeem</li>
+                    <li>Employment News</li>
+                  </ul></td>
+                </tr>
+
+                <tr>
+                  <td class="p-2 border-2 border-black">Commencement of class</td>
+                  <td class="p-2 border-2 border-black">1st week of July</td>
+                </tr>
+
+                <tr>
+                  <td class="p-2 border-2 border-black">First term/session exam</td>
+                  <td class="p-2 border-2 border-black">3rd week of September</td>
+                </tr>
+
+                <tr>
+                  <td class="p-2 border-2 border-black">Second term/session exam</td>
+                  <td class="p-2 border-2 border-black">3rd week of December</td>
+                </tr>
+
+                <tr>
+                  <td class="p-2 border-2 border-black">College annual sports</td>
+                  <td class="p-2 border-2 border-black">2nd week of January</td>
+                </tr>
+
+                <tr>
+                  <td class="p-2 border-2 border-black">Practical Teaching</td>
+                  <td class="p-2 border-2 border-black">Last week of Jan-1st week of feb</td>
+                </tr>
+
+                <tr>
+                  <td class="p-2 border-2 border-black">Educatunal Survey</td>
+                  <td class="p-2 border-2 border-black">2nd week of fab- 1st week of March</td>
+                </tr>
+
+
+                <tr>
+                  <td class="p-2 border-2 border-black">Third term /session exam</td>
+                  <td class="p-2 border-2 border-black">Last week of March</td>
+                </tr>
+
+                <tr>
+                  <td class="p-2 border-2 border-black">Test exam</td>
+                  <td class="p-2 border-2 border-black">2nd week of may</td>
+                </tr>
+
+
+                <tr>
+                  <td class="p-2 border-2 border-black">Annual Function</td>
+                  <td class="p-2 border-2 border-black">Last week of May</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
     </div>
@@ -565,7 +740,8 @@
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
               <li><a href="./principal.html" class="hover:text-cyan-400">Principal</a></li>
-              <li><a href="./controller_of_examination.html" class="hover:text-cyan-400">Controller of Examination</a></li>
+              <li><a href="./controller_of_examination.html" class="hover:text-cyan-400">Controller of Examination</a>
+              </li>
               <li><a href="./management_committee.html" class="hover:text-cyan-400">Management Committee</a></li>
               <li><a href="./board_of_studies.html" class="hover:text-cyan-400">Board of Studies</a></li>
               <li><a href="./examination_result.html" class="hover:text-cyan-400">Examination Result</a></li>
@@ -582,7 +758,8 @@
               <li><a href="./academic_calendar.html" class="hover:text-cyan-400">Academic Calendar</a></li>
               <li><a href="./statutes_ordinances.html" class="hover:text-cyan-400">Statutes/Ordinances</a></li>
               <li><a href="./departments.html" class="hover:text-cyan-400">Departments</a></li>
-              <li><a href="./department_wise_faculty_photos.html" class="hover:text-cyan-400">Department Wise faculty/staff detail with photographs</a></li>
+              <li><a href="./department_wise_faculty_photos.html" class="hover:text-cyan-400">Department Wise
+                  faculty/staff detail with photographs</a></li>
               <li><a href="./library.html" class="hover:text-cyan-400">Library</a></li>
               <li><a href="./academic_collaborations.html" class="hover:text-cyan-400">Academic Collaboration</a></li>
               <li><a href="./partnership.html" class="hover:text-cyan-400">Partnership</a></li>
@@ -759,7 +936,7 @@
 
     <!-- Scroll to Top Button -->
     <a href="#" id="scrollTopBtn"
-      class="hidden fixed bottom-6 right-6 z-50 w-10 h-10 bg-cyan-600 hover:bg-cyan-700 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300">
+      class=" fixed bottom-6 right-6 z-50 w-10 h-10 bg-cyan-600 hover:bg-cyan-700 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
   </footer>

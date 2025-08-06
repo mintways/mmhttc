@@ -1,0 +1,6 @@
+# Ignore specific folders inside assets
+assets/pdf/
+assets/xls/
+assets/pdf 2022/
+assets/pdf 2023/
+assets/video/

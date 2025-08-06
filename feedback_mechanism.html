@@ -164,6 +164,16 @@
     .notice-scroll:hover {
       animation-play-state: paused;
     }
+
+    /* NEW NAAC */
+    .aqar:hover .aqar-submenu {
+      display: block;
+    }
+
+    /* Show AQAR 2023-24 submenu on hover */
+    .aqar23-24:hover .aqar23-24-submenu {
+      display: block;
+    }
   </style>
 </head>
 
@@ -311,26 +321,65 @@
                   <div class="nav-dropdown" data-dropdown="admissions">
                     <a href="./prospectus.html">Prospectus</a>
                     <a href="./admission_process_guidelines.html">Admission Process</a>
-                    <a href="./fee_refund_policy.html">Fee Refund Policy</a>
+                    <a href="./fee_refund_policy.html">Fee Structure and Refund Policy</a>
                   </div>
                 </li>
 
-                <!-- NAAC Dropdown -->
+                <!--NEW NAAC Dropdown -->
                 <li class="relative group">
                   <button class="hover:underline transition-colors flex items-center gap-1">
                     NAAC <i class="fas fa-chevron-down text-xs"></i>
                   </button>
+
+                  <!-- Main dropdown  -->
                   <div class="nav-dropdown" data-dropdown="naac">
-                    <a href="./dvv_clarification.html">DVV Clarification</a>
-                    <div class="border-t border-gray-200 my-1"></div>
-                    <div class="px-3 py-1 text-sm font-semibold text-gray-600">AQAR</div>
-                    <a href="AQAR1.html">AQAR 1</a>
-                    <a href="AQAR2.html">AQAR 2</a>
-                    <a href="AQAR3.html">AQAR 3</a>
-                    <a href="AQAR4.html">AQAR 4</a>
-                    <a href="AQAR5.html">AQAR 5</a>
-                    <a href="AQAR6.html">AQAR 6</a>
-                    <a href="AQAR7.html">AQAR 7</a>
+                    <!-- <a href="./dvv_clarification.html">DVV Clarification</a> -->
+                    <a href="./aqar_report.html">AQAR Report</a>
+
+                    <!-- AQAR submenu  -->
+                    <div class="relative aqar text-black">
+                      <div class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
+                        AQAR <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                      </div>
+                      <div
+                        class="aqar-submenu absolute left-full top-0 hidden bg-white text-black shadow-lg min-w-[180px] z-50">
+                        <a href="AQAR1.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 1</a>
+                        <a href="AQAR2.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 2</a>
+                        <a href="AQAR3.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 3</a>
+                        <a href="AQAR4.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 4</a>
+                        <a href="AQAR5.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 5</a>
+                        <a href="AQAR6.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 6</a>
+                        <a href="AQAR7.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 7</a>
+                      </div>
+                    </div>
+
+
+                    <!-- AQAR 2023-2024 -->
+                    <div class="relative aqar23-24 text-black">
+                      <div class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
+                        AQAR 2023–2024 <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                      </div>
+                      <div
+                        class="aqar23-24-submenu absolute left-full top-0 hidden bg-white text-black shadow-lg min-w-[200px] z-50">
+                        <a href="AQAR23_24_1.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.1</a>
+                        <a href="AQAR23_24_2.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.2</a>
+                        <a href="AQAR23_24_3.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.3</a>
+                        <a href="AQAR23_24_4.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.4</a>
+                        <a href="AQAR23_24_5.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.5</a>
+                        <a href="AQAR23_24_6.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.6</a>
+                        <a href="AQAR23_24_7.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.7</a>
+                      </div>
+                    </div>
+
+
+                    <!-- Other criteria -->
+                    <!-- <a href="criteria1.html">Criteria 1</a>
+                    <a href="criteria2.html">Criteria 2</a>
+                    <a href="criteria3.html">Criteria 3</a>
+                    <a href="criteria4.html">Criteria 4</a>
+                    <a href="criteria5.html">Criteria 5</a>
+                    <a href="criteria6.html">Criteria 6</a>
+                    <a href="criteria7.html">Criteria 7</a> -->
                   </div>
                 </li>
 
@@ -432,31 +481,6 @@
   </header>
   <h1 class="text-center text-sky-500 m-2 text-3xl font-semibold">Feedback Mechanism</h1>
   <div class="flex min-h-screen bg-blue-950">
-    <!-- Sidebar -->
-    <div class="w-72 bg-blue-950 p-4 rounded-r-2xl shadow-lg">
-      <ul class="text-white space-y-3">
-        <li><a href="./sports_facilities.html" class="block px-4 py-2 hover:bg-white hover:text-blue-900 rounded">Sports
-            Facilities</a></li>
-        <li><a href="./placement_cell.html" class="block px-4 py-2 hover:bg-white hover:text-blue-900 rounded">Placement
-            Cell and Its Activities</a></li>
-        <li><a href="./health_facilities.html" class="block px-4 py-2 hover:bg-white hover:text-blue-900 rounded">Health
-            Facilities</a></li>
-        <li><a href="./internal_complaint_committee.html"
-            class="block px-4 py-2 hover:bg-white hover:text-blue-900 rounded">Internal Complaint Committee</a></li>
-        <li><a href="./anti_ragging_cell.html"
-            class="block px-4 py-2 hover:bg-white hover:text-blue-900 rounded">Anti-Ragging Cell</a></li>
-        <li><a href="./equal_opportunity_cell.html"
-            class="block px-4 py-2 hover:bg-white hover:text-blue-900 rounded">Equal Opportunity Cell</a></li>
-        <li><a href="./grievance_redressal_cell.html"
-            class="block px-4 py-2 hover:bg-white hover:text-blue-900 rounded">Grievance Redressal Cell</a></li>
-        <li><a href="./sedg_cell.html" class="block px-4 py-2 hover:bg-white hover:text-blue-900 rounded">SEDG Cell</a>
-        </li>
-        <li><a href="./facilities_for_differently_abled.html"
-            class="block px-4 py-2 hover:bg-white hover:text-blue-900 rounded">Facilities for Differently Abled</a></li>
-        <li><a href="./feedback_mechanism.html"
-            class="block px-4 py-2 hover:bg-white hover:text-blue-900 rounded">Feedback Mechanism</a></li>
-      </ul>
-    </div>
 
     <!-- Main Content -->
     <div class="flex-1 bg-sky-200 p-6 overflow-y-auto">
@@ -603,7 +627,8 @@
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
               <li><a href="./principal.html" class="hover:text-cyan-400">Principal</a></li>
-              <li><a href="./controller_of_examination.html" class="hover:text-cyan-400">Controller of Examination</a></li>
+              <li><a href="./controller_of_examination.html" class="hover:text-cyan-400">Controller of Examination</a>
+              </li>
               <li><a href="./management_committee.html" class="hover:text-cyan-400">Management Committee</a></li>
               <li><a href="./board_of_studies.html" class="hover:text-cyan-400">Board of Studies</a></li>
               <li><a href="./examination_result.html" class="hover:text-cyan-400">Examination Result</a></li>
@@ -620,7 +645,8 @@
               <li><a href="./academic_calendar.html" class="hover:text-cyan-400">Academic Calendar</a></li>
               <li><a href="./statutes_ordinances.html" class="hover:text-cyan-400">Statutes/Ordinances</a></li>
               <li><a href="./departments.html" class="hover:text-cyan-400">Departments</a></li>
-              <li><a href="./department_wise_faculty_photos.html" class="hover:text-cyan-400">Department Wise faculty/staff detail with photographs</a></li>
+              <li><a href="./department_wise_faculty_photos.html" class="hover:text-cyan-400">Department Wise
+                  faculty/staff detail with photographs</a></li>
               <li><a href="./library.html" class="hover:text-cyan-400">Library</a></li>
               <li><a href="./academic_collaborations.html" class="hover:text-cyan-400">Academic Collaboration</a></li>
               <li><a href="./partnership.html" class="hover:text-cyan-400">Partnership</a></li>
@@ -797,7 +823,7 @@
 
     <!-- Scroll to Top Button -->
     <a href="#" id="scrollTopBtn"
-      class="hidden fixed bottom-6 right-6 z-50 w-10 h-10 bg-cyan-600 hover:bg-cyan-700 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300">
+      class=" fixed bottom-6 right-6 z-50 w-10 h-10 bg-cyan-600 hover:bg-cyan-700 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
   </footer>
