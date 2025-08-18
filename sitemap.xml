@@ -198,11 +198,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mmhttc.ac.in/grievance_redressal_cell.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://mmhttc.ac.in/sedg_cell.html</loc>
   <lastmod>2025-08-01T14:04:37+00:00</lastmod>
   <priority>0.80</priority>
@@ -248,7 +243,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mmhttc.ac.in/news_recent_events_achievements.html</loc>
+  <loc>https://mmhttc.ac.in/recent_news_event_achievements.html</loc>
   <lastmod>2025-08-01T14:04:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -315,71 +310,6 @@
 <url>
   <loc>https://mmhttc.ac.in/naac.html</loc>
   <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/approvals.html</loc>
-  <lastmod>2025-08-01T14:04:35+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/audit_reports.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/department_wise_faculty_photos.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/partnership.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/refund_policy.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/campus_infrastructure.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/rnd_collaborations.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/incubation_startups.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/facility_list.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/grievance_committee.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/differently_abled.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/notices_and_circulars.html</loc>
-  <lastmod>2025-08-01T14:04:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmhttc.ac.in/achievements.html</loc>
-  <lastmod>2025-08-01T14:04:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -654,4 +584,4 @@
 </url>
 
 
-</urlset>
+</urlset>  

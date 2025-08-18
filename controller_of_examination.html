@@ -178,7 +178,7 @@
 
     <!-- for google search -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script async src="https://cse.google.com/cse.js?cx=02093ca59d5c94a4d"></script>
+    <script async src="https://cse.google.com/cse.js?cx=f00f02dc972d4466d"></script>
 
 </head>
 
@@ -188,33 +188,40 @@
     <!--header  -->
     <header class="">
         <!-- top strip -->
-        <div class="w-full bg-header text-white text-sm">
-            <div class="max-w-7xl mx-auto px-4  flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="w-full bg-header text-white text-sm md:py-2">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
 
-                <!-- Left Contact Info -->
-                <ul class="flex flex-col md:flex-row items-center gap-4">
-                    <li class="flex items-center gap-1"><i class="fa-solid fa-phone"></i> <span>06274-251001</span></li>
-                    <li class="flex items-center gap-1"><i class="fa-solid fa-envelope"></i> <a
-                            href="mailto:mmhttc@gmail.com">mmhttc@gmail.com</a></li>
-                    <li class="flex items-center gap-1"><i class="fa fa-phone"></i> <a href="Contact Us.html">Contact
-                            Us</a></li>
-                    <li class="flex items-center gap-1"><i class="fa-solid fa-images"></i> <a
-                            href="Media Gallery.html">Gallery</a></li>
+                <!-- Left Column: Contact Info -->
+                <ul class="flex flex-wrap items-center gap-x-4 gap-y-2">
+                    <li class="flex items-center gap-1">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>06274-251001</span>
+                    </li>
+                    <li class="flex items-center gap-1">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:mmhttc@gmail.com" class="hover:underline">mmhttc@gmail.com</a>
+                    </li>
+                    <li class="flex items-center gap-1">
+                        <i class="fa fa-phone"></i>
+                        <a href="contact_us.html" class="hover:underline">Contact Us</a>
+                    </li>
+                    <li class="flex items-center gap-1">
+                        <i class="fa-solid fa-images"></i>
+                        <a href="picture_gallery.html" class="hover:underline">Gallery</a>
+                    </li>
                 </ul>
 
-                <!-- Right LMS + Search -->
-                <div class="flex flex-col md:flex-row items-center gap-4">
-
+                <!-- Right Column: LMS + Search -->
+                <div class="flex flex-wrap sm:justify-end items-center gap-4">
                     <!-- LMS -->
-                    <ul>
-                        <li class="text-blue-800 font-bold text-base hover:text-white md:text-2xl"><a href="#">LMS</a>
-                        </li>
-                    </ul>
+                    <a href="#" class="text-blue-800 font-bold text-base hover:text-white sm:text-lg md:text-xl">
+                        LMS
+                    </a>
 
                     <!-- Search Box -->
-                    <!-- <div class="text-black w-full md:w-auto">
-                        <div class="gcse-search"></div>
-                    </div> -->
+                    <!-- <div class="text-black w-full sm:w-auto">
+            <div class="gcse-search"></div>
+          </div> -->
                 </div>
 
             </div>
@@ -225,27 +232,27 @@
 
 
         <!-- middle strip -->
-        <div class="w-full bg-white flex flex-col md:flex-row items-center justify-between px-4 gap-4">
-
+        <div class="w-full bg-white px-4 py-4 flex flex-col md:flex-row items-center gap-4">
             <!-- Left Logo -->
-            <div class="flex-shrink-0 w-full md:w-[120px] flex justify-center md:justify-start">
-                <img src="./assets/img/logo Mm.jpg.png" alt="Main Logo" class="w-24 h-auto" />
-            </div>
-            <div
-                class="flex-1 h-18 overflow-hidden flex flex-col justify-center  leading-[1.1] text-center text-green-800 text-xs sm:text-sm md:text-base font-semibold  items-start">
-                <img src="./assets/img/MMHTTC Name for Website.png" alt="" srcset="">
-
-            </div>
-            <!-- Affiliation Logos -->
-            <div class="flex flex-wrap items-center justify-center md:justify-end gap-5 md:w-auto">
-                <img src="./assets/img/ncte.jpg" alt="NCTE" class="w-12 h-12 object-contain" />
-                <img src="./assets/img/aicte.jpeg" alt="AICTE" class="w-12 h-12 object-contain" />
-                <img src="./assets/img/LNMU.jpg" alt="LNMU" class="w-12 h-12 object-contain" />
-                <img src="./assets/img/BSEB.jpg" alt="BSEB" class="w-12 h-12 object-contain" />
-                <img src="./assets/img/ugc2.jpg" alt="UGC" class="w-12 h-12 object-contain" />
-                <img src="./assets/img/nac.jpeg" alt="NAAC" class="w-14 h-14 object-contain" />
+            <div class="flex-shrink-0">
+                <img src="./assets/img/logo Mm.jpg.png" alt="Main Logo" class="w-20 h-auto object-contain" />
             </div>
 
+            <!-- Middle Title Image -->
+            <div class="flex-grow flex justify-center md:justify-start">
+                <img src="./assets/img/MMHTTC Name for Website.png" alt="College Title"
+                    class="max-w-full h-auto object-contain" />
+            </div>
+
+            <!-- Right Logos -->
+            <div class="flex-shrink-0 flex flex-wrap justify-center md:justify-end items-center gap-2">
+                <img src="./assets/img/ncte.jpg" alt="NCTE" class="w-10 h-10 object-contain" />
+                <img src="./assets/img/aicte.jpeg" alt="AICTE" class="w-10 h-10 object-contain" />
+                <img src="./assets/img/LNMU.jpg" alt="LNMU" class="w-10 h-10 object-contain" />
+                <img src="./assets/img/BSEB.jpg" alt="BSEB" class="w-10 h-10 object-contain" />
+                <img src="./assets/img/ugc2.jpg" alt="UGC" class="w-10 h-10 object-contain" />
+                <img src="./assets/img/nac.jpeg" alt="NAAC" class="w-12 h-12 object-contain" />
+            </div>
         </div>
 
         <!-- middle strip end -->
@@ -265,6 +272,7 @@
                         <!-- Navigation Menu -->
                         <div class="flex-1 nav-menu-container overflow-x-auto" id="nav-menu">
                             <ul class="flex items-center gap-6 py-4 whitespace-nowrap">
+
                                 <li><a href="./index.html" class="hover:underline transition-colors">Home</a></li>
 
                                 <!-- About Us Dropdown -->
@@ -328,18 +336,18 @@
                                     </div>
                                 </li>
 
-                                <!--NEW NAAC Dropdown -->
+                                <!-- NEW NAAC Dropdown -->
                                 <li class="relative group">
                                     <button class="hover:underline transition-colors flex items-center gap-1">
                                         NAAC <i class="fas fa-chevron-down text-xs"></i>
                                     </button>
 
-                                    <!-- Main dropdown  -->
+                                    <!-- Main dropdown -->
                                     <div class="nav-dropdown" data-dropdown="naac">
                                         <!-- <a href="./dvv_clarification.html">DVV Clarification</a> -->
                                         <a href="./aqar_report.html">AQAR Report</a>
 
-                                        <!-- AQAR submenu  -->
+                                        <!-- AQAR submenu -->
                                         <div class="relative aqar text-black">
                                             <div
                                                 class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
@@ -365,7 +373,7 @@
                                         </div>
 
 
-                                        <!-- AQAR 2023-2024 -->
+                                        <!-- AQAR 2023-2024 submenu  -->
                                         <div class="relative aqar23-24 text-black">
                                             <div
                                                 class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
@@ -393,14 +401,15 @@
 
                                         <!-- Other criteria -->
                                         <!-- <a href="criteria1.html">Criteria 1</a>
-                                        <a href="criteria2.html">Criteria 2</a>
-                                        <a href="criteria3.html">Criteria 3</a>
-                                        <a href="criteria4.html">Criteria 4</a>
-                                        <a href="criteria5.html">Criteria 5</a>
-                                        <a href="criteria6.html">Criteria 6</a>
-                                        <a href="criteria7.html">Criteria 7</a> -->
+                    <a href="criteria2.html">Criteria 2</a>
+                    <a href="criteria3.html">Criteria 3</a>
+                    <a href="criteria4.html">Criteria 4</a>
+                    <a href="criteria5.html">Criteria 5</a>
+                    <a href="criteria6.html">Criteria 6</a>
+                    <a href="criteria7.html">Criteria 7</a> -->
                                     </div>
                                 </li>
+
 
                                 <!-- Infrastructure Research Dropdown -->
                                 <li class="relative group">
@@ -428,12 +437,11 @@
                                         <a href="./internal_complaint_committee.html">Internal Complaint Committee</a>
                                         <a href="./anti_ragging_cell.html">Anti-Ragging Cell</a>
                                         <a href="./equal_opportunity_cell.html">Equal Opportunity Cell</a>
-                                        <a href="./grievance_redressal_cell.html">Grievance Redressal Cell</a>
                                         <a href="./sedg_cell.html">SEDG Cell</a>
                                         <a href="./facilities_for_differently_abled.html">Facilities for Differently
                                             Abled</a>
                                         <a href="./feedback_mechanism.html">Feedback Mechanism</a>
-                                        <a href="./Elearning.php">E-Learning</a>
+                                        <!-- <a href="./Elearning.php">E-Learning</a> -->
                                     </div>
                                 </li>
 
@@ -458,7 +466,7 @@
                                         <a href="./circulars_notices.html">Circulars & Notices</a>
                                         <a href="./announcements.html">Announcements</a>
                                         <a href="./newsletters.html">Newsletters</a>
-                                        <a href="./news_recent_events_achievements.html">News & Events</a>
+                                        <a href="./recent_news_event_achievements.html">News & Events</a>
                                         <a href="./job_openings.html">Job Openings</a>
                                         <a href="./reservation_roster.html">Reservation Roster</a>
                                     </div>
@@ -771,6 +779,7 @@
                 <!-- footer link start -->
                 <div
                     class="lg:w-2/3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-h-[500px] overflow-y-auto pr-2 custom-scroll">
+
                     <div>
                         <h4 class="text-lg font-bold mb-2">Home</h4>
                         <hr class="border-b border-cyan-500 w-10 mb-3" />
@@ -784,13 +793,17 @@
                         <h4 class="text-lg font-bold mb-2">About Us</h4>
                         <hr class="border-b border-cyan-500 w-10 mb-3" />
                         <ul class="space-y-2">
+                            <li><a href="./about_us.html" class="hover:text-cyan-400">About Us</a></li>
                             <li><a href="./overview.html" class="hover:text-cyan-400">Overview</a></li>
-                            <li><a href="./moa_statutes.html" class="hover:text-cyan-400">MoA / Statutes</a></li>
+                            <li><a href="./act_and_statutes.html" class="hover:text-cyan-400">Act and Statutes</a></li>
                             <li><a href="./development_plan.html" class="hover:text-cyan-400">Development Plan</a></li>
-                            <li><a href="./naac.html" class="hover:text-cyan-400">NAAC</a></li>
-                            <li><a href="./approvals.html" class="hover:text-cyan-400">Approvals</a></li>
+                            <li><a href="./accreditation_naac.html" class="hover:text-cyan-400">NAAC Accreditation</a>
+                            </li>
+                            <li><a href="./recognition_approval.html" class="hover:text-cyan-400">Recognition
+                                    approval</a></li>
                             <li><a href="./annual_reports.html" class="hover:text-cyan-400">Annual Reports</a></li>
-                            <li><a href="./audit_reports.html" class="hover:text-cyan-400">Audit Reports</a></li>
+                            <li><a href="./annual_accounts_audit_report.html" class="hover:text-cyan-400">Audit
+                                    Reports</a></li>
                         </ul>
                     </div>
 
@@ -801,7 +814,8 @@
                         <ul class="space-y-2">
                             <li><a href="./principal.html" class="hover:text-cyan-400">Principal</a></li>
                             <li><a href="./controller_of_examination.html" class="hover:text-cyan-400">Controller of
-                                    Examination</a></li>
+                                    Examination</a>
+                            </li>
                             <li><a href="./management_committee.html" class="hover:text-cyan-400">Management
                                     Committee</a></li>
                             <li><a href="./board_of_studies.html" class="hover:text-cyan-400">Board of Studies</a></li>
@@ -824,28 +838,14 @@
                             <li><a href="./statutes_ordinances.html" class="hover:text-cyan-400">Statutes/Ordinances</a>
                             </li>
                             <li><a href="./departments.html" class="hover:text-cyan-400">Departments</a></li>
-                            <li><a href="./department_wise_faculty_photos.html" class="hover:text-cyan-400">Department
-                                    Wise faculty/staff detail with photographs</a></li>
+                            <li><a href="./faculty_staff_details.html" class="hover:text-cyan-400">faculty/Staff
+                                    details</a></li>
+                            <li><a href="./iqac.html" class="hover:text-cyan-400">IQAC</a></li>
                             <li><a href="./library.html" class="hover:text-cyan-400">Library</a></li>
                             <li><a href="./academic_collaborations.html" class="hover:text-cyan-400">Academic
                                     Collaboration</a></li>
-                            <li><a href="./partnership.html" class="hover:text-cyan-400">Partnership</a></li>
                         </ul>
                     </div>
-
-
-
-                    <!-- IQAC -->
-                    <div>
-                        <h4 class="text-lg font-bold mb-2">IQAC</h4>
-                        <hr class="border-b border-cyan-500 w-10 mb-3" />
-                        <ul class="space-y-2">
-                            <li><a href="./iqac.html" class="hover:text-cyan-400">Internal Quality Assurance Cell</a>
-                            </li>
-                        </ul>
-                    </div>
-
-
 
                     <!-- Admissions & Fee -->
                     <div>
@@ -855,17 +855,21 @@
                             <li><a href="./prospectus.html" class="hover:text-cyan-400">Prospectus</a></li>
                             <li><a href="./admission_process_guidelines.html" class="hover:text-cyan-400">Admission
                                     Process</a></li>
-                            <li><a href="./refund_policy.html" class="hover:text-cyan-400">Refund Policy</a></li>
+                            <li><a href="./fee_refund_policy.html" class="hover:text-cyan-400">Fee Structure and Refund
+                                    Policy</a>
+                            </li>
                         </ul>
                     </div>
 
-                    <!-- Infrastructure -->
+                    <!-- naac -->
                     <div>
-                        <h4 class="text-lg font-bold mb-2">Infrastructure</h4>
+                        <h4 class="text-lg font-bold mb-2">NAAC</h4>
                         <hr class="border-b border-cyan-500 w-10 mb-3" />
                         <ul class="space-y-2">
-                            <li><a href="./campus_infrastructure.html" class="hover:text-cyan-400">Campus
-                                    Infrastructure</a></li>
+                            <li><a href="./naac.html" class="hover:text-cyan-400">NAAC</a></li>
+                            <li><a href="./aqar_report.html" class="hover:text-cyan-400">AQAR Report</a></li>
+                            <li><a href="./AQAR1.html" class="hover:text-cyan-400">AQAR 1</a></li>
+                            <li><a href="./AQAR23_24_1.html" class="hover:text-cyan-400">AQAR 2023-2024</a></li>
                         </ul>
                     </div>
 
@@ -874,60 +878,56 @@
                         <h4 class="text-lg font-bold mb-2">Research</h4>
                         <hr class="border-b border-cyan-500 w-10 mb-3" />
                         <ul class="space-y-2">
-                            <li><a href="./rnd_collaborations.html" class="hover:text-cyan-400">R&D & Collaborations</a>
+                            <li><a href="./recognition_approval.html" class="hover:text-cyan-400">Research and
+                                    Development Cell</a>
                             </li>
-                            <li><a href="./incubation_startups.html" class="hover:text-cyan-400">Incubation/Startups</a>
+                            <li><a href="./incubation_entrepreneurship_cell.html" class="hover:text-cyan-400">Incubation
+                                    Centre</a>
+                            </li>
+                            <li><a href="./central_facilities.html" class="hover:text-cyan-400">Central Facilities</a>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Central Facilities -->
-                    <div>
-                        <h4 class="text-lg font-bold mb-2">Central Facilities</h4>
-                        <hr class="border-b border-cyan-500 w-10 mb-3" />
-                        <ul class="space-y-2">
-                            <li><a href="./facility_list.html" class="hover:text-cyan-400">Facility List</a></li>
-                        </ul>
-                    </div>
 
                     <!-- Student Life -->
                     <div>
-                        <h4 class="text-lg font-bold mb-2">Student Life</h4>
+                        <h4 class="text-lg font-bold mb-2">Student Life 1</h4>
                         <hr class="border-b border-cyan-500 w-10 mb-3" />
                         <ul class="space-y-2">
-                            <li><a href="./sports_facilities.html" class="hover:text-cyan-400">Sports Facilitiesa></li>
-                            <li><a href="./placement_cell.html" class="hover:text-cyan-400">Placement Cell</a></li>
-                            <li><a href="./grievance_committee.html" class="hover:text-cyan-400">Grievance Committee</a>
+                            <li><a href="./sports_facilities.html" class="hover:text-cyan-400">Sports Facilities</a>
                             </li>
+                            <li><a href="./placement_cell.html" class="hover:text-cyan-400">Placement Cell</a></li>
+                            <li><a href="./student_grievance_redressal_committee.html"
+                                    class="hover:text-cyan-400">Student Grievance
+                                    Commmittee</a></li>
                             <li><a href="./health_facilities.html" class="hover:text-cyan-400">Health Facilities</a>
                             </li>
+                            <li><a href="./internal_complaint_committee.html" class="hover:text-cyan-400">Internal
+                                    Complaint Committee
+                                </a></li>
+
                         </ul>
                     </div>
 
-                    <!-- Support Cells -->
                     <div>
-                        <h4 class="text-lg font-bold mb-2">Support Cells</h4>
+                        <h4 class="text-lg font-bold mb-2">Student Life 2</h4>
                         <hr class="border-b border-cyan-500 w-10 mb-3" />
                         <ul class="space-y-2">
-                            <li><a href="./anti_ragging_cell.html" class="hover:text-cyan-400">Anti-Ragging</a></li>
-                            <li><a href="./equal_opportunity_cell.html" class="hover:text-cyan-400">Equal
-                                    Opportunity</a></li>
-                            <li><a href="./differently_abled.html" class="hover:text-cyan-400">Differently Abled</a>
+                            <li><a href="./anti_ragging_cell.html" class="hover:text-cyan-400">Anti-Ragging Cell</a>
                             </li>
-                            <li><a href="./sedg_cell.html" class="hover:text-cyan-400">SEDG</a></li>
+                            <li><a href="./equal_opportunity_cell.html" class="hover:text-cyan-400">Equal Opportunity
+                                    Cell</a></li>
+                            <li><a href="./sedg_cell.html" class="hover:text-cyan-400">SEDG Cell</a></li>
+                            <li><a href="./facilities_for_differently_abled.html" class="hover:text-cyan-400">Facilities
+                                    For
+                                    Differently Abled</a></li>
                             <li><a href="./feedback_mechanism.html" class="hover:text-cyan-400">Feedback Mechanism</a>
                             </li>
+                            <li><a href="./Elearning.php" class="hover:text-cyan-400">E learning</a></li>
                         </ul>
                     </div>
 
-                    <!-- E-learning -->
-                    <div>
-                        <h4 class="text-lg font-bold mb-2">E-learning</h4>
-                        <hr class="border-b border-cyan-500 w-10 mb-3" />
-                        <ul class="space-y-2">
-                            <li><a href="ELearning.php" class="hover:text-cyan-400">E-learning Platform</a></li>
-                        </ul>
-                    </div>
 
                     <!-- Alumni -->
                     <div>
@@ -945,16 +945,50 @@
                         <h4 class="text-lg font-bold mb-2">Information Corner</h4>
                         <hr class="border-b border-cyan-500 w-10 mb-3" />
                         <ul class="space-y-2">
-                            <li><a href="./rti.html" class="hover:text-cyan-400">RTI Details</a></li>
-                            <li><a href="./notices_and_circulars.html" class="hover:text-cyan-400">Notices &
-                                    Circulars</a></li>
+                            <li><a href="./rti.html" class="hover:text-cyan-400">RTI</a></li>
+                            <li><a href="./circulars_notices.html" class="hover:text-cyan-400">Circulars & Notices</a>
+                            </li>
                             <li><a href="./announcements.html" class="hover:text-cyan-400">Announcements</a></li>
                             <li><a href="./newsletters.html" class="hover:text-cyan-400">Newsletters</a></li>
-                            <li><a href="./achievements.html" class="hover:text-cyan-400">Achievements</a></li>
+                            <li><a href="./recent_news_event_achievements.html" class="hover:text-cyan-400">News &
+                                    Events</a></li>
                             <li><a href="./job_openings.html" class="hover:text-cyan-400">Job Openings</a></li>
                             <li><a href="./reservation_roster.html" class="hover:text-cyan-400">Reservation Roster</a>
                             </li>
-                            <li><a href="./picture_gallery.html" class="hover:text-cyan-400">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Staff -->
+                    <div>
+                        <h4 class="text-lg font-bold mb-2">Staf</h4>
+                        <hr class="border-b border-cyan-500 w-10 mb-3" />
+                        <ul class="space-y-2">
+                            <li><a href="./administrative_staff.html" class="hover:text-cyan-400">Administrative
+                                    Staff</a></li>
+                            <li><a href="./teaching.html" class="hover:text-cyan-400">Teaching</a></li>
+                            <li><a href="./non_teaching.html" class="hover:text-cyan-400">Non Teaching</a></li>
+                            <li><a href="./library_staff.html" class="hover:text-cyan-400">Library Staff</a></li>
+                            <li><a href="./employee_zone.html" class="hover:text-cyan-400">Employee Zone </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Mandatory Disclosure -->
+                    <div>
+                        <h4 class="text-lg font-bold mb-2">Mandatory Disclosure</h4>
+                        <hr class="border-b border-cyan-500 w-10 mb-3" />
+                        <ul class="space-y-2">
+                            <li><a href="./mandatory_disclosure.html" class="hover:text-cyan-400">Mandatory
+                                    Disclosure</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Fallery -->
+                    <div>
+                        <h4 class="text-lg font-bold mb-2">Picture Gallery</h4>
+                        <hr class="border-b border-cyan-500 w-10 mb-3" />
+                        <ul class="space-y-2">
+                            <li><a href="./mandatory_disclosure.html" class="hover:text-cyan-400">Picture Gallery</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -963,11 +997,13 @@
                         <h4 class="text-lg font-bold mb-2">Contact Us</h4>
                         <hr class="border-b border-cyan-500 w-10 mb-3" />
                         <ul class="space-y-2">
-                            <li><a href="./contact_us.html" class="hover:text-cyan-400">Get in Touch</a></li>
+                            <li><a href="./contact_us.html" class="hover:text-cyan-400">Contact Us</a></li>
                         </ul>
                     </div>
+
+
                 </div>
-                <!-- link end -->
+
 
             </div>
         </div>
