@@ -1,13 +1,13 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Circular Notices</title>
   <link href="./assets/css/style.css" rel="stylesheet">
-  <title> Circulars Notices </title>
   <style>
     /* footer scroll */
     .custom-scroll::-webkit-scrollbar {
@@ -178,42 +178,50 @@
 
   <!-- for google search -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script async src="https://cse.google.com/cse.js?cx=02093ca59d5c94a4d"></script>
+  <script async src="https://cse.google.com/cse.js?cx=f00f02dc972d4466d"></script>
 
 </head>
 
+<body>
 
-<body class="bg-white" style="background-color: white; color: black !important;">
 
   <!--header  -->
   <header class="">
     <!-- top strip -->
-    <div class="w-full bg-header text-white text-sm">
-      <div class="max-w-7xl mx-auto px-4  flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="w-full bg-header text-white text-sm md:py-2">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
 
-        <!-- Left Contact Info -->
-        <ul class="flex flex-col md:flex-row items-center gap-4">
-          <li class="flex items-center gap-1"><i class="fa-solid fa-phone"></i> <span>06274-251001</span></li>
-          <li class="flex items-center gap-1"><i class="fa-solid fa-envelope"></i> <a
-              href="mailto:mmhttc@gmail.com">mmhttc@gmail.com</a></li>
-          <li class="flex items-center gap-1"><i class="fa fa-phone"></i> <a href="Contact Us.html">Contact Us</a></li>
-          <li class="flex items-center gap-1"><i class="fa-solid fa-images"></i> <a
-              href="Media Gallery.html">Gallery</a></li>
+        <!-- Left Column: Contact Info -->
+        <ul class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <li class="flex items-center gap-1">
+            <i class="fa-solid fa-phone"></i>
+            <span>06274-251001</span>
+          </li>
+          <li class="flex items-center gap-1">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:mmhttc@gmail.com" class="hover:underline">mmhttc@gmail.com</a>
+          </li>
+          <li class="flex items-center gap-1">
+            <i class="fa fa-phone"></i>
+            <a href="contact_us.html" class="hover:underline">Contact Us</a>
+          </li>
+          <li class="flex items-center gap-1">
+            <i class="fa-solid fa-images"></i>
+            <a href="picture_gallery.html" class="hover:underline">Gallery</a>
+          </li>
         </ul>
 
-        <!-- Right LMS + Search -->
-        <div class="flex flex-col md:flex-row items-center gap-4">
-
+        <!-- Right Column: LMS + Search -->
+        <div class="flex flex-wrap sm:justify-end items-center gap-4">
           <!-- LMS -->
-          <ul>
-            <li class="text-blue-800 font-bold text-base hover:text-white md:text-2xl"><a href="#">LMS</a></li>
-          </ul>
+          <a href="#" class="text-blue-800 font-bold text-base hover:text-white sm:text-lg md:text-xl">
+            LMS
+          </a>
 
           <!-- Search Box -->
-          <!-- <div class="text-black w-full md:w-auto">
+          <!-- <div class="text-black w-full sm:w-auto">
             <div class="gcse-search"></div>
           </div> -->
-
         </div>
 
       </div>
@@ -224,27 +232,27 @@
 
 
     <!-- middle strip -->
-    <div class="w-full bg-white flex flex-col md:flex-row items-center justify-between px-4 gap-4">
-
+    <div class="w-full bg-white px-4 py-4 flex flex-col md:flex-row items-center gap-4">
       <!-- Left Logo -->
-      <div class="flex-shrink-0 w-full md:w-[120px] flex justify-center md:justify-start">
-        <img src="./assets/img/logo Mm.jpg.png" alt="Main Logo" class="w-24 h-auto" />
-      </div>
-      <div
-        class="flex-1 h-18 overflow-hidden flex flex-col justify-center  leading-[1.1] text-center text-green-800 text-xs sm:text-sm md:text-base font-semibold  items-start">
-        <img src="./assets/img/MMHTTC Name for Website.png" alt="" srcset="">
-
-      </div>
-      <!-- Affiliation Logos -->
-      <div class="flex flex-wrap items-center justify-center md:justify-end gap-5 md:w-auto">
-        <img src="./assets/img/ncte.jpg" alt="NCTE" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/aicte.jpeg" alt="AICTE" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/LNMU.jpg" alt="LNMU" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/BSEB.jpg" alt="BSEB" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/ugc2.jpg" alt="UGC" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/nac.jpeg" alt="NAAC" class="w-14 h-14 object-contain" />
+      <div class="flex-shrink-0">
+        <img src="./assets/img/logo Mm.jpg.png" alt="Main Logo" class="w-20 h-auto object-contain" />
       </div>
 
+      <!-- Middle Title Image -->
+      <div class="flex-grow flex justify-center md:justify-start">
+        <img src="./assets/img/MMHTTC Name for Website.png" alt="College Title"
+          class="max-w-full h-auto object-contain" />
+      </div>
+
+      <!-- Right Logos -->
+      <div class="flex-shrink-0 flex flex-wrap justify-center md:justify-end items-center gap-2">
+        <img src="./assets/img/ncte.jpg" alt="NCTE" class="w-10 h-10 object-contain" />
+        <img src="./assets/img/aicte.jpeg" alt="AICTE" class="w-10 h-10 object-contain" />
+        <img src="./assets/img/LNMU.jpg" alt="LNMU" class="w-10 h-10 object-contain" />
+        <img src="./assets/img/BSEB.jpg" alt="BSEB" class="w-10 h-10 object-contain" />
+        <img src="./assets/img/ugc2.jpg" alt="UGC" class="w-10 h-10 object-contain" />
+        <img src="./assets/img/nac.jpeg" alt="NAAC" class="w-12 h-12 object-contain" />
+      </div>
     </div>
 
     <!-- middle strip end -->
@@ -264,6 +272,7 @@
             <!-- Navigation Menu -->
             <div class="flex-1 nav-menu-container overflow-x-auto" id="nav-menu">
               <ul class="flex items-center gap-6 py-4 whitespace-nowrap">
+
                 <li><a href="./index.html" class="hover:underline transition-colors">Home</a></li>
 
                 <!-- About Us Dropdown -->
@@ -327,18 +336,18 @@
                   </div>
                 </li>
 
-                <!--NEW NAAC Dropdown -->
+                <!-- NEW NAAC Dropdown -->
                 <li class="relative group">
                   <button class="hover:underline transition-colors flex items-center gap-1">
                     NAAC <i class="fas fa-chevron-down text-xs"></i>
                   </button>
 
-                  <!-- Main dropdown  -->
+                  <!-- Main dropdown -->
                   <div class="nav-dropdown" data-dropdown="naac">
                     <!-- <a href="./dvv_clarification.html">DVV Clarification</a> -->
                     <a href="./aqar_report.html">AQAR Report</a>
 
-                    <!-- AQAR submenu  -->
+                    <!-- AQAR submenu -->
                     <div class="relative aqar text-black">
                       <div class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
                         AQAR <i class="fas fa-chevron-right ml-2 text-xs"></i>
@@ -356,7 +365,7 @@
                     </div>
 
 
-                    <!-- AQAR 2023-2024 -->
+                    <!-- AQAR 2023-2024 submenu  -->
                     <div class="relative aqar23-24 text-black">
                       <div class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
                         AQAR 2023–2024 <i class="fas fa-chevron-right ml-2 text-xs"></i>
@@ -411,11 +420,10 @@
                     <a href="./internal_complaint_committee.html">Internal Complaint Committee</a>
                     <a href="./anti_ragging_cell.html">Anti-Ragging Cell</a>
                     <a href="./equal_opportunity_cell.html">Equal Opportunity Cell</a>
-                    <a href="./grievance_redressal_cell.html">Grievance Redressal Cell</a>
                     <a href="./sedg_cell.html">SEDG Cell</a>
                     <a href="./facilities_for_differently_abled.html">Facilities for Differently Abled</a>
                     <a href="./feedback_mechanism.html">Feedback Mechanism</a>
-                    <a href="./Elearning.php">E-Learning</a>
+                    <!-- <a href="./Elearning.php">E-Learning</a> -->
                   </div>
                 </li>
 
@@ -440,7 +448,7 @@
                     <a href="./circulars_notices.html">Circulars & Notices</a>
                     <a href="./announcements.html">Announcements</a>
                     <a href="./newsletters.html">Newsletters</a>
-                    <a href="./news_recent_events_achievements.html">News & Events</a>
+                    <a href="./recent_news_event_achievements.html">News & Events</a>
                     <a href="./job_openings.html">Job Openings</a>
                     <a href="./reservation_roster.html">Reservation Roster</a>
                   </div>
@@ -484,220 +492,1277 @@
   </header>
 
 
-  <!-- heading -->
-  <section class="bg-blue-100 max-w-full font-source py-4 md:text-2xl lg:text-4xl text-center">
-    <div>
-      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">Circular Notices</h1>
-    </div>
-  </section>
+  <h1 class="text-center text-sky-500 m-2 text-3xl font-semibold">Circular Notices</h1>
+  <div class="flex h-200 bg-blue-950">
 
-  <!-- <h1 class="text-4xl text-red-600 px-3 py-4 font-extrabold">UNDER DEVELOPMENT</h1> -->
-  <section class="max-w-full bg-lime-100 mx-auto ">
+    <!-- Main Content -->
+    <div class="flex-1 bg-sky-200 p-5 overflow-y-auto">
+      <div class="max-w-5xl mx-auto p-6 bg-white rounded-xl shadow-md text-center">
+        <!-- <h2 class="text-3xl font-bold mb-6"></h2> -->
 
-    <div class="max-w-7xl mx-auto px-4 py-10">
-      <h2 class="text-2xl font-bold text-green-700 mb-6">Examination Notices</h2>
+        <h2 class="text-center text-sky-500 m-2 text-3xl font-semibold">Notice 2025</h2>
 
-      <div class="space-y-6">
+        <div class="max-w-5xl mx-auto p-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Table 1: Examination -->
+            <div class="bg-white rounded-2xl shadow p-4">
+              <h2 class="text-lg font-semibold mb-3">Examination</h2>
+              <div class="overflow-x-auto">
+                <table class="min-w-full text-sm">
+                  <thead>
+                    <tr class="text-left border-b">
+                      <th class="py-2 px-3">Examination Notice</th>
+                      <th class="py-2 px-3">PDF</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        D.El.Ed face to face 23-25 2025 exam
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/D.El.Ed face to face 23-25 2025 exam.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                         B.Ed part 1 Exam 24-26 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.Ed part 1 Exam 24-26 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        B.Ed Part 2 Exam 23-25 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.Ed Part 2 Exam 23-25 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                      D.EL.ED 1 & 2 Yr Internal examination 2025 
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/D.EL.ED 1& 2 Yr Internal examination2025 .pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        B.Ed part 2 24-26 exam 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.ed part 2 24-26 exam 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       B.Ed exam Part 2 23-25 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.Ed exam Part 2 23-25 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       B.ed part 2 D.El.Ed 1 &2 23-24-25 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.ed part 2 D.El.Ed 1 &2 23-24-25 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       D.El.Ed 1st yr monthly test 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/D.El.Ed 1st yr monthly test 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       B.Ed Part 1 Reg & Mig 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.ed Part 1 Reg & Mig 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-        <!-- Notice 1 -->
-        <div class="bg-white shadow-md rounded-md p-6 flex flex-col md:flex-row items-start md:items-center gap-4">
-          <div class="text-center bg-red-600 text-white px-4 py-2 rounded-md">
-            <p class="text-2xl font-bold leading-none">08</p>
-            <p class="text-sm">APRIL 2023</p>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-red-700">
-              B.Ed 1st Year (2022–24) & 2nd Year (2021–23) Examination Fee Notice
-            </h3>
-            <p class="mt-2 text-gray-700">
-              ➥ B.Ed Part-1 and Part-2 Offline Examination Form 2022–24 and 2021–23. Visit in college.
-              <img src="./assets/img/new.gif" alt="new" class="inline-block w-8 h-8 ml-2">
-            </p>
-            <div class="mt-4 flex flex-wrap gap-3">
-              <a href="./assets/exam/B.Ed part1 and  B.Ed part2.jpeg" target="_blank"
-                class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 text-sm rounded-md">
-                <i class="fa fa-file-pdf-o mr-2"></i>Part-1 and 2 Notice
-              </a>
-              <a href="./assets/exam/B.ed Exam Fee.jpeg" target="_blank"
-                class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 text-sm rounded-md">
-                <i class="fa fa-file-pdf-o mr-2"></i>Examination Fee Notice
-              </a>
+            <!-- Table 2: Office Notice -->
+            <div class="bg-white rounded-2xl shadow p-4">
+              <h2 class="text-lg font-semibold mb-3">Office Notice</h2>
+              <div class="overflow-x-auto">
+                <table class="min-w-full text-sm">
+                  <thead>
+                    <tr class="text-left border-b">
+                      <th class="py-2 px-3">Office Notice</th>
+                      <th class="py-2 px-3">PDF</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Last Monday Of Sharwan 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Last Monday Of Sharwan 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Moharram2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Moharram2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Kabir Jayanti 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Kabir Jayanti 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Eid-Ul-Adha Bakraeid 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Eid-Ul-Adha Bakraeid 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Summer vacation2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Summer vacation2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Buddh Purnima 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Buddh Purnima 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       Janki Navmi 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Janki Navmi 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Labour Day 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Labour Day 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       Veer Kunwar singh jayanti 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Veer Kunwar singh jayanti 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Bhimroa Ambedkar jayanti 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Bhimroa Ambedkar jayanti 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Mahavir Jayanti 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Mahavir Jayanti 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       Eid-ul-fit ,Samrat Ashok Jayanti & Ramnavi2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Eid-ul-fit ,Samrat Ashok Jayanti & Ramnavi2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        BIhar Diwas 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/BIhar Diwas 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       Holi 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Holi 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Mahashivratri 2025
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Mahashivratri 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        St Ravi Das Jayanti 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/St Ravi Das Jayanti 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       Basasnt Panchmi 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Basasnt Panchmi 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       Senate Holiday vice chancellor 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Senate Holiday vice chancellor 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Pragrati Yatra & Makarsankranti 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Pragrati Yatra & Makarsankranti 2025.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                      Guru Govind singh Janyanti 2025
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Guru Govind singh Janyanti 2025.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Notice 2 -->
-        <div class="bg-white shadow-md rounded-md p-6 flex flex-col md:flex-row items-start md:items-center gap-4">
-          <div class="text-center bg-red-600 text-white px-4 py-2 rounded-md">
-            <p class="text-2xl font-bold leading-none">08</p>
-            <p class="text-sm">APRIL 2023</p>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-red-700">
-              D.El.Ed 1st Year (2022–24) & 2nd Year (2021–23) Examination Fee Notice
-            </h3>
-            <p class="mt-2 text-gray-700">
-              ➥ D.El.Ed Part-1 and Part-2 Examination Form 2022-24 AND 2021-23. Visit in college.
-              <img src="./assets/img/new.gif" alt="new" class="inline-block w-8 h-8 ml-2">
-            </p>
+        <!-- Guidelines PDF Button -->
+         <h2 class="text-center text-sky-500 m-2 text-3xl font-semibold">Notice 2024</h2>
+         <div class="max-w-5xl mx-auto p-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Table 1: Examination -->
+            <div class="bg-white rounded-2xl shadow p-4">
+              <h2 class="text-lg font-semibold mb-3">Examination</h2>
+              <div class="overflow-x-auto">
+                <table class="min-w-full text-sm">
+                  <thead>
+                    <tr class="text-left border-b">
+                      <th class="py-2 px-3">Examination Notice</th>
+                      <th class="py-2 px-3">PDF</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Examination B.ed part1&2( 23-25,24-26)2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Examination B.ed part1&2( 23-25,24-26)2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                         D.El.Ed 23-25 (2nd yr Exam)
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/D.El.Ed 23-25 (2nd yr Exam).pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        D.El.Ed Exam 23-25 (2)2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/D.El.Ed Exam 23-25 (2)2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       D.El.ED Face to face Exam 2nd yr 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/D.El.ED Face to face Exam 2nd yr 2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Practical Examination B.Ed 2 nd yr 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Practical xamination B.Ed 2 nd yr 2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        B.Ed part 2 Examination 22-24 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.Ed part 2 Examination 22-24 2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        B.Ed Part 1 Exam Theory 23-25 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.Ed Part 1 Exam Theory 23-25 2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       D.El.Ed Exam 1 st yr 2024 revised 
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/D.El.Ed Exam 1 st yr 2024revised .pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       D.El.Ed Exam 1 st yr 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/D.El.Ed Exam 1 st yr 2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       D.El.Ed Exam 2 nd yr 2024 (22-24)
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/D.El.Ed Exam 2 nd yr 2024 (22-24).pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        B.Ed & D.El.Ed Part 1 & 2 exam 
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.Ed & D.El.Ed Part 1 & 2 exam .pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        B.Ed & D.El.Ed Part 1 & 2 exam 2
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.Ed & D.El.Ed Part 1 & 2 exam 2.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-            <div class="mt-4 flex flex-wrap gap-3">
-              <a href="./assets/exam/B.ed Exam Fee.jpeg" target="_blank"
-                class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 text-sm rounded-md">
-                <i class="fa fa-file-pdf-o mr-2"></i>Exam Fee Notice
-              </a>
-              <a href="./assets/exam/D.El.Ed part1 and  D.El.Ed exam form.jpeg" target="_blank"
-                class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 text-sm rounded-md">
-                <i class="fa fa-file-pdf-o mr-2"></i>Exam form Notice
-              </a>
+            <!-- Table 2: Office Notice -->
+            <div class="bg-white rounded-2xl shadow p-4">
+              <h2 class="text-lg font-semibold mb-3">Office Notice</h2>
+              <div class="overflow-x-auto">
+                <table class="min-w-full text-sm">
+                  <thead>
+                    <tr class="text-left border-b">
+                      <th class="py-2 px-3">Office Notice</th>
+                      <th class="py-2 px-3">PDF</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Christmas Day
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Notice -2024-pages-1.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Dr Rajendra Pd.jayanti
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Rajendra Prasad Jayanti 2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Chitragupta puja,diwali,bihya duj chath2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Chitragupta puja,diwali,bihya duj chath2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Sri krishn singh jayanti2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Sri krishn singh jayanti2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Durga Puja2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Durga Puja2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Mhatma Gandhi Jayanti & durga puja kalash2024 
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Mhatma Gandhi Jayanti & durga puja kalash2024 .pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       Hazarat Muhammad SA Birthday 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Hazarat Muhammad SA Birthday 2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Chahallum and sri krishna janm-2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Chahallum and sri krishna janm-2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Moharram2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Moharram2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Holiday 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Holiday 2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Budha Purnima2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Budha Purnima2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       Parlimentry Election 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Parlimentry Election 2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Veer Kumar singh Jayanti2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Veer Kumar singh Jayanti2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Mahavir Jayanti 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Mahavir Jayanti 2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Samrat Ashoka Jayanti 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Samrat Ashoka Jayanti 2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Bhimrao Ambedkar Jayanti 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Bhimrao Ambedkar Jayanti 2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Eid-ul-fitr 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Eid-ul-fitr 2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                       Sant Ravi Das Jayanti & Shabe Baraat 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Sant Ravi Das Jayanti & Shabe Baraat 2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Holi & good Friday 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Holi & good Friday 2024.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                      Basant Panchmi2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Basant Panchmi2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Karpuri Thakur Jayanti 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Karpuri Thakur Jayanti 2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Guru Govind Singh jayanti 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Guru Govind Singh jayanti 2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Makar sankranti 2024
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Makar sankranti 2024.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Notice 3 -->
-        <div class="bg-white shadow-md rounded-md p-6 flex flex-col md:flex-row items-start md:items-center gap-4">
-          <div class="text-center bg-red-600 text-white px-4 py-2 rounded-md">
-            <p class="text-2xl font-bold leading-none">01</p>
-            <p class="text-sm">APRIL 2023</p>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-red-700">
-              B.Ed 1st Year (2022–24) Internal Examination
-            </h3>
-            <p class="mt-2 text-gray-700">
-              ➥ B.Ed 1st year (2022-24).
-              <img src="./assets/img/new.gif" alt="new" class="inline-block w-8 h-8 ml-2">
-            </p>
-            <div class="mt-4 flex flex-wrap gap-3">
-              <a href="./assets/exam/2022-24exam time.jpeg" target="_blank"
-                class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 text-sm rounded-md">
-                <i class="fa fa-file-pdf-o mr-2"></i>View Time Table
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <!-- Notice 4 -->
-        <div class="bg-white shadow-md rounded-md p-6 flex flex-col md:flex-row items-start md:items-center gap-4">
-          <div class="text-center bg-red-600 text-white px-4 py-2 rounded-md">
-            <p class="text-2xl font-bold leading-none">28</p>
-            <p class="text-sm">MARCH 2023</p>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-red-700">
-              B.Ed 1st Year (2022–24) Assignment Notice
-            </h3>
-            <p class="mt-2 text-gray-700">
-              ➥ B.Ed Par 1, Offline examinaiton form 2022-24. Visit in College.
-              <!-- <img src="./assets/img/new.gif" alt="new" class="inline-block w-8 h-8 ml-2"> -->
-            </p>
-            <div class="mt-4 flex flex-wrap gap-3">
-              <a href="#" target="_blank"
-                class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 text-sm rounded-md">
-                <i class="fa fa-file-pdf-o mr-2"></i>View Notice
-              </a>
+        <h2 class="text-center text-sky-500 m-2 text-3xl font-semibold">Notice 2023</h2>
+        <!-- Grid of Forms -->
+        <!-- Tailwind CSS required -->
+        <div class="max-w-5xl mx-auto p-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Table 1: Examination -->
+            <div class="bg-white rounded-2xl shadow p-4">
+              <h2 class="text-lg font-semibold mb-3">Examination</h2>
+              <div class="overflow-x-auto">
+                <table class="min-w-full text-sm">
+                  <thead>
+                    <tr class="text-left border-b">
+                      <th class="py-2 px-3">Examination Notice</th>
+                      <th class="py-2 px-3">PDF</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        B.Ed Part 1 23-25 Monthly test Examination
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Monthly Test Examination B.Ed Part 1.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Monthly Test Examination B.Ed Part 1
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Monthly Test Examination B.Ed Part 1.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Monthly Test Examination B.Ed
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Monthly Test Examination B.Ed.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        PG 1st sem Examination
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Teaching & Non Teaching Staff NOtices.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Admission Of D.El.Ed 2 year2
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Admission Of D.El.Ed 2 year2.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Internal Examination D.El.Ed 2ndyr
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Internal Examination D.El.Ed 2ndyr.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Internal ExaminationOf D.El.Ed 2 year 2
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Internal ExaminationOf D.El.Ed 2 year2.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        External Examination for school intenship B.Ed
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/External Examination for school intenship B.Ed.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        B.ED Examination 1 & 2
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.ED Examination 1 & 2.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Internal Examination D.El.Ed 2nd yr
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Internal Examination D.El.Ed 2ndyr.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Internal Examination B.ed Part2 & D.El.Ed Part 2
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Internal Examination B.ed Part2 & D.El.Ed Part 2.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Internal Examination B.ed Part 1
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Internal Examination B.ed Part 1 .pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Examination fees Of D.El.Ed 1 & 2 yr
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Examination fees Of D.El.Ed 1 & 2 yr.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Examination fees Of B.Ed 1 & 2 yr
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Examination fees Of B.Ed 1 & 2 yr.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        B.Ed examination revised 2023
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.Ed examination revised 2023.pdf .pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        B.Ed & D.El.Ed lesson plan Copy
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.Ed & D.El.Ed lesson plan Copy.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        B.Ed 2 nd yr 21-23 lesson Plan copy
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/B.Ed 2 nd yr 21-23 lesson Plan copy.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Notice 5 -->
-        <div class="bg-white shadow-md rounded-md p-6 flex flex-col md:flex-row items-start md:items-center gap-4">
-          <div class="text-center bg-red-600 text-white px-4 py-2 rounded-md">
-            <p class="text-2xl font-bold leading-none">28</p>
-            <p class="text-sm">MARCH 2023</p>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-red-700">
-              B.Ed 2nd Year (2021-23) Assignment Notice
-            </h3>
-            <p class="mt-2 text-gray-700">
-              ➥ B.Ed Par 2, Offline examinaiton form 2022-24. Visit in College.
-              <!-- <img src="./assets/img/new.gif" alt="new" class="inline-block w-8 h-8 ml-2"> -->
-            </p>
-            <div class="mt-4 flex flex-wrap gap-3">
-              <a href="#" target="_blank"
-                class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 text-sm rounded-md">
-                <i class="fa fa-file-pdf-o mr-2"></i>View Notice
-              </a>
+            <!-- Table 2: Office Notice -->
+            <div class="bg-white rounded-2xl shadow p-4">
+              <h2 class="text-lg font-semibold mb-3">Office Notice</h2>
+              <div class="overflow-x-auto">
+                <table class="min-w-full text-sm">
+                  <thead>
+                    <tr class="text-left border-b">
+                      <th class="py-2 px-3">Office Notice</th>
+                      <th class="py-2 px-3">PDF</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Christmas Day
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/christmas Day2023.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Dr Rajendra Pd.jayanti
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Dr Rajendra Pd Jayanti 2023.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Principal Notice
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Principal Notice2023.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Guru Nanak Birthday
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Guru Nanak Birthday.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Diwali & chat Puja 2023
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Diwali & chat Puja2023.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Essay Competition
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Essay Competition Principal Office.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Durga Puja
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Durga Puja.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Durga Puja kalashsthapana
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Durga Puja kalashsthapana.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Jay Prakash Narayan Jayanti
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Jay Prakash Narayan Jayanti.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Mahatma Gandhi Jayanti
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Mahatma Gandhi Jayanti.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Anant chaturdarshi & Muhammad (SA) Birthday
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Anant chaturdarshi & Muhammad (SA) Birthday.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        vishwakarma Puja
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/vishwakarma Puja.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Chahalum & Sri Krishna Janam
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Chahalum & Sri Krishna Janam.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Raksha Bandhan
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Raksha Bandhan.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        last Monday Of shrawan
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/last Monday Of shrawan.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        L.N.M.U Migration notices
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/L.N.M.U Migration notices.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Moharram
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Moharram.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Bhartiya gyan Samvardhan Yojna Notice
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Bhartiya gyan Notice comiittee hall meeting.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Notice regarding program video
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Notice regarding program video.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        A.N sinha jayanti
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/A.N sinha jayanti.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        kabir Jayanti
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/kabir Jayanti .pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Labour Day
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Labour Day .pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Janki Navami
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Janki Navami .pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Last Friday of Ramzan & Vk Jayanti
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Last Friday & Vk Jayanti.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Mahavir Jayanti
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Mahavir Jayanti.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Samrat Ashoka Jayanti & Ramnavmi
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Samrat Ashoka Jayanti & Ramnavmi.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Yuva Shakti Bihar ki Pragrati Seminar
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Yuva Shakti Biahr ki Pragrati Seminar.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Holi & Shabe Barat
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Holi & Shabe Barat.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Mahashivratri
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Mahashivratri.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        St Ravi Das Jayanti
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/St Ravi Das Jayanti.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Azadi ka Amrit Mahaotsav seminar
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Azadi ka Amrit Mahaotsav seminar.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Confrence hall meeting
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/confrence hall meeting.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Ethics & Qualitative Research
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Ethics & Qualitative Research.pdf" target="_blank"
+                          rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        karpoori thakur jayanti
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/karpoori thakur jayanti.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Members Present in lab
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Members Present in lab.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Meeting of IQAC 2023
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Meeting of Iqac 2023.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Makar Sankaranti
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Makar Sankaranti.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        Reg & migration Lnmu
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/Reg & migratoon Lnmu.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 px-3 whitespace-nowrap">
+                        NAAC TEAM PEER VISIT
+                      </td>
+                      <td class="py-2 px-3">
+                        <a href="./assets/pdf_1/NAAC TEAM PEER VISIT.pdf" target="_blank" rel="noopener noreferrer"
+                          class="inline-block bg-yellow-300 hover:bg-yellow-400 text-black font-medium py-1.5 px-3 rounded shadow">Download</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
     </div>
-
-  </section>
-
-
-
-
-
-  <!-- logos -->
-  <section>
-    <div class="max-w-7xl mx-auto px-4 py-6 bg-white">
-      <div class="flex flex-wrap lg:flex-nowrap justify-center gap-4">
-
-        <!-- ugc logo -->
-        <a href="https://ugc.ac.in/" target="_blank"
-          class="w-[130px] h-[130px] border-2 border-blue-800 flex items-center justify-center p-2">
-          <img src="./assets/img/ugc2.jpg" alt="UGC"
-            class="object-contain w-full h-full hover:scale-105 transition-transform duration-300" />
-        </a>
-
-        <!-- infli logo -->
-        <a href="https://nlist.inflibnet.ac.in/collegeadmin/" target="_blank"
-          class="w-[130px] h-[130px] border-2 border-blue-800 flex items-center justify-center p-2">
-          <img src="./assets/img/inf_logo.png" alt="INFLIBNET"
-            class="object-contain w-full h-full hover:scale-105 transition-transform duration-300" />
-        </a>
-
-        <!-- ministory of education logo -->
-        <a href="https://www.education.gov.in/en" target="_blank"
-          class="w-[130px] h-[130px] border-2 border-blue-800 flex items-center justify-center p-2">
-          <img src="./assets/img/ministory_education.png" alt="Ministry of Education"
-            class="object-contain w-full h-full hover:scale-105 transition-transform duration-300" />
-        </a>
-
-        <!-- ncte logo -->
-        <a href="https://ncte.gov.in/" target="_blank"
-          class="w-[130px] h-[130px] border-2 border-blue-800 flex items-center justify-center p-2">
-          <img src="./assets/img/ncte.jpg" alt="NCTE"
-            class="object-contain w-full h-full hover:scale-105 transition-transform duration-300" />
-        </a>
-
-        <!-- bihar government logo -->
-        <a href="https://governor.bih.nic.in/" target="_blank"
-          class="w-[130px] h-[130px] border-2 border-blue-800 flex items-center justify-center p-2">
-          <img src="./assets/img/raj.jpg" alt="Governor Bihar"
-            class="object-contain w-full h-full hover:scale-105 transition-transform duration-300" />
-        </a>
-
-        <!-- aishe logo -->
-        <a href="https://aishe.gov.in/aishe/home" target="_blank"
-          class="w-[130px] h-[130px] border-2 border-blue-800 flex items-center justify-center p-2">
-          <img src="./assets/img/AISHE_LOGO.png" alt="AISHE"
-            class="object-contain w-full h-full hover:scale-105 transition-transform duration-300" />
-        </a>
-
-        <!-- lnmu logo -->
-        <a href="http://www.lnmu.ac.in/" target="_blank"
-          class="w-[130px] h-[130px] border-2 border-blue-800 flex items-center justify-center p-2">
-          <img src="./assets/img/LNMU.jpg" alt="LNMU"
-            class="object-contain w-full h-full hover:scale-105 transition-transform duration-300" />
-        </a>
-
-        <!-- bseb logo -->
-        <a href="http://dledsecondary.biharboardonline.com/Reg/21_23/Login" target="_blank"
-          class="w-[130px] h-[130px] border-2 border-blue-800 flex items-center justify-center p-2">
-          <img src="./assets/img/BSEB.jpg" alt="BSEB"
-            class="object-contain w-full h-full hover:scale-105 transition-transform duration-300" />
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-
+  </div>
 
 
   <!-- Footer Section -->
@@ -734,6 +1799,7 @@
         <!-- footer link start -->
         <div
           class="lg:w-2/3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-h-[500px] overflow-y-auto pr-2 custom-scroll">
+
           <div>
             <h4 class="text-lg font-bold mb-2">Home</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
@@ -747,13 +1813,14 @@
             <h4 class="text-lg font-bold mb-2">About Us</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
+              <li><a href="./about_us.html" class="hover:text-cyan-400">About Us</a></li>
               <li><a href="./overview.html" class="hover:text-cyan-400">Overview</a></li>
-              <li><a href="./moa_statutes.html" class="hover:text-cyan-400">MoA / Statutes</a></li>
+              <li><a href="./act_and_statutes.html" class="hover:text-cyan-400">Act and Statutes</a></li>
               <li><a href="./development_plan.html" class="hover:text-cyan-400">Development Plan</a></li>
-              <li><a href="./naac.html" class="hover:text-cyan-400">NAAC</a></li>
-              <li><a href="./approvals.html" class="hover:text-cyan-400">Approvals</a></li>
+              <li><a href="./accreditation_naac.html" class="hover:text-cyan-400">NAAC Accreditation</a></li>
+              <li><a href="./recognition_approval.html" class="hover:text-cyan-400">Recognition approval</a></li>
               <li><a href="./annual_reports.html" class="hover:text-cyan-400">Annual Reports</a></li>
-              <li><a href="./audit_reports.html" class="hover:text-cyan-400">Audit Reports</a></li>
+              <li><a href="./annual_accounts_audit_report.html" class="hover:text-cyan-400">Audit Reports</a></li>
             </ul>
           </div>
 
@@ -781,49 +1848,12 @@
               <li><a href="./academic_calendar.html" class="hover:text-cyan-400">Academic Calendar</a></li>
               <li><a href="./statutes_ordinances.html" class="hover:text-cyan-400">Statutes/Ordinances</a></li>
               <li><a href="./departments.html" class="hover:text-cyan-400">Departments</a></li>
-              <li><a href="./department_wise_faculty_photos.html" class="hover:text-cyan-400">Department Wise
-                  faculty/staff detail with photographs</a></li>
+              <li><a href="./faculty_staff_details.html" class="hover:text-cyan-400">faculty/Staff details</a></li>
+              <li><a href="./iqac.html" class="hover:text-cyan-400">IQAC</a></li>
               <li><a href="./library.html" class="hover:text-cyan-400">Library</a></li>
               <li><a href="./academic_collaborations.html" class="hover:text-cyan-400">Academic Collaboration</a></li>
-              <li><a href="./partnership.html" class="hover:text-cyan-400">Partnership</a></li>
             </ul>
           </div>
-
-          <!-- Departments -->
-          <!-- <div>
-            <h4 class="text-lg font-bold mb-2">Departments</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Faculty/Staff Details</a></li>
-            </ul>
-          </div> -->
-
-          <!-- IQAC -->
-          <div>
-            <h4 class="text-lg font-bold mb-2">IQAC</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="./iqac.html" class="hover:text-cyan-400">Internal Quality Assurance Cell</a></li>
-            </ul>
-          </div>
-
-          <!-- Library -->
-          <!-- <div>
-            <h4 class="text-lg font-bold mb-2">Library</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Library Info</a></li>
-            </ul>
-          </div> -->
-
-          <!-- Academic Collaborations -->
-          <!-- <div>
-            <h4 class="text-lg font-bold mb-2">Academic Collaborations</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Partnerships</a></li>
-            </ul>
-          </div> -->
 
           <!-- Admissions & Fee -->
           <div>
@@ -832,16 +1862,20 @@
             <ul class="space-y-2">
               <li><a href="./prospectus.html" class="hover:text-cyan-400">Prospectus</a></li>
               <li><a href="./admission_process_guidelines.html" class="hover:text-cyan-400">Admission Process</a></li>
-              <li><a href="./refund_policy.html" class="hover:text-cyan-400">Refund Policy</a></li>
+              <li><a href="./fee_refund_policy.html" class="hover:text-cyan-400">Fee Structure and Refund Policy</a>
+              </li>
             </ul>
           </div>
 
-          <!-- Infrastructure -->
+          <!-- naac -->
           <div>
-            <h4 class="text-lg font-bold mb-2">Infrastructure</h4>
+            <h4 class="text-lg font-bold mb-2">NAAC</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./campus_infrastructure.html" class="hover:text-cyan-400">Campus Infrastructure</a></li>
+              <li><a href="./naac.html" class="hover:text-cyan-400">NAAC</a></li>
+              <li><a href="./aqar_report.html" class="hover:text-cyan-400">AQAR Report</a></li>
+              <li><a href="./AQAR1.html" class="hover:text-cyan-400">AQAR 1</a></li>
+              <li><a href="./AQAR23_24_1.html" class="hover:text-cyan-400">AQAR 2023-2024</a></li>
             </ul>
           </div>
 
@@ -850,53 +1884,45 @@
             <h4 class="text-lg font-bold mb-2">Research</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./rnd_collaborations.html" class="hover:text-cyan-400">R&D & Collaborations</a></li>
-              <li><a href="./incubation_startups.html" class="hover:text-cyan-400">Incubation/Startups</a></li>
+              <li><a href="./recognition_approval.html" class="hover:text-cyan-400">Research and Development Cell</a>
+              </li>
+              <li><a href="./incubation_entrepreneurship_cell.html" class="hover:text-cyan-400">Incubation Centre</a>
+              </li>
+              <li><a href="./central_facilities.html" class="hover:text-cyan-400">Central Facilities</a></li>
             </ul>
           </div>
 
-          <!-- Central Facilities -->
-          <div>
-            <h4 class="text-lg font-bold mb-2">Central Facilities</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="./facility_list.html" class="hover:text-cyan-400">Facility List</a></li>
-            </ul>
-          </div>
 
           <!-- Student Life -->
           <div>
-            <h4 class="text-lg font-bold mb-2">Student Life</h4>
+            <h4 class="text-lg font-bold mb-2">Student Life 1</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./sports_facilities.html" class="hover:text-cyan-400">Sports Facilitiesa></li>
+              <li><a href="./sports_facilities.html" class="hover:text-cyan-400">Sports Facilities</a></li>
               <li><a href="./placement_cell.html" class="hover:text-cyan-400">Placement Cell</a></li>
-              <li><a href="./grievance_committee.html" class="hover:text-cyan-400">Grievance Committee</a></li>
+              <li><a href="./student_grievance_redressal_committee.html" class="hover:text-cyan-400">Student Grievance
+                  Commmittee</a></li>
               <li><a href="./health_facilities.html" class="hover:text-cyan-400">Health Facilities</a></li>
+              <li><a href="./internal_complaint_committee.html" class="hover:text-cyan-400">Internal Complaint Committee
+                </a></li>
+
             </ul>
           </div>
 
-          <!-- Support Cells -->
           <div>
-            <h4 class="text-lg font-bold mb-2">Support Cells</h4>
+            <h4 class="text-lg font-bold mb-2">Student Life 2</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./anti_ragging_cell.html" class="hover:text-cyan-400">Anti-Ragging</a></li>
-              <li><a href="./equal_opportunity_cell.html" class="hover:text-cyan-400">Equal Opportunity</a></li>
-              <li><a href="./differently_abled.html" class="hover:text-cyan-400">Differently Abled</a></li>
-              <li><a href="./sedg_cell.html" class="hover:text-cyan-400">SEDG</a></li>
+              <li><a href="./anti_ragging_cell.html" class="hover:text-cyan-400">Anti-Ragging Cell</a></li>
+              <li><a href="./equal_opportunity_cell.html" class="hover:text-cyan-400">Equal Opportunity Cell</a></li>
+              <li><a href="./sedg_cell.html" class="hover:text-cyan-400">SEDG Cell</a></li>
+              <li><a href="./facilities_for_differently_abled.html" class="hover:text-cyan-400">Facilities For
+                  Differently Abled</a></li>
               <li><a href="./feedback_mechanism.html" class="hover:text-cyan-400">Feedback Mechanism</a></li>
+              <li><a href="./Elearning.php" class="hover:text-cyan-400">E learning</a></li>
             </ul>
           </div>
 
-          <!-- E-learning -->
-          <div>
-            <h4 class="text-lg font-bold mb-2">E-learning</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="ELearning.php" class="hover:text-cyan-400">E-learning Platform</a></li>
-            </ul>
-          </div>
 
           <!-- Alumni -->
           <div>
@@ -913,14 +1939,44 @@
             <h4 class="text-lg font-bold mb-2">Information Corner</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./rti.html" class="hover:text-cyan-400">RTI Details</a></li>
-              <li><a href="./notices_and_circulars.html" class="hover:text-cyan-400">Notices & Circulars</a></li>
+              <li><a href="./rti.html" class="hover:text-cyan-400">RTI</a></li>
+              <li><a href="./circulars_notices.html" class="hover:text-cyan-400">Circulars & Notices</a></li>
               <li><a href="./announcements.html" class="hover:text-cyan-400">Announcements</a></li>
               <li><a href="./newsletters.html" class="hover:text-cyan-400">Newsletters</a></li>
-              <li><a href="./achievements.html" class="hover:text-cyan-400">Achievements</a></li>
+              <li><a href="./recent_news_event_achievements.html" class="hover:text-cyan-400">News & Events</a></li>
               <li><a href="./job_openings.html" class="hover:text-cyan-400">Job Openings</a></li>
               <li><a href="./reservation_roster.html" class="hover:text-cyan-400">Reservation Roster</a></li>
-              <li><a href="./picture_gallery.html" class="hover:text-cyan-400">Gallery</a></li>
+            </ul>
+          </div>
+
+          <!-- Staff -->
+          <div>
+            <h4 class="text-lg font-bold mb-2">Staf</h4>
+            <hr class="border-b border-cyan-500 w-10 mb-3" />
+            <ul class="space-y-2">
+              <li><a href="./administrative_staff.html" class="hover:text-cyan-400">Administrative Staff</a></li>
+              <li><a href="./teaching.html" class="hover:text-cyan-400">Teaching</a></li>
+              <li><a href="./non_teaching.html" class="hover:text-cyan-400">Non Teaching</a></li>
+              <li><a href="./library_staff.html" class="hover:text-cyan-400">Library Staff</a></li>
+              <li><a href="./employee_zone.html" class="hover:text-cyan-400">Employee Zone </a></li>
+            </ul>
+          </div>
+
+          <!-- Mandatory Disclosure -->
+          <div>
+            <h4 class="text-lg font-bold mb-2">Mandatory Disclosure</h4>
+            <hr class="border-b border-cyan-500 w-10 mb-3" />
+            <ul class="space-y-2">
+              <li><a href="./mandatory_disclosure.html" class="hover:text-cyan-400">Mandatory Disclosure</a></li>
+            </ul>
+          </div>
+
+          <!-- Fallery -->
+          <div>
+            <h4 class="text-lg font-bold mb-2">Picture Gallery</h4>
+            <hr class="border-b border-cyan-500 w-10 mb-3" />
+            <ul class="space-y-2">
+              <li><a href="./mandatory_disclosure.html" class="hover:text-cyan-400">Picture Gallery</a></li>
             </ul>
           </div>
 
@@ -929,11 +1985,13 @@
             <h4 class="text-lg font-bold mb-2">Contact Us</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./contact_us.html" class="hover:text-cyan-400">Get in Touch</a></li>
+              <li><a href="./contact_us.html" class="hover:text-cyan-400">Contact Us</a></li>
             </ul>
           </div>
+
+
         </div>
-        <!-- link end -->
+
 
       </div>
     </div>
@@ -965,115 +2023,114 @@
   </footer>
 
 
+  <script>
 
+    // top button
+    const scrollBtn = document.getElementById('scrollTopBtn');
 
-</body>
-
-
-<script>
-
-  // top button
-  const scrollBtn = document.getElementById('scrollTopBtn');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      scrollBtn.classList.remove('hidden');
-    } else {
-      scrollBtn.classList.add('hidden');
-    }
-  });
-
-  scrollBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-
-  // new script for nav bar
-  document.addEventListener('DOMContentLoaded', function () {
-    const dropdownButtons = document.querySelectorAll('.group button');
-    const dropdowns = document.querySelectorAll('.nav-dropdown');
-    let activeDropdown = null;
-
-    dropdownButtons.forEach(button => {
-      button.addEventListener('click', function (e) {
-        e.stopPropagation();
-        const dropdown = this.nextElementSibling;
-
-        // Close other dropdowns
-        if (activeDropdown && activeDropdown !== dropdown) {
-          activeDropdown.classList.remove('show');
-        }
-
-        // Toggle current dropdown
-        dropdown.classList.toggle('show');
-        activeDropdown = dropdown.classList.contains('show') ? dropdown : null;
-
-        // Position the dropdown
-        if (dropdown.classList.contains('show')) {
-          const rect = this.getBoundingClientRect();
-          dropdown.style.top = (rect.bottom + 5) + 'px';
-          dropdown.style.left = rect.left + 'px';
-          dropdown.style.minWidth = rect.width + 'px';
-        }
-      });
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollBtn.classList.remove('hidden');
+      } else {
+        scrollBtn.classList.add('hidden');
+      }
     });
 
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', function (e) {
-      if (!e.target.closest('.group')) {
+    scrollBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // new script for nav bar
+    document.addEventListener('DOMContentLoaded', function () {
+      const dropdownButtons = document.querySelectorAll('.group button');
+      const dropdowns = document.querySelectorAll('.nav-dropdown');
+      let activeDropdown = null;
+
+      dropdownButtons.forEach(button => {
+        button.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const dropdown = this.nextElementSibling;
+
+          // Close other dropdowns
+          if (activeDropdown && activeDropdown !== dropdown) {
+            activeDropdown.classList.remove('show');
+          }
+
+          // Toggle current dropdown
+          dropdown.classList.toggle('show');
+          activeDropdown = dropdown.classList.contains('show') ? dropdown : null;
+
+          // Position the dropdown
+          if (dropdown.classList.contains('show')) {
+            const rect = this.getBoundingClientRect();
+            dropdown.style.top = (rect.bottom + 5) + 'px';
+            dropdown.style.left = rect.left + 'px';
+            dropdown.style.minWidth = rect.width + 'px';
+          }
+        });
+      });
+
+      // Close dropdowns when clicking outside
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.group')) {
+          dropdowns.forEach(dropdown => {
+            dropdown.classList.remove('show');
+          });
+          activeDropdown = null;
+        }
+      });
+
+      // Close dropdowns on scroll
+      window.addEventListener('scroll', function () {
         dropdowns.forEach(dropdown => {
           dropdown.classList.remove('show');
         });
         activeDropdown = null;
-      }
-    });
-
-    // Close dropdowns on scroll
-    window.addEventListener('scroll', function () {
-      dropdowns.forEach(dropdown => {
-        dropdown.classList.remove('show');
       });
-      activeDropdown = null;
+
+      // Navigation scroll functionality
+      updateScrollButtons();
+      window.addEventListener('resize', updateScrollButtons);
     });
 
-    // Navigation scroll functionality
-    updateScrollButtons();
-    window.addEventListener('resize', updateScrollButtons);
-  });
+    function updateScrollButtons() {
+      const navMenu = document.getElementById('nav-menu');
+      const leftBtn = document.getElementById('left-scroll-btn');
+      const rightBtn = document.getElementById('right-scroll-btn');
 
-  function updateScrollButtons() {
-    const navMenu = document.getElementById('nav-menu');
-    const leftBtn = document.getElementById('left-scroll-btn');
-    const rightBtn = document.getElementById('right-scroll-btn');
+      if (navMenu.scrollLeft > 0) {
+        leftBtn.classList.add('show');
+      } else {
+        leftBtn.classList.remove('show');
+      }
 
-    if (navMenu.scrollLeft > 0) {
-      leftBtn.classList.add('show');
-    } else {
-      leftBtn.classList.remove('show');
+      if (navMenu.scrollLeft < (navMenu.scrollWidth - navMenu.clientWidth)) {
+        rightBtn.classList.add('show');
+      } else {
+        rightBtn.classList.remove('show');
+      }
     }
 
-    if (navMenu.scrollLeft < (navMenu.scrollWidth - navMenu.clientWidth)) {
-      rightBtn.classList.add('show');
-    } else {
-      rightBtn.classList.remove('show');
-    }
-  }
+    function scrollNav(direction) {
+      const navMenu = document.getElementById('nav-menu');
+      const scrollAmount = 200;
 
-  function scrollNav(direction) {
-    const navMenu = document.getElementById('nav-menu');
-    const scrollAmount = 200;
+      if (direction === 'left') {
+        navMenu.scrollLeft -= scrollAmount;
+      } else {
+        navMenu.scrollLeft += scrollAmount;
+      }
 
-    if (direction === 'left') {
-      navMenu.scrollLeft -= scrollAmount;
-    } else {
-      navMenu.scrollLeft += scrollAmount;
+      setTimeout(updateScrollButtons, 100);
     }
 
-    setTimeout(updateScrollButtons, 100);
-  }
+
+
+  </script>
 
 
 
-</script>
+</body>
 
 </html>

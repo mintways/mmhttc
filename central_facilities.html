@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="./assets/css/style.css" rel="stylesheet">
-  <title> temp </title>
+  <title> Central Facilities </title>
   <style>
     /* footer scroll */
     .custom-scroll::-webkit-scrollbar {
@@ -178,7 +178,7 @@
 
   <!-- for google search -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script async src="https://cse.google.com/cse.js?cx=02093ca59d5c94a4d"></script>
+  <script async src="https://cse.google.com/cse.js?cx=f00f02dc972d4466d"></script>
 
 </head>
 
@@ -188,32 +188,40 @@
   <!--header  -->
   <header class="">
     <!-- top strip -->
-    <div class="w-full bg-header text-white text-sm">
-      <div class="max-w-7xl mx-auto px-4  flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="w-full bg-header text-white text-sm md:py-2">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
 
-        <!-- Left Contact Info -->
-        <ul class="flex flex-col md:flex-row items-center gap-4">
-          <li class="flex items-center gap-1"><i class="fa-solid fa-phone"></i> <span>06274-251001</span></li>
-          <li class="flex items-center gap-1"><i class="fa-solid fa-envelope"></i> <a
-              href="mailto:mmhttc@gmail.com">mmhttc@gmail.com</a></li>
-          <li class="flex items-center gap-1"><i class="fa fa-phone"></i> <a href="Contact Us.html">Contact Us</a></li>
-          <li class="flex items-center gap-1"><i class="fa-solid fa-images"></i> <a
-              href="Media Gallery.html">Gallery</a></li>
+        <!-- Left Column: Contact Info -->
+        <ul class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <li class="flex items-center gap-1">
+            <i class="fa-solid fa-phone"></i>
+            <span>06274-251001</span>
+          </li>
+          <li class="flex items-center gap-1">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:mmhttc@gmail.com" class="hover:underline">mmhttc@gmail.com</a>
+          </li>
+          <li class="flex items-center gap-1">
+            <i class="fa fa-phone"></i>
+            <a href="contact_us.html" class="hover:underline">Contact Us</a>
+          </li>
+          <li class="flex items-center gap-1">
+            <i class="fa-solid fa-images"></i>
+            <a href="picture_gallery.html" class="hover:underline">Gallery</a>
+          </li>
         </ul>
 
-        <!-- Right LMS + Search -->
-        <div class="flex flex-col md:flex-row items-center gap-4">
-
+        <!-- Right Column: LMS + Search -->
+        <div class="flex flex-wrap sm:justify-end items-center gap-4">
           <!-- LMS -->
-          <ul>
-            <li class="text-blue-800 font-bold text-base hover:text-white md:text-2xl"><a href="#">LMS</a></li>
-          </ul>
+          <a href="#" class="text-blue-800 font-bold text-base hover:text-white sm:text-lg md:text-xl">
+            LMS
+          </a>
 
           <!-- Search Box -->
-          <!-- <div class="text-black w-full md:w-auto">
+          <!-- <div class="text-black w-full sm:w-auto">
             <div class="gcse-search"></div>
           </div> -->
-
         </div>
 
       </div>
@@ -224,27 +232,27 @@
 
 
     <!-- middle strip -->
-    <div class="w-full bg-white flex flex-col md:flex-row items-center justify-between px-4 gap-4">
-
+    <div class="w-full bg-white px-4 py-4 flex flex-col md:flex-row items-center gap-4">
       <!-- Left Logo -->
-      <div class="flex-shrink-0 w-full md:w-[120px] flex justify-center md:justify-start">
-        <img src="./assets/img/logo Mm.jpg.png" alt="Main Logo" class="w-24 h-auto" />
-      </div>
-      <div
-        class="flex-1 h-18 overflow-hidden flex flex-col justify-center  leading-[1.1] text-center text-green-800 text-xs sm:text-sm md:text-base font-semibold  items-start">
-        <img src="./assets/img/MMHTTC Name for Website.png" alt="" srcset="">
-
-      </div>
-      <!-- Affiliation Logos -->
-      <div class="flex flex-wrap items-center justify-center md:justify-end gap-5 md:w-auto">
-        <img src="./assets/img/ncte.jpg" alt="NCTE" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/aicte.jpeg" alt="AICTE" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/LNMU.jpg" alt="LNMU" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/BSEB.jpg" alt="BSEB" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/ugc2.jpg" alt="UGC" class="w-12 h-12 object-contain" />
-        <img src="./assets/img/nac.jpeg" alt="NAAC" class="w-14 h-14 object-contain" />
+      <div class="flex-shrink-0">
+        <img src="./assets/img/logo Mm.jpg.png" alt="Main Logo" class="w-20 h-auto object-contain" />
       </div>
 
+      <!-- Middle Title Image -->
+      <div class="flex-grow flex justify-center md:justify-start">
+        <img src="./assets/img/MMHTTC Name for Website.png" alt="College Title"
+          class="max-w-full h-auto object-contain" />
+      </div>
+
+      <!-- Right Logos -->
+      <div class="flex-shrink-0 flex flex-wrap justify-center md:justify-end items-center gap-2">
+        <img src="./assets/img/ncte.jpg" alt="NCTE" class="w-10 h-10 object-contain" />
+        <img src="./assets/img/aicte.jpeg" alt="AICTE" class="w-10 h-10 object-contain" />
+        <img src="./assets/img/LNMU.jpg" alt="LNMU" class="w-10 h-10 object-contain" />
+        <img src="./assets/img/BSEB.jpg" alt="BSEB" class="w-10 h-10 object-contain" />
+        <img src="./assets/img/ugc2.jpg" alt="UGC" class="w-10 h-10 object-contain" />
+        <img src="./assets/img/nac.jpeg" alt="NAAC" class="w-12 h-12 object-contain" />
+      </div>
     </div>
 
     <!-- middle strip end -->
@@ -264,6 +272,7 @@
             <!-- Navigation Menu -->
             <div class="flex-1 nav-menu-container overflow-x-auto" id="nav-menu">
               <ul class="flex items-center gap-6 py-4 whitespace-nowrap">
+
                 <li><a href="./index.html" class="hover:underline transition-colors">Home</a></li>
 
                 <!-- About Us Dropdown -->
@@ -327,18 +336,18 @@
                   </div>
                 </li>
 
-                <!--NEW NAAC Dropdown -->
+                <!-- NEW NAAC Dropdown -->
                 <li class="relative group">
                   <button class="hover:underline transition-colors flex items-center gap-1">
                     NAAC <i class="fas fa-chevron-down text-xs"></i>
                   </button>
 
-                  <!-- Main dropdown  -->
+                  <!-- Main dropdown -->
                   <div class="nav-dropdown" data-dropdown="naac">
                     <!-- <a href="./dvv_clarification.html">DVV Clarification</a> -->
                     <a href="./aqar_report.html">AQAR Report</a>
 
-                    <!-- AQAR submenu  -->
+                    <!-- AQAR submenu -->
                     <div class="relative aqar text-black">
                       <div class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
                         AQAR <i class="fas fa-chevron-right ml-2 text-xs"></i>
@@ -356,7 +365,7 @@
                     </div>
 
 
-                    <!-- AQAR 2023-2024 -->
+                    <!-- AQAR 2023-2024 submenu  -->
                     <div class="relative aqar23-24 text-black">
                       <div class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
                         AQAR 2023–2024 <i class="fas fa-chevron-right ml-2 text-xs"></i>
@@ -411,11 +420,10 @@
                     <a href="./internal_complaint_committee.html">Internal Complaint Committee</a>
                     <a href="./anti_ragging_cell.html">Anti-Ragging Cell</a>
                     <a href="./equal_opportunity_cell.html">Equal Opportunity Cell</a>
-                    <a href="./grievance_redressal_cell.html">Grievance Redressal Cell</a>
                     <a href="./sedg_cell.html">SEDG Cell</a>
                     <a href="./facilities_for_differently_abled.html">Facilities for Differently Abled</a>
                     <a href="./feedback_mechanism.html">Feedback Mechanism</a>
-                    <a href="./Elearning.php">E-Learning</a>
+                    <!-- <a href="./Elearning.php">E-Learning</a> -->
                   </div>
                 </li>
 
@@ -440,7 +448,7 @@
                     <a href="./circulars_notices.html">Circulars & Notices</a>
                     <a href="./announcements.html">Announcements</a>
                     <a href="./newsletters.html">Newsletters</a>
-                    <a href="./news_recent_events_achievements.html">News & Events</a>
+                    <a href="./recent_news_event_achievements.html">News & Events</a>
                     <a href="./job_openings.html">Job Openings</a>
                     <a href="./reservation_roster.html">Reservation Roster</a>
                   </div>
@@ -485,13 +493,1020 @@
 
 
   <!-- heading -->
-  <section class="bg-blue-100 max-w-full font-source py-4 md:text-2xl lg:text-4xl text-center">
+  <!-- <section class="bg-blue-100 max-w-full font-source py-4 md:text-2xl lg:text-4xl text-center">
     <div>
-      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">PROSPECTUS</h1>
+      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">Central Facilities</h1>
+    </div>
+  </section> -->
+
+  <!-- <h1 class="text-4xl text-red-600 px-3 py-4 font-extrabold">UNDER DEVELOPMENT</h1> -->
+
+  <!-- inpage links -->
+  <section class="max-w-full py-5 bg-gray-300">
+    <div class="max-w-[80%] mx-auto mb-8">
+      <table class="min-w-full border-2 border-green-200 bg-background rounded-lg shadow">
+        <thead class="bg-green-200 text-green-800">
+          <tr>
+            <th class="p-2 border-2 border-green-500">S.No</th>
+            <th class="p-2 border-2 border-green-500">Section Name</th>
+            <th class="p-2 border-2 border-green-500">Go To</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-2 border-2 border-black text-center">1</td>
+            <td class="p-2 border-2 border-black">Classroom</td>
+            <td class="p-2 border-2 border-black text-center">
+              <a href="#classroom" class="text-blue-700 hover:underline">Open</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="p-2 border-2 border-black text-center">2</td>
+            <td class="p-2 border-2 border-black">Seminar Cum Conference</td>
+            <td class="p-2 border-2 border-black text-center">
+              <a href="#seminar" class="text-blue-700 hover:underline">Open</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="p-2 border-2 border-black text-center">3</td>
+            <td class="p-2 border-2 border-black">Multipurpose Hall</td>
+            <td class="p-2 border-2 border-black text-center">
+              <a href="#multipurpose" class="text-blue-700 hover:underline">Open</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="p-2 border-2 border-black text-center">4</td>
+            <td class="p-2 border-2 border-black">Computer Lab Cum ICT</td>
+            <td class="p-2 border-2 border-black text-center">
+              <a href="#computer" class="text-blue-700 hover:underline">Open</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="p-2 border-2 border-black text-center">5</td>
+            <td class="p-2 border-2 border-black">Health & Physical Lab</td>
+            <td class="p-2 border-2 border-black text-center">
+              <a href="#health-physical" class="text-blue-700 hover:underline">Open</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="p-2 border-2 border-black text-center">6</td>
+            <td class="p-2 border-2 border-black">Curriculum Lab</td>
+            <td class="p-2 border-2 border-black text-center">
+              <a href="#curriculum-lab" class="text-blue-700 hover:underline">Open</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="p-2 border-2 border-black text-center">7</td>
+            <td class="p-2 border-2 border-black">Language Lab</td>
+            <td class="p-2 border-2 border-black text-center">
+              <a href="#language-lab" class="text-blue-700 hover:underline">Open</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="p-2 border-2 border-black text-center">8</td>
+            <td class="p-2 border-2 border-black">Psychology Lab</td>
+            <td class="p-2 border-2 border-black text-center">
+              <a href="#psychology-lab" class="text-blue-700 hover:underline">Open</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="p-2 border-2 border-black text-center">9</td>
+            <td class="p-2 border-2 border-black">Art and Craft Lab</td>
+            <td class="p-2 border-2 border-black text-center">
+              <a href="#art-and-craft" class="text-blue-700 hover:underline">Open</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
-  <h1 class="text-4xl text-red-600 px-3 py-4 font-extrabold">UNDER DEVELOPMENT</h1>
+  <!-- 1. Classroom -->
+  <section id="classroom" class="max-w-full font-source">
+    <!-- Title -->
+    <div class="bg-blue-100 py-4 text-center md:text-2xl lg:text-4xl">
+      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">Classroom</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="bg-lime-100 px-6 py-6">
+      <div class="max-w-[80%] mx-auto mt-10 space-y-12 bg-red-100 px-4 py-4 rounded shadow">
+
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img src="./assets/img/Class.png" alt="Classroom" class="rounded-lg shadow-lg  object-fill w-full md:w-3/4">
+        </div>
+
+        <!-- Description -->
+        <div>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg">
+            Theoretical lectures are delivered in the classrooms and the major teaching-learning process takes place in
+            the classrooms. The nuances of different subjects are explained by the faculty members and absorbed by the
+            students. This process of transfer of knowledge is an extremely important part of education because a smooth
+            transfer results in efficient learning and vice-versa. The environment within the classroom plays an
+            important role and the University has designed the rooms as per international standards and provides the
+            necessary furniture and other tools necessary for different programmes.
+          </p>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg mt-4">
+            To make the environment student-friendly, comfortable seating arrangement has been provided. properly fixing
+            boards of adequate dimension - white - at appropriate places, providing podiums of proper sizes at right
+            places, etc. All the classrooms are equipped with teaching aids needed to support technology enhanced
+            learning.
+          </p>
+        </div>
+
+
+        <!-- Facilities Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full border-2 border-green-200 bg-background rounded-lg shadow text-sm md:text-base">
+            <thead class="bg-green-200 text-green-800">
+              <tr>
+                <th class="p-2 border-2 border-green-500">S.No</th>
+                <th class="p-2 border-2 border-green-500">Facility</th>
+                <th class="p-2 border-2 border-green-500">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">1</td>
+                <td class="p-2 border-2 border-black">Total area of the Class Room</td>
+                <td class="p-2 border-2 border-black">1000 Sq. ft. Each Class Room</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">2</td>
+                <td class="p-2 border-2 border-black">Total seating capacity</td>
+                <td class="p-2 border-2 border-black">100</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">3</td>
+                <td class="p-2 border-2 border-black">Working hours</td>
+                <td class="p-2 border-2 border-black">10 am to 03 pm on all working days</td>
+              </tr>
+
+
+              <tr>
+                <td class="p-2 border-2 border-black text-center">4</td>
+                <td class="p-2 border-2 border-black">Total Facility Available in Class Room1</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>8 Fans</li>
+                    <li>1 Projector</li>
+                    <li>12 Lights</li>
+                    <li>1 White Board</li>
+                    <li>36 Benches</li>
+                    <li>36 Desks</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="p-2 border-2 border-black text-center">5</td>
+                <td class="p-2 border-2 border-black"> Total Facility Available in Class Room2</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>1 Podium</li>
+                    <li>1 Projector</li>
+                    <li>8 Fan</li>
+                    <li>12 Light</li>
+                    <li>1 Camera</li>
+                    <li>1 White Board</li>
+                    <li>36 Banches</li>
+                    <li>36 Desk</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="p-2 border-2 border-black text-center">6</td>
+                <td class="p-2 border-2 border-black"> Total Facility Available in Class Room3</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>1 Projector</li>
+                    <li>6 Fan</li>
+                    <li>2 Light</li>
+                    <li>1 Camera</li>
+                    <li>1 White Board</li>
+                    <li>19 Banches</li>
+                    <li>19 Desk</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="p-2 border-2 border-black text-center">7</td>
+                <td class="p-2 border-2 border-black"> Total Facility Available in Class Room4</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>1 Podium</li>
+                    <li>1 Projector</li>
+                    <li>8 Fan</li>
+                    <li>4 Light</li>
+                    <li>1 Camera</li>
+                    <li>1 White Board</li>
+                    <li>26 Banches</li>
+                    <li>26 Desk</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <!-- 8 -->
+              <tr>
+                <td class="p-2 border-2 border-black text-center">8</td>
+                <td class="p-2 border-2 border-black"> Total Facility Available in Class Room5</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>1 Podium</li>
+                    <!-- <li>1 Projector</li> -->
+                    <li>8 Fan</li>
+                    <li>4 Light</li>
+                    <li>1 Camera</li>
+                    <li>1 White Board</li>
+                    <li>26 Banches</li>
+                    <li>26 Desk</li>
+                  </ul>
+                </td>
+              </tr>
+
+
+              <!-- 9 -->
+              <tr>
+                <td class="p-2 border-2 border-black text-center">9</td>
+                <td class="p-2 border-2 border-black"> Total Facility Available in Class Room6</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <!-- <li>1 Podium</li> -->
+                    <!-- <li>1 Projector</li> -->
+                    <li>6 Fan</li>
+                    <li>10 Light</li>
+                    <!-- <li>1 Camera</li> -->
+                    <li>1 White Board</li>
+                    <li>20 Banches</li>
+                    <li>20 Desk</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <!-- 10 -->
+              <tr>
+                <td class="p-2 border-2 border-black text-center">10</td>
+                <td class="p-2 border-2 border-black"> Total Facility Available in Class Room7</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>1 Podium</li>
+                    <!-- <li>1 Projector</li> -->
+                    <li>8 Fan</li>
+                    <li>8 Light</li>
+                    <li>1 Camera</li>
+                    <li>1 White Board</li>
+                    <li>26 Banches</li>
+                    <li>26 Desk</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <!-- 11 -->
+              <tr>
+                <td class="p-2 border-2 border-black text-center">11</td>
+                <td class="p-2 border-2 border-black"> Total Facility Available in Class Room8</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <!-- <li>1 Podium</li> -->
+                    <!-- <li>1 Projector</li> -->
+                    <li>6 Fan</li>
+                    <li>6 Light</li>
+                    <li>1 Camera</li>
+                    <li>1 White Board</li>
+                    <li>20 Banches</li>
+                    <li>20 Desk</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <!-- 12 -->
+              <tr>
+                <td class="p-2 border-2 border-black text-center">12</td>
+                <td class="p-2 border-2 border-black"> Total Facility Available in Class Room9</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>1 Podium</li>
+                    <!-- <li>1 Projector</li> -->
+                    <li>8 Fan</li>
+                    <li>12 Light</li>
+                    <li>1 Camera</li>
+                    <li>1 White Board</li>
+                    <li>36 Banches</li>
+                    <li>36 Desk</li>
+                  </ul>
+                </td>
+              </tr>
+
+
+              <!-- 13 -->
+              <tr>
+                <td class="p-2 border-2 border-black text-center">13</td>
+                <td class="p-2 border-2 border-black"> Total Facility Available in Class Room10</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>1 Podium</li>
+                    <!-- <li>1 Projector</li> -->
+                    <li>8 Fan</li>
+                    <li>12 Light</li>
+                    <li>1 Camera</li>
+                    <li>1 White Board</li>
+                    <li>36 Banches</li>
+                    <li>36 Desk</li>
+                  </ul>
+                </td>
+              </tr>
+
+
+              <!-- 14 -->
+              <tr>
+                <td class="p-2 border-2 border-black text-center">14</td>
+                <td class="p-2 border-2 border-black"> Total Facility Available in Class Room11</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>1 Podium</li>
+                    <!-- <li>1 Projector</li> -->
+                    <li>8 Fan</li>
+                    <li>12 Light</li>
+                    <li>1 Camera</li>
+                    <li>1 White Board</li>
+                    <li>36 Banches</li>
+                    <li>36 Desk</li>
+                  </ul>
+                </td>
+              </tr>
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 2. Seminar Cum Conference -->
+  <section id="seminar" class="max-w-full font-source">
+    <!-- Title -->
+    <div class="bg-blue-100 py-4 text-center md:text-2xl lg:text-4xl">
+      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">Seminar Cum Conference</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="bg-lime-100 px-6 py-6">
+      <div class="max-w-[80%] mx-auto mt-10 space-y-12 bg-red-100 px-4 py-4 rounded shadow">
+
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img src="./assets/img/conf.jpg" alt="Seminar Cum Conference"
+            class="rounded-lg shadow-lg  object-fill w-full md:w-3/4">
+        </div>
+
+        <!-- Description -->
+        <div>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg">
+            The state - of - the art Conference Room of the University is spacious, well furnished and well-equipped
+            with all the information and communication tools and interfaces for facilitating multimedia presentations by
+            the students, the faculty and the visiting scholars. This hi-tech facility is alternatively used from time
+            to time for mock group discussions, personal interviews and quiz sessions, debates, declamations and for
+            many other activities meant for equipping the students with soft skills and corporate attitudes.
+          </p>
+        </div>
+
+
+        <!-- Facilities Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full border-2 border-green-200 bg-background rounded-lg shadow text-sm md:text-base">
+            <thead class="bg-green-200 text-green-800">
+              <tr>
+                <th class="p-2 border-2 border-green-500">S.No</th>
+                <th class="p-2 border-2 border-green-500">Facility</th>
+                <th class="p-2 border-2 border-green-500">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">1</td>
+                <td class="p-2 border-2 border-black">Total Area of the Seminar Cum Conference</td>
+                <td class="p-2 border-2 border-black">356 Sq. ft.</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">2</td>
+                <td class="p-2 border-2 border-black">Total Seating Capacity</td>
+                <td class="p-2 border-2 border-black">51</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">3</td>
+                <td class="p-2 border-2 border-black">Working Hours</td>
+                <td class="p-2 border-2 border-black">10 am to 03 pm on all working days</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">4</td>
+                <td class="p-2 border-2 border-black">Total Facility Available</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>8 Fans</li>
+                    <li>12 Lights</li>
+                    <li>2 AC</li>
+                    <li>1 TV</li>
+                    <li>4 Speakers</li>
+                    <li>20 Mics</li>
+                    <li>51 Chairs</li>
+                    <li>17 Tables</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 3. Multipurpose Hall -->
+  <section id="multipurpose" class="max-w-full font-source">
+    <!-- Title -->
+    <div class="bg-blue-100 py-4 text-center md:text-2xl lg:text-4xl">
+      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">Multipurpose Hall</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="bg-lime-100 px-6 py-6">
+      <div class="max-w-[80%] mx-auto mt-10 space-y-12 bg-red-100 px-4 py-4 rounded shadow">
+
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img src="./assets/img/sem.png" alt="Multipurpose Hall"
+            class="rounded-lg shadow-lg object-fill w-full md:w-3/4 max-h-[500px]">
+        </div>
+
+        <!-- Description -->
+        <div>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg">
+            Maulana Mazharul Haque Trachers' Training College is well aware of the fact that co-curricular activities
+            are as important as academic teaching for imparting holistic education to the students. Keeping this in
+            mind, seminars and conclaves are being arranged regularly for different programmes offered by the
+            University.
+          </p>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg mt-4">
+            Organizing an event where large numbers of participants are expected to attend is possible only if there is
+            a well-designed, well-built space equipped with state-of-the art gadgets suitable for conducting seminars.
+            The College Multipurpose Hall sufficiently meets the requirement.
+          </p>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg mt-4">
+            All seminars, trainings and guest lecture etc. in which large number of students and faculty members are
+            required to attend/participate, are being organized in this seminar hall. The hall is air-conditioned and
+            equipped with all the necessary systems including acoustics which is important for conducting seminars of
+            national and international levels.
+          </p>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg mt-4">
+            As the University is offering large number of programmes, the seminar hall is being utilized almost on all
+            working days. A roster is maintained for seminars of different schools to be conducted in the hall.
+          </p>
+        </div>
+
+
+        <!-- Facilities Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full border-2 border-green-200 bg-background rounded-lg shadow text-sm md:text-base">
+            <thead class="bg-green-200 text-green-800">
+              <tr>
+                <th class="p-2 border-2 border-green-500">S.No</th>
+                <th class="p-2 border-2 border-green-500">Facility</th>
+                <th class="p-2 border-2 border-green-500">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">1</td>
+                <td class="p-2 border-2 border-black">Total Area of the Multipurpose Hall</td>
+                <td class="p-2 border-2 border-black">4000 Sq. ft.</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">2</td>
+                <td class="p-2 border-2 border-black">Total Seating Capacity</td>
+                <td class="p-2 border-2 border-black">200*</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">3</td>
+                <td class="p-2 border-2 border-black">Working Hours</td>
+                <td class="p-2 border-2 border-black">Function happens then</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">4</td>
+                <td class="p-2 border-2 border-black">Total Facility Available in Seminar Cum Conference</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>8 Fans</li>
+                    <li>12 Lights</li>
+                    <li>2 AC</li>
+                    <li>1 TV</li>
+                    <li>4 Speakers</li>
+                    <li>20 Mics</li>
+                    <li>51 Chairs</li>
+                    <li>17 Tables</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 4. Computer Hall -->
+  <section id="computer" class="max-w-full font-source">
+    <!-- Title -->
+    <div class="bg-blue-100 py-4 text-center md:text-2xl lg:text-4xl">
+      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">Computer Lab Cum ICT</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="bg-lime-100 px-6 py-6">
+      <div class="max-w-[80%] mx-auto mt-10 space-y-12 bg-red-100 px-4 py-4 rounded shadow">
+
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img src="./assets/img/comp.png" alt="Computer Lab Cum ICT"
+            class="rounded-lg shadow-lg object-fill w-full md:w-3/4 max-h-[500px]">
+        </div>
+
+        <!-- Description -->
+        <div>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg">
+            Keeping in view the growing importance of computer learning, the college has established a well-equipped
+            computer lab to keep the students abreast with the latest computer knowledge. It can accommodate 55 students
+            at a time. The college has high-tech computers with LAN and internet services through wireless connectivity,
+            and LCD projection systems, hardware and software, printers, and scanners.
+          </p>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg mt-4">
+            Students, faculty, and staff have access to the computer labs, which provide the tools and technologies to
+            produce websites, edit papers, complete class assignments, communicate via email, conduct data analyses, and
+            access library resources. Microsoft Windows software is available for word processing, statistics,
+            spreadsheets, and database management.
+          </p>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg mt-4">
+            The computers in the lab are well configured and suitable for users. These computers are upgraded as per the
+            needs of the university syllabus and the software version updates.
+          </p>
+        </div>
+
+        <!-- Facilities Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full border-2 border-green-200 bg-background rounded-lg shadow text-sm md:text-base">
+            <thead class="bg-green-200 text-green-800">
+              <tr>
+                <th class="p-2 border-2 border-green-500">S.No</th>
+                <th class="p-2 border-2 border-green-500">Facility</th>
+                <th class="p-2 border-2 border-green-500">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">1</td>
+                <td class="p-2 border-2 border-black">Total Area of the Computer Lab Cum ICT</td>
+                <td class="p-2 border-2 border-black">1000 Sq. ft.</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">2</td>
+                <td class="p-2 border-2 border-black">Total Seating Capacity</td>
+                <td class="p-2 border-2 border-black">55</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">3</td>
+                <td class="p-2 border-2 border-black">Working Hours</td>
+                <td class="p-2 border-2 border-black">10 AM to 03 PM on all working days</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">4</td>
+                <td class="p-2 border-2 border-black">Total Facility Available in Computer Lab Cum ICT</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>8 Fans</li>
+                    <li>9 Lights</li>
+                    <li>2 AC</li>
+                    <li>1 CCTV</li>
+                    <li>2 Speakers</li>
+                    <li>49 Monitors</li>
+                    <li>50 Chairs</li>
+                    <li>2 Tables</li>
+                    <li>1 Music System</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 5. Health & Physical Lab -->
+  <section id="health-physical" class="max-w-full font-source">
+    <!-- Title -->
+    <div class="bg-blue-100 py-4 text-center md:text-2xl lg:text-4xl">
+      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">Health and Physical Lab</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="bg-lime-100 px-6 py-6">
+      <div class="max-w-[80%] mx-auto mt-10 space-y-12 bg-red-100 px-4 py-4 rounded shadow">
+
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img src="#" alt="Health and Physical Lab"
+            class="rounded-lg shadow-lg object-cover w-full md:w-3/4 max-h-[530px]" />
+        </div>
+
+        <!-- Description -->
+        <div>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg">
+            College has a fully equipped health & physical resource centre, providing ample opportunity for students to
+            indulge in indoor & outdoor sports activities. The students can avail indoor games like chess, caromboard &
+            outdoor games like badminton, volleyball. Our mission is to provide students with adequate resources to
+            excel in sports by creating an environment which imbibes ethics of sportsmanship. College aims to develop
+            professional competence through physical, emotional development for benefit of students.
+          </p>
+        </div>
+
+        <!-- Facilities Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full border-2 border-green-200 bg-background rounded-lg shadow text-sm md:text-base">
+            <thead class="bg-green-200 text-green-800">
+              <tr>
+                <th class="p-2 border-2 border-green-500">S.No</th>
+                <th class="p-2 border-2 border-green-500">Facility</th>
+                <th class="p-2 border-2 border-green-500">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">1</td>
+                <td class="p-2 border-2 border-black">Total Area of the Health and Physical Lab</td>
+                <td class="p-2 border-2 border-black">500 Sq. ft.</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">2</td>
+                <td class="p-2 border-2 border-black">Total Seating Capacity</td>
+                <td class="p-2 border-2 border-black">55</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">3</td>
+                <td class="p-2 border-2 border-black">Working Hours</td>
+                <td class="p-2 border-2 border-black">According to Routine</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">4</td>
+                <td class="p-2 border-2 border-black">Total Facility Available in Health and Physical Lab</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>4 Fans</li>
+                    <li>4 Lights</li>
+                    <li>3 Caromboards</li>
+                    <li>1 Rack</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 6. Curriculum Lab -->
+  <section id="curriculum-lab" class="max-w-full font-source">
+    <!-- Title -->
+    <div class="bg-blue-100 py-4 text-center md:text-2xl lg:text-4xl">
+      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">Curriculum Lab</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="bg-lime-100 px-6 py-6">
+      <div class="max-w-[80%] mx-auto mt-10 space-y-12 bg-red-100 px-4 py-4 rounded shadow">
+
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img src="./assets/img/curriculum.png" alt="Curriculum Lab"
+            class="rounded-lg shadow-lg object-cover w-full md:w-3/4 max-h-[530px]" />
+        </div>
+
+        <!-- Description -->
+        <div>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg">
+            The Science Laboratory is well equipped with the requisite facilities and equipment as per NCTE norms on
+            desirable lines.
+            The college has a well equipped science laboratory with three big demonstration tables, charts and models,
+            and apparatus required for conducting science practicals of school level. It has an epidiascope and an
+            overhead projector also.
+            This laboratory is utilized for conducting theory and practical classes both for teaching of physical
+            sciences and life sciences and Mathematics.
+            The curriculum of teaching of science requires intensive training in conducting practicals in science at
+            high school level.
+            To achieve this objective, the students are given training in conducting at least 10 practicals each in
+            physical sciences and life sciences & mathematics as prescribed in the school syllabi.
+            This laboratory is also utilized for giving demonstration lessons in teaching of physical sciences and
+            Mathematics to the students.
+          </p>
+        </div>
+
+        <!-- Facilities Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full border-2 border-green-200 bg-background rounded-lg shadow text-sm md:text-base">
+            <thead class="bg-green-200 text-green-800">
+              <tr>
+                <th class="p-2 border-2 border-green-500">S.No</th>
+                <th class="p-2 border-2 border-green-500">Facility</th>
+                <th class="p-2 border-2 border-green-500">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">1</td>
+                <td class="p-2 border-2 border-black">Total Area of the Curriculum Lab</td>
+                <td class="p-2 border-2 border-black">1000 Sq. ft.</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">2</td>
+                <td class="p-2 border-2 border-black">Total Seating Capacity</td>
+                <td class="p-2 border-2 border-black">55</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">3</td>
+                <td class="p-2 border-2 border-black">Working Hours</td>
+                <td class="p-2 border-2 border-black">According to Routine</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">4</td>
+                <td class="p-2 border-2 border-black">Total Facility Available in Curriculum Lab</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>8 Fans</li>
+                    <li>9 Lights</li>
+                    <li>2 ACs</li>
+                    <li>50 Chairs</li>
+                    <li>2 Tables</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 7. Language Lab -->
+  <section id="language-lab" class="max-w-full font-source">
+    <!-- Title -->
+    <div class="bg-blue-100 py-4 text-center md:text-2xl lg:text-4xl">
+      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">Language Lab</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="bg-lime-100 px-6 py-6">
+      <div class="max-w-[80%] mx-auto mt-10 space-y-12 bg-red-100 px-4 py-4 rounded shadow">
+
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img src="./assets/img/language.png" alt="Language Lab"
+            class="rounded-lg shadow-lg object-cover w-full md:w-3/4 max-h-[530px]" />
+        </div>
+
+        <!-- Description -->
+        <div>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg">
+            Good communication skills are indispensable for success in any profession and one of the most important
+            skills among teachers.
+            The college language laboratory has an audio and audio-visual installation which can be altered by the
+            learners to fit their requirements.
+            The Language Laboratory facilitates individual tutoring by the staff members as well as self-learning by the
+            students. It helps students acquire proficiency in the English language.
+            The language laboratory is an audio or audio-visual installation used as an aid in modern language teaching.
+            English is the most accepted mode of communication internationally. For harnessing this communication skill,
+            the college uses the most advanced emerging technology.
+          </p>
+        </div>
+
+        <!-- Facilities Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full border-2 border-green-200 bg-background rounded-lg shadow text-sm md:text-base">
+            <thead class="bg-green-200 text-green-800">
+              <tr>
+                <th class="p-2 border-2 border-green-500">S.No</th>
+                <th class="p-2 border-2 border-green-500">Facility</th>
+                <th class="p-2 border-2 border-green-500">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">1</td>
+                <td class="p-2 border-2 border-black">Total Area of the Language Lab</td>
+                <td class="p-2 border-2 border-black">500 Sq. ft.</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">2</td>
+                <td class="p-2 border-2 border-black">Total Seating Capacity</td>
+                <td class="p-2 border-2 border-black">55</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">3</td>
+                <td class="p-2 border-2 border-black">Working Hours</td>
+                <td class="p-2 border-2 border-black">According to Routine</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">4</td>
+                <td class="p-2 border-2 border-black">Total Facility Available in Language Lab</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>1 Fan</li>
+                    <li>2 Lights</li>
+                    <li>1 Microprocessor Controlled System</li>
+                    <li>1 Black Board</li>
+                    <li>10 Translator Machines</li>
+                    <li>8 Headphones</li>
+                    <li>4 Chairs</li>
+                    <li>5 Tables</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 8. Psychology Lab -->
+  <section id="psychology-lab" class="max-w-full font-source">
+    <!-- Title -->
+    <div class="bg-blue-100 py-4 text-center md:text-2xl lg:text-4xl">
+      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">Psychology Lab</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="bg-lime-100 px-6 py-6">
+      <div class="max-w-[80%] mx-auto mt-10 space-y-12 bg-red-100 px-4 py-4 rounded shadow">
+
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img src="#" alt="Psychology Lab" class="rounded-lg shadow-lg object-cover w-full md:w-3/4 max-h-[530px]" />
+        </div>
+
+        <!-- Description -->
+        <div>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg">
+            The college has a Psychology Laboratory equipped with various psychological tests and equipment.
+            It is used for teaching teacher trainees to administer various psychological tests and understand individual
+            differences in classrooms better.
+            The B.Ed. students and faculty members make use of these tests for conducting research.
+            The Training, Placement and Counseling Cell (TPCC) of the college also utilizes these tests for diagnostic
+            and prognostic purposes.
+          </p>
+        </div>
+
+        <!-- Facilities Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full border-2 border-green-200 bg-background rounded-lg shadow text-sm md:text-base">
+            <thead class="bg-green-200 text-green-800">
+              <tr>
+                <th class="p-2 border-2 border-green-500">S.No</th>
+                <th class="p-2 border-2 border-green-500">Facility</th>
+                <th class="p-2 border-2 border-green-500">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">1</td>
+                <td class="p-2 border-2 border-black">Total Area of the Psychology Lab</td>
+                <td class="p-2 border-2 border-black">900 Sq. ft.</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">2</td>
+                <td class="p-2 border-2 border-black">Total Seating Capacity</td>
+                <td class="p-2 border-2 border-black">50</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">3</td>
+                <td class="p-2 border-2 border-black">Working Hours</td>
+                <td class="p-2 border-2 border-black">According to Routine</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">4</td>
+                <td class="p-2 border-2 border-black">Total Facility Available in Psychology Lab</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>6 Fans</li>
+                    <li>6 Lights</li>
+                    <li>1 Wardrobe</li>
+                    <li>3 Tables</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 9. Art and Craft Lab -->
+  <section id="art-and-craft" class="max-w-full font-source">
+    <!-- Title -->
+    <div class="bg-blue-100 py-4 text-center md:text-2xl lg:text-4xl">
+      <h1 class="text-blue-950 underline decoration-blue-950 font-poppins">Art and Craft</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="bg-lime-100 px-6 py-6">
+      <div class="max-w-[80%] mx-auto mt-10 space-y-12 bg-red-100 px-4 py-4 rounded shadow">
+
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img src="./assets/img/art.png" alt="Art and Craft"
+            class="rounded-lg shadow-lg object-cover w-full md:w-3/4 max-h-[530px]" />
+        </div>
+
+        <!-- Description -->
+        <div>
+          <p class="text-gray-800 leading-relaxed text-justify text-base md:text-lg">
+            A well-equipped Art &amp; Craft resource centre is established in college because canvas is the mode to
+            express the inner feelings of students.
+            It is said that colour speaks for itself. Art is the soul of life, creativity is cultivated with
+            opportunities extended to the students in many forms.
+            All the possible facilities and opportunities are extended to our students to engrave their minds and
+            creativity.
+          </p>
+        </div>
+
+        <!-- Facilities Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full border-2 border-green-200 bg-background rounded-lg shadow text-sm md:text-base">
+            <thead class="bg-green-200 text-green-800">
+              <tr>
+                <th class="p-2 border-2 border-green-500">S.No</th>
+                <th class="p-2 border-2 border-green-500">Facility</th>
+                <th class="p-2 border-2 border-green-500">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">1</td>
+                <td class="p-2 border-2 border-black">Total area of the Art and Craft</td>
+                <td class="p-2 border-2 border-black">500 Sq. ft.</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">2</td>
+                <td class="p-2 border-2 border-black">Total seating capacity</td>
+                <td class="p-2 border-2 border-black">100</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">3</td>
+                <td class="p-2 border-2 border-black">Working hours</td>
+                <td class="p-2 border-2 border-black">According to Routine</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-2 border-black text-center">4</td>
+                <td class="p-2 border-2 border-black">Total Facility Available in Art And Craft</td>
+                <td class="p-2 border-2 border-black">
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>5 Fans</li>
+                    <li>4 Lights</li>
+                    <li>1 Wardrobe</li>
+                    <li>1 Sewing Machine</li>
+                    <li>1 Rack</li>
+                    <li>4 Painting Tables</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
 
 
@@ -598,6 +1613,7 @@
         <!-- footer link start -->
         <div
           class="lg:w-2/3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-h-[500px] overflow-y-auto pr-2 custom-scroll">
+
           <div>
             <h4 class="text-lg font-bold mb-2">Home</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
@@ -611,13 +1627,14 @@
             <h4 class="text-lg font-bold mb-2">About Us</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
+              <li><a href="./about_us.html" class="hover:text-cyan-400">About Us</a></li>
               <li><a href="./overview.html" class="hover:text-cyan-400">Overview</a></li>
-              <li><a href="./moa_statutes.html" class="hover:text-cyan-400">MoA / Statutes</a></li>
+              <li><a href="./act_and_statutes.html" class="hover:text-cyan-400">Act and Statutes</a></li>
               <li><a href="./development_plan.html" class="hover:text-cyan-400">Development Plan</a></li>
-              <li><a href="./naac.html" class="hover:text-cyan-400">NAAC</a></li>
-              <li><a href="./approvals.html" class="hover:text-cyan-400">Approvals</a></li>
+              <li><a href="./accreditation_naac.html" class="hover:text-cyan-400">NAAC Accreditation</a></li>
+              <li><a href="./recognition_approval.html" class="hover:text-cyan-400">Recognition approval</a></li>
               <li><a href="./annual_reports.html" class="hover:text-cyan-400">Annual Reports</a></li>
-              <li><a href="./audit_reports.html" class="hover:text-cyan-400">Audit Reports</a></li>
+              <li><a href="./annual_accounts_audit_report.html" class="hover:text-cyan-400">Audit Reports</a></li>
             </ul>
           </div>
 
@@ -645,49 +1662,12 @@
               <li><a href="./academic_calendar.html" class="hover:text-cyan-400">Academic Calendar</a></li>
               <li><a href="./statutes_ordinances.html" class="hover:text-cyan-400">Statutes/Ordinances</a></li>
               <li><a href="./departments.html" class="hover:text-cyan-400">Departments</a></li>
-              <li><a href="./department_wise_faculty_photos.html" class="hover:text-cyan-400">Department Wise
-                  faculty/staff detail with photographs</a></li>
+              <li><a href="./faculty_staff_details.html" class="hover:text-cyan-400">faculty/Staff details</a></li>
+              <li><a href="./iqac.html" class="hover:text-cyan-400">IQAC</a></li>
               <li><a href="./library.html" class="hover:text-cyan-400">Library</a></li>
               <li><a href="./academic_collaborations.html" class="hover:text-cyan-400">Academic Collaboration</a></li>
-              <li><a href="./partnership.html" class="hover:text-cyan-400">Partnership</a></li>
             </ul>
           </div>
-
-          <!-- Departments -->
-          <!-- <div>
-            <h4 class="text-lg font-bold mb-2">Departments</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Faculty/Staff Details</a></li>
-            </ul>
-          </div> -->
-
-          <!-- IQAC -->
-          <div>
-            <h4 class="text-lg font-bold mb-2">IQAC</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="./iqac.html" class="hover:text-cyan-400">Internal Quality Assurance Cell</a></li>
-            </ul>
-          </div>
-
-          <!-- Library -->
-          <!-- <div>
-            <h4 class="text-lg font-bold mb-2">Library</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Library Info</a></li>
-            </ul>
-          </div> -->
-
-          <!-- Academic Collaborations -->
-          <!-- <div>
-            <h4 class="text-lg font-bold mb-2">Academic Collaborations</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:text-cyan-400">Partnerships</a></li>
-            </ul>
-          </div> -->
 
           <!-- Admissions & Fee -->
           <div>
@@ -696,16 +1676,20 @@
             <ul class="space-y-2">
               <li><a href="./prospectus.html" class="hover:text-cyan-400">Prospectus</a></li>
               <li><a href="./admission_process_guidelines.html" class="hover:text-cyan-400">Admission Process</a></li>
-              <li><a href="./refund_policy.html" class="hover:text-cyan-400">Refund Policy</a></li>
+              <li><a href="./fee_refund_policy.html" class="hover:text-cyan-400">Fee Structure and Refund Policy</a>
+              </li>
             </ul>
           </div>
 
-          <!-- Infrastructure -->
+          <!-- naac -->
           <div>
-            <h4 class="text-lg font-bold mb-2">Infrastructure</h4>
+            <h4 class="text-lg font-bold mb-2">NAAC</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./campus_infrastructure.html" class="hover:text-cyan-400">Campus Infrastructure</a></li>
+              <li><a href="./naac.html" class="hover:text-cyan-400">NAAC</a></li>
+              <li><a href="./aqar_report.html" class="hover:text-cyan-400">AQAR Report</a></li>
+              <li><a href="./AQAR1.html" class="hover:text-cyan-400">AQAR 1</a></li>
+              <li><a href="./AQAR23_24_1.html" class="hover:text-cyan-400">AQAR 2023-2024</a></li>
             </ul>
           </div>
 
@@ -714,53 +1698,45 @@
             <h4 class="text-lg font-bold mb-2">Research</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./rnd_collaborations.html" class="hover:text-cyan-400">R&D & Collaborations</a></li>
-              <li><a href="./incubation_startups.html" class="hover:text-cyan-400">Incubation/Startups</a></li>
+              <li><a href="./recognition_approval.html" class="hover:text-cyan-400">Research and Development Cell</a>
+              </li>
+              <li><a href="./incubation_entrepreneurship_cell.html" class="hover:text-cyan-400">Incubation Centre</a>
+              </li>
+              <li><a href="./central_facilities.html" class="hover:text-cyan-400">Central Facilities</a></li>
             </ul>
           </div>
 
-          <!-- Central Facilities -->
-          <div>
-            <h4 class="text-lg font-bold mb-2">Central Facilities</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="./facility_list.html" class="hover:text-cyan-400">Facility List</a></li>
-            </ul>
-          </div>
 
           <!-- Student Life -->
           <div>
-            <h4 class="text-lg font-bold mb-2">Student Life</h4>
+            <h4 class="text-lg font-bold mb-2">Student Life 1</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./sports_facilities.html" class="hover:text-cyan-400">Sports Facilitiesa></li>
+              <li><a href="./sports_facilities.html" class="hover:text-cyan-400">Sports Facilities</a></li>
               <li><a href="./placement_cell.html" class="hover:text-cyan-400">Placement Cell</a></li>
-              <li><a href="./grievance_committee.html" class="hover:text-cyan-400">Grievance Committee</a></li>
+              <li><a href="./student_grievance_redressal_committee.html" class="hover:text-cyan-400">Student Grievance
+                  Commmittee</a></li>
               <li><a href="./health_facilities.html" class="hover:text-cyan-400">Health Facilities</a></li>
+              <li><a href="./internal_complaint_committee.html" class="hover:text-cyan-400">Internal Complaint Committee
+                </a></li>
+
             </ul>
           </div>
 
-          <!-- Support Cells -->
           <div>
-            <h4 class="text-lg font-bold mb-2">Support Cells</h4>
+            <h4 class="text-lg font-bold mb-2">Student Life 2</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./anti_ragging_cell.html" class="hover:text-cyan-400">Anti-Ragging</a></li>
-              <li><a href="./equal_opportunity_cell.html" class="hover:text-cyan-400">Equal Opportunity</a></li>
-              <li><a href="./differently_abled.html" class="hover:text-cyan-400">Differently Abled</a></li>
-              <li><a href="./sedg_cell.html" class="hover:text-cyan-400">SEDG</a></li>
+              <li><a href="./anti_ragging_cell.html" class="hover:text-cyan-400">Anti-Ragging Cell</a></li>
+              <li><a href="./equal_opportunity_cell.html" class="hover:text-cyan-400">Equal Opportunity Cell</a></li>
+              <li><a href="./sedg_cell.html" class="hover:text-cyan-400">SEDG Cell</a></li>
+              <li><a href="./facilities_for_differently_abled.html" class="hover:text-cyan-400">Facilities For
+                  Differently Abled</a></li>
               <li><a href="./feedback_mechanism.html" class="hover:text-cyan-400">Feedback Mechanism</a></li>
+              <li><a href="./Elearning.php" class="hover:text-cyan-400">E learning</a></li>
             </ul>
           </div>
 
-          <!-- E-learning -->
-          <div>
-            <h4 class="text-lg font-bold mb-2">E-learning</h4>
-            <hr class="border-b border-cyan-500 w-10 mb-3" />
-            <ul class="space-y-2">
-              <li><a href="ELearning.php" class="hover:text-cyan-400">E-learning Platform</a></li>
-            </ul>
-          </div>
 
           <!-- Alumni -->
           <div>
@@ -777,14 +1753,44 @@
             <h4 class="text-lg font-bold mb-2">Information Corner</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./rti.html" class="hover:text-cyan-400">RTI Details</a></li>
-              <li><a href="./notices_and_circulars.html" class="hover:text-cyan-400">Notices & Circulars</a></li>
+              <li><a href="./rti.html" class="hover:text-cyan-400">RTI</a></li>
+              <li><a href="./circulars_notices.html" class="hover:text-cyan-400">Circulars & Notices</a></li>
               <li><a href="./announcements.html" class="hover:text-cyan-400">Announcements</a></li>
               <li><a href="./newsletters.html" class="hover:text-cyan-400">Newsletters</a></li>
-              <li><a href="./achievements.html" class="hover:text-cyan-400">Achievements</a></li>
+              <li><a href="./recent_news_event_achievements.html" class="hover:text-cyan-400">News & Events</a></li>
               <li><a href="./job_openings.html" class="hover:text-cyan-400">Job Openings</a></li>
               <li><a href="./reservation_roster.html" class="hover:text-cyan-400">Reservation Roster</a></li>
-              <li><a href="./picture_gallery.html" class="hover:text-cyan-400">Gallery</a></li>
+            </ul>
+          </div>
+
+          <!-- Staff -->
+          <div>
+            <h4 class="text-lg font-bold mb-2">Staf</h4>
+            <hr class="border-b border-cyan-500 w-10 mb-3" />
+            <ul class="space-y-2">
+              <li><a href="./administrative_staff.html" class="hover:text-cyan-400">Administrative Staff</a></li>
+              <li><a href="./teaching.html" class="hover:text-cyan-400">Teaching</a></li>
+              <li><a href="./non_teaching.html" class="hover:text-cyan-400">Non Teaching</a></li>
+              <li><a href="./library_staff.html" class="hover:text-cyan-400">Library Staff</a></li>
+              <li><a href="./employee_zone.html" class="hover:text-cyan-400">Employee Zone </a></li>
+            </ul>
+          </div>
+
+          <!-- Mandatory Disclosure -->
+          <div>
+            <h4 class="text-lg font-bold mb-2">Mandatory Disclosure</h4>
+            <hr class="border-b border-cyan-500 w-10 mb-3" />
+            <ul class="space-y-2">
+              <li><a href="./mandatory_disclosure.html" class="hover:text-cyan-400">Mandatory Disclosure</a></li>
+            </ul>
+          </div>
+
+          <!-- Fallery -->
+          <div>
+            <h4 class="text-lg font-bold mb-2">Picture Gallery</h4>
+            <hr class="border-b border-cyan-500 w-10 mb-3" />
+            <ul class="space-y-2">
+              <li><a href="./mandatory_disclosure.html" class="hover:text-cyan-400">Picture Gallery</a></li>
             </ul>
           </div>
 
@@ -793,11 +1799,13 @@
             <h4 class="text-lg font-bold mb-2">Contact Us</h4>
             <hr class="border-b border-cyan-500 w-10 mb-3" />
             <ul class="space-y-2">
-              <li><a href="./contact_us.html" class="hover:text-cyan-400">Get in Touch</a></li>
+              <li><a href="./contact_us.html" class="hover:text-cyan-400">Contact Us</a></li>
             </ul>
           </div>
+
+
         </div>
-        <!-- link end -->
+
 
       </div>
     </div>
