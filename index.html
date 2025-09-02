@@ -294,7 +294,7 @@
   <!--header  -->
   <header class="">
     <!-- top strip -->
-    <div class="w-full bg-header text-white text-sm">
+    <div class="w-full bg-header text-white text-sm md:py-2">
       <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
 
         <!-- Left Column: Contact Info -->
@@ -334,12 +334,15 @@
     </div>
 
 
+
+
+
     <!-- top strip end -->
 
 
 
     <!-- middle strip -->
-    <div class="w-full bg-white px-4 py-4 flex flex-col md:flex-row items-center gap-4">
+    <div class="w-full bg-white px-4 py-4 flex flex-col md:flex-row items-center gap-4 lg:pb-0 md:pb-2">
       <!-- Left Logo -->
       <div class="flex-shrink-0">
         <img src="./assets/img/logo Mm.jpg.png" alt="Main Logo" class="w-20 h-auto object-contain" />
@@ -803,40 +806,61 @@
 
 
   <!-- tarana and personalities -->
-  <section class="max-w-full mx-auto px-4 py-8 flex flex-col md:flex-row items-center gap-6 bg-blue-950">
-    <!-- Image Slider -->
-    <div class="relative w-full md:w-1/2 h-[60vh] overflow-hidden rounded-lg shadow-lg">
-      <div id="peopleSlider" class="flex w-full h-full transition-transform duration-700 ease-in-out">
-        <img src="./assets/img/droupadi.png" alt="President" class="w-full h-full object-fill flex-shrink-0" />
-        <img src="./assets/img/arif.png" alt="Governor" class="w-full h-full object-fill flex-shrink-0" />
-        <img src="./assets/img/nitish.png" alt="CM" class="w-full h-full object-fill flex-shrink-0" />
-        <img src="./assets/img/sunil.png" alt="Education Minister" class="w-full h-full object-fill flex-shrink-0" />
-        <img src="./assets/img/sanjay.png" alt="Vice Chancellor" class="w-full h-full object-fill flex-shrink-0" />
+  <section class="w-full bg-blue-950 py-8 px-4 md:px-10">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+
+      <!-- Image Slider -->
+      <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+        <div id="peopleSlider" class="flex w-full h-full transition-transform duration-700 ease-in-out">
+          <img src="./assets/img/droupadi.png" alt="President" class="w-full h-full object-fill flex-shrink-0" />
+          <img src="./assets/img/arif.png" alt="Governor" class="w-full h-full object-fill flex-shrink-0" />
+          <img src="./assets/img/nitish.png" alt="CM" class="w-full h-full object-fiil flex-shrink-0" />
+          <img src="./assets/img/sunil.png" alt="Education Minister" class="w-full h-full object-fill flex-shrink-0" />
+          <img src="./assets/img/sanjay.png" alt="Vice Chancellor" class="w-full h-full object-fill flex-shrink-0" />
+        </div>
+
+        <!-- Slider Dots -->
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+          <span class="people-slider-dot w-2.5 h-2.5 bg-white rounded-full cursor-pointer"
+            onclick="goToPeopleSlide(0)"></span>
+          <span class="people-slider-dot w-2.5 h-2.5 bg-gray-300 rounded-full cursor-pointer"
+            onclick="goToPeopleSlide(1)"></span>
+          <span class="people-slider-dot w-2.5 h-2.5 bg-gray-300 rounded-full cursor-pointer"
+            onclick="goToPeopleSlide(2)"></span>
+          <span class="people-slider-dot w-2.5 h-2.5 bg-gray-300 rounded-full cursor-pointer"
+            onclick="goToPeopleSlide(3)"></span>
+          <span class="people-slider-dot w-2.5 h-2.5 bg-gray-300 rounded-full cursor-pointer"
+            onclick="goToPeopleSlide(4)"></span>
+        </div>
       </div>
 
-      <!-- Slider Dots -->
-      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
-        <span class="people-slider-dot bg-white w-4 h-2 rounded-full cursor-pointer"
-          onclick="goToPeopleSlide(0)"></span>
-        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
-          onclick="goToPeopleSlide(1)"></span>
-        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
-          onclick="goToPeopleSlide(2)"></span>
-        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
-          onclick="goToPeopleSlide(3)"></span>
-        <span class="people-slider-dot bg-green-700 w-4 h-2 rounded-full cursor-pointer"
-          onclick="goToPeopleSlide(4)"></span>
+      <!-- Quote Card (Middle Block) -->
+      <div
+        class="w-full aspect-[4/3] flex flex-col items-center justify-center rounded-xl bg-white shadow-lg p-6 text-center">
+        <blockquote class="text-lg md:text-xl font-semibold text-gray-800 leading-relaxed">
+          “Education is the most powerful weapon which you can use to change the world.”
+        </blockquote>
+        <footer class="mt-6 text-sm text-gray-600">
+          — Nelson Mandela
+        </footer>
       </div>
-    </div>
 
-    <!-- Video -->
-    <div class="w-full md:w-1/2 h-[60vh] rounded-lg overflow-hidden shadow-lg">
-      <video controls muted loop class="w-full h-full object-cover">
-        <source src="./assets/video/movie.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+
+      <!-- Video -->
+      <div class="w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+        <video controls muted loop class="w-full h-full object-cover">
+          <source src="./assets/video/movie.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
     </div>
   </section>
+
+
+
+
+
 
 
 
