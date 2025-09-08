@@ -126,15 +126,18 @@ if (isset($_POST['submit_button'])) {
     $dob  = $_POST['dateofbirth']; 
     $cdob = $_POST['confirmdateofbirth'];
 
+    // Use parameterized query to prevent SQL injection
     $query = "INSERT INTO student (name, rollno, dateofbirth, confirmdateofbirth) 
-              VALUES ('$name', '$roll', '$dob', '$cdob')";
+              VALUES (?, ?, ?, ?)";
+    $params = [$name, $roll, $dob, $cdob];
 
-    $data = mysqli_query($conn, $query);
+    $stmt = sqlsrv_query($conn, $query, $params);
 
-    if ($data) {
-        echo '<script>window.location="index.php"</script>';
+    if ($stmt === false) {
+        echo "Failed to insert data:<br>";
+        die(print_r(sqlsrv_errors(), true));
     } else {
-        echo "Failed to insert data: " . mysqli_error($conn);
+        echo '<script>window.location="index.php"</script>';
     }
 }
 
@@ -143,10 +146,17 @@ if (isset($_POST['submit_login_button'])) {
     $roll = $_POST['roll']; 
     $dob  = $_POST['dob']; 
 
-    $query = "SELECT * FROM student WHERE rollno = '$roll' AND dateofbirth = '$dob'";
-    $result = mysqli_query($conn, $query);
+    $query = "SELECT * FROM student WHERE rollno = ? AND dateofbirth = ?";
+    $params = [$roll, $dob];
 
-    if ($result && mysqli_num_rows($result) > 0) {
+    $stmt = sqlsrv_query($conn, $query, $params);
+
+    if ($stmt === false) {
+        echo "Login failed:<br>";
+        die(print_r(sqlsrv_errors(), true));
+    }
+
+    if (sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
         $_SESSION["roll_no"] = $roll;
         echo "<script>location.href='../Elearning.php'</script>";
     } else {
