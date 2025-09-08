@@ -6,7 +6,7 @@ if ($environment === "PRODUCTION") {
     $serverName = "103.73.188.70";
     $database   = "mmhttc_website";
     $username   = "mmhttc_website_user";
-    $password   = "RedCross@123"; 
+    $password   = "RedCross@123#"; 
 } else {
     $serverName = "localhost"; 
     $database   = "database_mmhttc";
