@@ -1,35 +1,36 @@
 <?php
-$environment = "PRODUCTION";
 
+$environment = "DEVELOPMENT"; // "PRODUCTION"
 
 if ($environment === "PRODUCTION") {
     $serverName = "103.73.188.70";
     $database   = "mmhttc_website";
     $username   = "mmhttc_website_user";
-    $password   = "RedCross@123#"; 
+    $password   = "RedCross@123#";
 } else {
-    $serverName = "localhost"; 
+    $serverName = "MDAZAM\\SQLEXPRESS";  
     $database   = "database_mmhttc";
-    $username   = "root"; 
-    $password   = ""; 
+    $username   = "";
+    $password   = "";
 }
 
-
 $connectionOptions = [
-    "Database" => $database,
-    "UID"      => $username,
-    "PWD"      => $password,
+    "Database" => "database_mmhttc",
     "CharacterSet" => "UTF-8"
 ];
 
 
+if (!empty($username)) {
+    $connectionOptions["Uid"] = $username;
+    $connectionOptions["PWD"] = $password;
+}
+
+
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 
-
 if ($conn === false) {
-    echo "Connection Failed:<br>";
     die(print_r(sqlsrv_errors(), true));
-} else {
-    echo "Connection OK";
 }
+
+echo " Connected to SQL Server (" . $environment . ")";
 ?>
