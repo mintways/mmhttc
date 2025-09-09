@@ -15,7 +15,7 @@ if ($environment === "PRODUCTION") {
 }
 
 $connectionOptions = [
-    "Database" => "database_mmhttc",
+    "Database" => "mmhttc_website",
     "CharacterSet" => "UTF-8"
 ];
 
@@ -34,3 +34,4 @@ if ($conn === false) {
 
 echo " Connected to SQL Server (" . $environment . ")";
 ?>
+
