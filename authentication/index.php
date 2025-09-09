@@ -127,7 +127,7 @@ if (isset($_POST['submit_button'])) {
     $cdob = $_POST['confirmdateofbirth'];
 
     // Use parameterized query to prevent SQL injection
-    $query = "INSERT INTO student (name, rollno, dateofbirth, confirmdateofbirth) 
+    $query = "INSERT INTO dbo.student (name, rollno, dateofbirth, confirmdateofbirth) 
               VALUES (?, ?, ?, ?)";
     $params = [$name, $roll, $dob, $cdob];
 
@@ -144,9 +144,16 @@ if (isset($_POST['submit_button'])) {
 // ---------- Login ----------
 if (isset($_POST['submit_login_button'])) {
     $roll = $_POST['roll']; 
-    $dob  = $_POST['dob']; 
+    $dob_input = $_POST['dob']; 
 
-    $query = "SELECT * FROM student WHERE rollno = ? AND dateofbirth = ?";
+    // Convert date to YYYY-MM-DD
+    $dateObj = DateTime::createFromFormat('d-m-Y', $dob_input);
+    if (!$dateObj) {
+        die("Invalid date format! Use DD-MM-YYYY.");
+    }
+    $dob = $dateObj->format('Y-m-d');
+
+    $query = "SELECT * FROM dbo.student WHERE rollno = ? AND dateofbirth = ?";
     $params = [$roll, $dob];
 
     $stmt = sqlsrv_query($conn, $query, $params);
@@ -163,4 +170,5 @@ if (isset($_POST['submit_login_button'])) {
         echo "Invalid user";
     }
 }
+
 ?>
