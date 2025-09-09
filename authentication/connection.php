@@ -1,6 +1,6 @@
 <?php
 
-$environment = "DEVELOPMENT"; // "PRODUCTION"
+$environment = "PRODUCTION"; // "PRODUCTION"
 
 if ($environment === "PRODUCTION") {
     $serverName = "103.73.188.70";
