@@ -271,6 +271,96 @@
     .aqar23-24:hover .aqar23-24-submenu {
       display: block;
     }
+
+    /* Popup Modal Styles */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 9999999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px; 
+    }
+
+    .popup-content {
+      position: relative;
+      background: #fff;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 900px;         
+      max-height: 90vh;        
+      padding: 8px;
+      overflow: hidden;    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: popupZoom 0.3s ease;
+    }
+
+
+
+    .popup-content img {
+      width: 100%;
+      height: 100%;
+      max-height: 85vh;        
+      object-fit: contain;     
+      border-radius: 8px;
+      cursor: pointer;
+      display: block;
+    }
+
+
+    /* Close Button */
+    .popup-close {
+      position: absolute;
+      top: 2px;
+      right: 6px;
+      background: #dc2626;
+      color: #fff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      z-index: 10;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    @keyframes popupZoom {
+      from {
+        transform: scale(0.7);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .popup-content {
+        max-width: 100%;
+        max-height: 90vh;
+        padding: 4px;
+        border-radius: 8px;
+      }
+
+      .popup-content img {
+        max-height: 80vh;
+      }
+
+      .popup-close {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+      }
+  }
+
+
   </style>
 
   <!-- for google search -->
@@ -858,14 +948,6 @@
   </section>
 
 
-
-
-
-
-
-
-
-
   <!-- acdemic -->
   <section id="academic" class="relative  academic-parallax py-16">
     <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
@@ -928,7 +1010,6 @@
 
 
   <!-- notice section -->
-
   <section class="py-12 bg-blue-950">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -1148,10 +1229,6 @@
     </div>
   </section>
   <!-- certification end -->
-
-
-
-
 
 
   <!-- Infrastructure and facilities -->
@@ -1540,9 +1617,23 @@
     </a>
   </footer>
 
+    <!-- Popup Modal -->
+  <div id="popupModal" class="popup-overlay" style="display:none;">
+    <div class="popup-content">
+      
+      <button class="popup-close" onclick="closePopup()">×</button>
+    
+      <a href="https://forms.gle/wxxXaBj2jhJfF3Vy6" target="_blank">
+        <img src="./assets/img/Brochure.jpg.jpeg" alt="Admission Form Popup">
+      </a>
+
+    </div>
+  </div>
 
 
 </body>
+
+
 
 
 <script>
@@ -1744,6 +1835,19 @@
     }
 
     setTimeout(updateScrollButtons, 100);
+  }
+
+  // Popup on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(() => {
+        const popup = document.getElementById('popupModal');
+        if (popup) popup.style.display = 'flex';
+      }, 300);
+    });
+
+
+  function closePopup() {
+    document.getElementById('popupModal').style.display = 'none';
   }
 
 
