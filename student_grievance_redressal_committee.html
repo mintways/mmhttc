@@ -21,7 +21,7 @@
 
         /* new css for navbar*/
         .nav-dropdown {
-            position: fixed !important;
+             position: fixed !important;
             z-index: 999999 !important;
             background: white;
             border: 1px solid #e5e7eb;
@@ -185,334 +185,46 @@
 
 <body>
 
-
+    <div id="header"></div>
     <!--header  -->
-    <header class="">
-        <!-- top strip -->
-        <div class="w-full bg-header text-white text-sm md:py-2">
-            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
 
-                <!-- Left Column: Contact Info -->
-                <ul class="flex flex-wrap items-center gap-x-4 gap-y-2">
-                    <li class="flex items-center gap-1">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>06274-251001</span>
-                    </li>
-                    <li class="flex items-center gap-1">
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:mmhttc@gmail.com" class="hover:underline">mmhttc@gmail.com</a>
-                    </li>
-                    <li class="flex items-center gap-1">
-                        <i class="fa fa-phone"></i>
-                        <a href="contact_us.html" class="hover:underline">Contact Us</a>
-                    </li>
-                    <li class="flex items-center gap-1">
-                        <i class="fa-solid fa-images"></i>
-                        <a href="picture_gallery.html" class="hover:underline">Gallery</a>
-                    </li>
-                </ul>
 
-                <!-- Right Column: LMS + Search -->
-                <div class="flex flex-wrap sm:justify-end items-center gap-4">
-                    <!-- LMS -->
-                    <a href="./Elearning.php" class="text-blue-800 font-bold text-base hover:text-white sm:text-lg md:text-xl">
-                        LMS
+    <!-- Grievance Redressal Mechanism Section -->
+    <h1 class="text-center text-sky-600 m-6 text-3xl font-semibold">
+        Grievance Redressal Mechanism
+    </h1>
+
+    <div class="flex m-4 mb-10">
+        <div class="flex-1">
+            <div class="bg-sky-200 p-8 rounded-xl text-center shadow-md">
+
+                <h2 class="text-2xl font-bold mb-6">Grievance Redressal Links</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+                    <!-- PDF -->
+                    <a href="./assets/pdf/Guidelines for Grievance Redressal.pdf" target="_blank"
+                        class="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold py-3 px-4 rounded shadow block">
+                        Guideline Redressal Mechanism
                     </a>
 
-                    <!-- Search Box -->
-                    <!-- <div class="text-black w-full sm:w-auto">
-            <div class="gcse-search"></div>
-          </div> -->
+                    <!-- Google Form 1 -->
+                    <a href="https://forms.gle/Fvzq7xgAMa4eNRcA9" target="_blank"
+                        class="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold py-3 px-4 rounded shadow block">
+                        Grievance Redressal Performa
+                    </a>
+
+                    <!-- Google Form 2 -->
+                    <a href="https://forms.gle/gxGTZhNUgQ91tpzg7" target="_blank"
+                        class="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold py-3 px-4 rounded shadow block">
+                        Complaint Form
+                    </a>
+
                 </div>
 
             </div>
         </div>
-
-        <!-- top strip end -->
-
-
-
-        <!-- middle strip -->
-        <div class="w-full bg-white px-4 py-4 flex flex-col md:flex-row items-center gap-4 lg:pb-0 md:pb-2">
-            <!-- Left Logo -->
-            <div class="flex-shrink-0">
-                <img src="./assets/img/logo Mm.jpg.png" alt="Main Logo" class="w-20 h-auto object-contain" />
-            </div>
-
-            <!-- Middle Title Image -->
-            <div class="flex-grow flex justify-center md:justify-start">
-                <img src="./assets/img/MMHTTC Name for Website.png" alt="College Title"
-                    class="max-w-full h-auto object-contain" />
-            </div>
-
-            <!-- Right Logos -->
-            <div class="flex-shrink-0 flex flex-wrap justify-center md:justify-end items-center gap-2">
-                <img src="./assets/img/ncte.jpg" alt="NCTE" class="w-10 h-10 object-contain" />
-                <img src="./assets/img/aicte.jpeg" alt="AICTE" class="w-10 h-10 object-contain" />
-                <img src="./assets/img/LNMU.jpg" alt="LNMU" class="w-10 h-10 object-contain" />
-                <img src="./assets/img/BSEB.jpg" alt="BSEB" class="w-10 h-10 object-contain" />
-                <img src="./assets/img/ugc2.jpg" alt="UGC" class="w-10 h-10 object-contain" />
-                <img src="./assets/img/nac.jpeg" alt="NAAC" class="w-12 h-12 object-contain" />
-            </div>
-        </div>
-
-        <!-- middle strip end -->
-
-
-
-        <!-- nav bar strip -->
-        <div class="w-full bg-blue-950 ">
-            <nav class="nav-container bg-blue-950  text-white sticky top-0 z-50 shadow-lg">
-                <div class="max-w-7xl mx-auto px-4">
-                    <div class="flex items-center gap-3">
-                        <!-- Left Scroll Button -->
-                        <button class="scroll-btn" id="left-scroll-btn" onclick="scrollNav('left')">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-
-                        <!-- Navigation Menu -->
-                        <div class="flex-1 nav-menu-container overflow-x-auto" id="nav-menu">
-                            <ul class="flex items-center gap-6 py-4 whitespace-nowrap">
-
-                                <li><a href="./index.html" class="hover:underline transition-colors">Home</a></li>
-
-                                <!-- About Us Dropdown -->
-                                <li class="relative group">
-                                    <button class="hover:underline transition-colors flex items-center gap-1">
-                                        About Us <i class="fas fa-chevron-down text-xs"></i>
-                                    </button>
-                                    <div class="nav-dropdown" data-dropdown="about">
-                                        <a href="./about_us.html">About Us</a>
-                                        <a href="./overview.html">Overview</a>
-                                        <a href="./act_and_statutes.html">Act and Statutes</a>
-                                        <a href="./institutional_development_plan.html">Development Plan</a>
-                                        <a href="./accreditation_naac.html">NAAC Accreditation</a>
-                                        <a href="./recognition_approval.html">Recognition/Approval</a>
-                                        <a href="./annual_reports.html">Annual Reports</a>
-                                        <a href="./annual_accounts_audit_report.html">Audit Reports</a>
-                                    </div>
-                                </li>
-
-                                <!-- Administration Dropdown -->
-                                <li class="relative group">
-                                    <button class="hover:underline transition-colors flex items-center gap-1">
-                                        Administration <i class="fas fa-chevron-down text-xs"></i>
-                                    </button>
-                                    <div class="nav-dropdown" data-dropdown="admin">
-                                        <a href="./principal.html">Principal</a>
-                                        <a href="./controller_of_examination.html">Controller of Examination</a>
-                                        <a href="./management_committee.html">Management Committee</a>
-                                        <a href="./board_of_studies.html">Board of Studies</a>
-                                        <a href="./examination_result.html">Examination Result</a>
-                                        <a href="./hod_of_departments.html">HoD of Departments</a>
-                                    </div>
-                                </li>
-
-                                <!-- Academics Dropdown -->
-                                <li class="relative group">
-                                    <button class="hover:underline transition-colors flex items-center gap-1">
-                                        Academics <i class="fas fa-chevron-down text-xs"></i>
-                                    </button>
-                                    <div class="nav-dropdown" data-dropdown="academics">
-                                        <a href="./academic_programs.html">Academic Programs</a>
-                                        <a href="./academic_calendar.html">Academic Calendar</a>
-                                        <a href="./statutes_ordinances.html">Statutes/Ordinances</a>
-                                        <a href="./departments.html">Departments</a>
-                                        <a href="./faculty_staff_details.html">Faculty/Staff Details</a>
-                                        <a href="./iqac.html">IQAC</a>
-                                        <a href="./library.html">Library</a>
-                                        <a href="./academic_collaborations.html">Academic Collaborations</a>
-                                    </div>
-                                </li>
-
-                                <!-- Admissions & Fee Dropdown -->
-                                <li class="relative group">
-                                    <button class="hover:underline transition-colors flex items-center gap-1">
-                                        Admissions & Fee <i class="fas fa-chevron-down text-xs"></i>
-                                    </button>
-                                    <div class="nav-dropdown" data-dropdown="admissions">
-                                        <a href="./prospectus.html">Prospectus</a>
-                                        <a href="./admission_process_guidelines.html">Admission Process</a>
-                                        <a href="./fee_refund_policy.html">Fee Structure and Refund Policy</a>
-                                    </div>
-                                </li>
-
-                                <!-- NEW NAAC Dropdown -->
-                                <li class="relative group">
-                                    <button class="hover:underline transition-colors flex items-center gap-1">
-                                        NAAC <i class="fas fa-chevron-down text-xs"></i>
-                                    </button>
-
-                                    <!-- Main dropdown -->
-                                    <div class="nav-dropdown" data-dropdown="naac">
-                                        <!-- <a href="./dvv_clarification.html">DVV Clarification</a> -->
-                                        <a href="./aqar_report.html">AQAR Report</a>
-
-                                        <!-- AQAR submenu -->
-                                        <div class="relative aqar text-black">
-                                            <div
-                                                class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
-                                                AQAR <i class="fas fa-chevron-right ml-2 text-xs"></i>
-                                            </div>
-                                            <div
-                                                class="aqar-submenu absolute left-full top-0 hidden bg-white text-black shadow-lg min-w-[180px] z-50">
-                                                <a href="AQAR1.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
-                                                    1</a>
-                                                <a href="AQAR2.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
-                                                    2</a>
-                                                <a href="AQAR3.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
-                                                    3</a>
-                                                <a href="AQAR4.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
-                                                    4</a>
-                                                <a href="AQAR5.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
-                                                    5</a>
-                                                <a href="AQAR6.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
-                                                    6</a>
-                                                <a href="AQAR7.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
-                                                    7</a>
-                                            </div>
-                                        </div>
-
-
-                                        <!-- AQAR 2023-2024 submenu  -->
-                                        <div class="relative aqar23-24 text-black">
-                                            <div
-                                                class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
-                                                AQAR 2023–2024 <i class="fas fa-chevron-right ml-2 text-xs"></i>
-                                            </div>
-                                            <div
-                                                class="aqar23-24-submenu absolute left-full top-0 hidden bg-white text-black shadow-lg min-w-[200px] z-50">
-                                                <a href="AQAR23_24_1.html"
-                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.1</a>
-                                                <a href="AQAR23_24_2.html"
-                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.2</a>
-                                                <a href="AQAR23_24_3.html"
-                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.3</a>
-                                                <a href="AQAR23_24_4.html"
-                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.4</a>
-                                                <a href="AQAR23_24_5.html"
-                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.5</a>
-                                                <a href="AQAR23_24_6.html"
-                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.6</a>
-                                                <a href="AQAR23_24_7.html"
-                                                    class="block px-4 py-2 hover:bg-gray-100">AQAR 23_24.7</a>
-                                            </div>
-                                        </div>
-
-
-                                        <!-- Other criteria -->
-                                        <!-- <a href="criteria1.html">Criteria 1</a>
-                    <a href="criteria2.html">Criteria 2</a>
-                    <a href="criteria3.html">Criteria 3</a>
-                    <a href="criteria4.html">Criteria 4</a>
-                    <a href="criteria5.html">Criteria 5</a>
-                    <a href="criteria6.html">Criteria 6</a>
-                    <a href="criteria7.html">Criteria 7</a> -->
-                                    </div>
-                                </li>
-
-
-                                <!-- Infrastructure Research Dropdown -->
-                                <li class="relative group">
-                                    <button class="hover:underline transition-colors flex items-center gap-1">
-                                        Research <i class="fas fa-chevron-down text-xs"></i>
-                                    </button>
-                                    <div class="nav-dropdown" data-dropdown="infrastructure">
-                                        <a href="./research_development_cell.html">Research & Development Cell</a>
-                                        <a href="./incubation_entrepreneurship_cell.html">Incubation Centre</a>
-                                        <a href="./central_facilities.html">Central Facilities</a>
-                                    </div>
-                                </li>
-
-                                <!-- Student Life Dropdown -->
-                                <li class="relative group">
-                                    <button class="hover:underline transition-colors flex items-center gap-1">
-                                        Student Life <i class="fas fa-chevron-down text-xs"></i>
-                                    </button>
-                                    <div class="nav-dropdown" data-dropdown="student-life">
-                                        <a href="./sports_facilities.html">Sports Facilities</a>
-                                        <a href="./placement_cell.html">Placement Cell</a>
-                                        <a href="./student_grievance_redressal_committee.html">Student Grievance
-                                            Committee</a>
-                                        <a href="./health_facilities.html">Health Facilities</a>
-                                        <a href="./internal_complaint_committee.html">Internal Complaint Committee</a>
-                                        <a href="./anti_ragging_cell.html">Anti-Ragging Cell</a>
-                                        <a href="./equal_opportunity_cell.html">Equal Opportunity Cell</a>
-                                        <a href="./sedg_cell.html">SEDG Cell</a>
-                                        <a href="./facilities_for_differently_abled.html">Facilities for Differently
-                                            Abled</a>
-                                        <a href="./feedback_mechanism.html">Feedback Mechanism</a>
-                                        <!-- <a href="./Elearning.php">E-Learning</a> -->
-                                    </div>
-                                </li>
-
-                                <!-- Alumni Dropdown -->
-                                <li class="relative group">
-                                    <button class="hover:underline  transition-colors flex items-center gap-1">
-                                        Alumni <i class="fas fa-chevron-down text-xs"></i>
-                                    </button>
-                                    <div class="nav-dropdown" data-dropdown="alumni">
-                                        <a href="./alumni.html">Alumni</a>
-                                        <a href="./alumni_association.html">Alumni Association</a>
-                                    </div>
-                                </li>
-
-                                <!-- Information Corner Dropdown -->
-                                <li class="relative group">
-                                    <button class="hover:underline  transition-colors flex items-center gap-1">
-                                        Information Corner <i class="fas fa-chevron-down text-xs"></i>
-                                    </button>
-                                    <div class="nav-dropdown" data-dropdown="info">
-                                        <a href="./rti.html">RTI</a>
-                                        <a href="./circulars_notices.html">Circulars & Notices</a>
-                                        <a href="./announcements.html">Announcements</a>
-                                        <a href="./newsletters.html">Newsletters</a>
-                                        <a href="./recent_news_event_achievements.html">News & Events</a>
-                                        <a href="./job_openings.html">Job Openings</a>
-                                        <a href="./reservation_roster.html">Reservation Roster</a>
-                                    </div>
-                                </li>
-
-                                <!-- Staff Dropdown -->
-                                <li class="relative group">
-                                    <button class="hover:underline transition-colors flex items-center gap-1">
-                                        Staff <i class="fas fa-chevron-down text-xs"></i>
-                                    </button>
-                                    <div class="nav-dropdown" data-dropdown="staff">
-                                        <a href="./administrative_staff.html">Administrative Staff</a>
-                                        <a href="./teaching.html">Teaching</a>
-                                        <a href="./non_teaching.html">Non Teaching</a>
-                                        <a href="./library_staff.html">Library Staff</a>
-                                        <a href="./employee_zone.html">Employee Zone</a>
-                                    </div>
-                                </li>
-
-                                <!-- Disclosure Dropdown -->
-                                <li><a href="./mandatory_disclosure.html"
-                                        class="hover:underline transition-colors">Mandatory
-                                        Disclosure</a></li>
-
-
-                                <li><a href="./picture_gallery.html" class="hover:underline transition-colors">Picture
-                                        Gallery</a></li>
-                                <li><a href="./contact_us.html" class="hover:underline transition-colors">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Right Scroll Button -->
-                        <button class="scroll-btn" id="right-scroll-btn" onclick="scrollNav('right')">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <!-- nav strip end -->
-
-    </header>
-
+    </div>
 
     <h1 class="text-center text-sky-500 m-2 text-3xl font-semibold"> Student Grievance Redressal Cell</h1>
     <div class="flex m-4 space-x-4">
@@ -526,7 +238,7 @@
 
                     <!-- Centered Guidelines PDF Button -->
                     <div class="flex justify-center mb-6">
-                        <a href="./assets/pdf/Guidelines for Grievance Redressal.pdf" download
+                        <a href="./assets/pdf/Guidelines for Grievance Redressal.pdf" target="_blank"
                             class="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold py-2 px-6 rounded shadow text-center">
                             Download Guidelines PDF
                         </a>
@@ -876,58 +588,6 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // new script for nav bar
-        document.addEventListener('DOMContentLoaded', function () {
-            const dropdownButtons = document.querySelectorAll('.group button');
-            const dropdowns = document.querySelectorAll('.nav-dropdown');
-            let activeDropdown = null;
-
-            dropdownButtons.forEach(button => {
-                button.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    const dropdown = this.nextElementSibling;
-
-                    // Close other dropdowns
-                    if (activeDropdown && activeDropdown !== dropdown) {
-                        activeDropdown.classList.remove('show');
-                    }
-
-                    // Toggle current dropdown
-                    dropdown.classList.toggle('show');
-                    activeDropdown = dropdown.classList.contains('show') ? dropdown : null;
-
-                    // Position the dropdown
-                    if (dropdown.classList.contains('show')) {
-                        const rect = this.getBoundingClientRect();
-                        dropdown.style.top = (rect.bottom + 5) + 'px';
-                        dropdown.style.left = rect.left + 'px';
-                        dropdown.style.minWidth = rect.width + 'px';
-                    }
-                });
-            });
-
-            // Close dropdowns when clicking outside
-            document.addEventListener('click', function (e) {
-                if (!e.target.closest('.group')) {
-                    dropdowns.forEach(dropdown => {
-                        dropdown.classList.remove('show');
-                    });
-                    activeDropdown = null;
-                }
-            });
-
-            // Close dropdowns on scroll
-            window.addEventListener('scroll', function () {
-                dropdowns.forEach(dropdown => {
-                    dropdown.classList.remove('show');
-                });
-                activeDropdown = null;
-            });
-
-            // Navigation scroll functionality
-            updateScrollButtons();
-            window.addEventListener('resize', updateScrollButtons);
-        });
 
         function updateScrollButtons() {
             const navMenu = document.getElementById('nav-menu');
@@ -961,9 +621,133 @@
         }
 
 
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+
+                initNavbar();
+                initTopMenu();
+                renderSearch();
+
+            });
+
+        function initNavbar() {
+
+            const dropdownButtons = document.querySelectorAll('.group button');
+            const dropdowns = document.querySelectorAll('.nav-dropdown');
+            let activeDropdown = null;
+
+            dropdownButtons.forEach(button => {
+                button.addEventListener('click', function (e) {
+
+                    e.stopPropagation();
+                    const dropdown = this.nextElementSibling;
+
+                    if (activeDropdown && activeDropdown !== dropdown) {
+                        activeDropdown.classList.remove('show');
+                    }
+
+                    dropdown.classList.toggle('show');
+                    activeDropdown = dropdown.classList.contains('show') ? dropdown : null;
+
+                    if (dropdown.classList.contains('show')) {
+                        const rect = this.getBoundingClientRect();
+                        dropdown.style.top = (rect.bottom + 5) + "px";
+                        dropdown.style.left = rect.left + "px";
+                        dropdown.style.minWidth = rect.width + "px";
+                    }
+
+                });
+            });
+
+            document.addEventListener('click', function (e) {
+
+                if (!e.target.closest('.nav-dropdown') && !e.target.closest('.group')) {
+                    dropdowns.forEach(d => d.classList.remove('show'));
+                    activeDropdown = null;
+                }
+
+            });
+            window.addEventListener('scroll', function () {
+
+                dropdowns.forEach(d => d.classList.remove('show'));
+                activeDropdown = null;
+
+            });
+
+            updateScrollButtons();
+            window.addEventListener('resize', updateScrollButtons);
+
+        }
+
+        function updateScrollButtons() {
+
+            const navMenu = document.getElementById("nav-menu");
+            const leftBtn = document.getElementById("left-scroll-btn");
+            const rightBtn = document.getElementById("right-scroll-btn");
+
+            if (!navMenu) return;
+
+            if (navMenu.scrollWidth > navMenu.clientWidth) {
+                rightBtn.classList.add("show");
+            }
+
+            if (navMenu.scrollLeft > 0) {
+                leftBtn.classList.add("show");
+            } else {
+                leftBtn.classList.remove("show");
+            }
+
+        }
+
+        function scrollNav(direction) {
+
+            const navMenu = document.getElementById("nav-menu");
+            if (!navMenu) return;
+
+            navMenu.scrollLeft += direction === "left" ? -200 : 200;
+
+            setTimeout(updateScrollButtons, 100);
+
+        }
+
+
+        function initTopMenu() {
+
+            const topToggle = document.getElementById("topToggle");
+            const topMobileMenu = document.getElementById("topMobileMenu");
+
+            if (!topToggle || !topMobileMenu) return;
+
+            // Toggle menu
+            topToggle.addEventListener("click", function (e) {
+                e.stopPropagation();
+                topMobileMenu.classList.toggle("hidden");
+            });
+
+            // Close when clicking outside
+            document.addEventListener("click", function (e) {
+                if (!e.target.closest("#topMobileMenu") && !e.target.closest("#topToggle")) {
+                    topMobileMenu.classList.add("hidden");
+                }
+            });
+
+            // Close when scrolling
+            window.addEventListener("scroll", function () {
+                topMobileMenu.classList.add("hidden");
+            });
+
+            // Close when screen becomes desktop
+            window.addEventListener("resize", function () {
+                if (window.innerWidth >= 1024) {
+                    topMobileMenu.classList.add("hidden");
+                }
+            });
+
+        }
 
     </script>
-
 
 
 </body>

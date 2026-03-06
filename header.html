@@ -1,0 +1,886 @@
+<style>
+    /* marguee */
+    @keyframes slideMarquee {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .marquee-animate {
+        display: inline-block;
+        animation: slideMarquee 10s linear forwards;
+    }
+
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .animate-marquee {
+        display: inline-block;
+        animation: marquee 15s linear infinite;
+    }
+
+
+    /* nav */
+    details.active summary {
+        background-color: #1e40af;
+        /* Tailwind blue-800 */
+        color: white;
+    }
+
+
+    /* notice */
+    @keyframes announcement {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .animate-announcement {
+        animation: announcement 25s linear infinite;
+    }
+
+
+    /* academic parallax */
+    .academic-parallax::before {
+        content: '';
+        background-image:
+            linear-gradient(to bottom, rgba(191, 219, 254, 0.764), rgba(147, 196, 253, 0.622)),
+            url('./assets/img/small-chalkboard-near-stationery-table.jpg');
+
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    /* footer scroll */
+    .custom-scroll::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .custom-scroll::-webkit-scrollbar-thumb {
+        background: #0e7490;
+        border-radius: 3px;
+    }
+
+
+    /* notice section */
+
+    @keyframes scroll {
+        0% {
+            transform: translateY(100%);
+        }
+
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+
+    .animate-scroll {
+        animation: scroll 15s linear infinite;
+    }
+
+    .group-hover\:pause:hover {
+        animation-play-state: paused;
+    }
+
+    /* Custom CSS for the new design */
+.nav-dropdown {
+    position: absolute;
+    z-index: 999999;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+    display: none;
+}
+
+    .nav-dropdown.show {
+        display: block;
+    }
+
+    .nav-dropdown a {
+        display: block;
+        padding: 10px 15px;
+        color: #374151;
+        text-decoration: none;
+        transition: background-color 0.2s;
+    }
+
+    .nav-dropdown a:hover {
+        background-color: #f3f4f6;
+    }
+
+    .hero-slider {
+        position: relative;
+        z-index: 1;
+    }
+
+    .nav-container {
+        position: relative;
+        z-index: 999999;
+    }
+
+    .scroll-btn {
+        background: #1e3a8a;
+        color: white;
+        border: none;
+        width: 35px;
+        height: 35px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: none;
+        transition: all 0.3s ease;
+        font-size: 14px;
+    }
+
+    .scroll-btn:hover {
+        background: #1e40af;
+        transform: scale(1.05);
+    }
+
+    .scroll-btn.show {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Hide scrollbar for navigation */
+    .nav-menu-container {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .nav-menu-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .announcement-bar {
+        background: linear-gradient(90deg, #1e40af, #3b82f6, #1e40af);
+        background-size: 200% 100%;
+        animation: gradient-shift 3s ease infinite;
+        color: white;
+        padding: 10px 0;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes gradient-shift {
+
+        0%,
+        100% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+    }
+
+    .announcement-content {
+        animation: scroll-announcement 30s linear infinite;
+        white-space: nowrap;
+    }
+
+    @keyframes scroll-announcement {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .academic-card {
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+    }
+
+    .academic-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        border-color: #3b82f6;
+    }
+
+    .academic-card img {
+        transition: transform 0.3s ease;
+    }
+
+    .academic-card:hover img {
+        transform: scale(1.05);
+    }
+
+    .notice-scroll {
+        animation: scroll-notice 20s linear infinite;
+    }
+
+    @keyframes scroll-notice {
+        0% {
+            transform: translateY(100%);
+        }
+
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+
+    .notice-scroll:hover {
+        animation-play-state: paused;
+    }
+
+    /* NEW NAAC */
+    .aqar:hover .aqar-submenu {
+        display: block;
+    }
+
+    /* Show AQAR 2023-24 submenu on hover */
+    .aqar23-24:hover .aqar23-24-submenu {
+        display: block;
+    }
+
+    /* Popup Modal Styles */
+    .popup-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 9999999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .popup-content {
+        position: relative;
+        background: #fff;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 900px;
+        max-height: 90vh;
+        padding: 8px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: popupZoom 0.3s ease;
+    }
+
+
+
+    .popup-content img {
+        width: 100%;
+        height: 100%;
+        max-height: 85vh;
+        object-fit: contain;
+        border-radius: 8px;
+        cursor: pointer;
+        display: block;
+    }
+
+
+    /* Close Button */
+    .popup-close {
+        position: absolute;
+        top: 2px;
+        right: 6px;
+        background: #dc2626;
+        color: #fff;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes popupZoom {
+        from {
+            transform: scale(0.7);
+            opacity: 0;
+        }
+
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .popup-content {
+            max-width: 100%;
+            max-height: 90vh;
+            padding: 4px;
+            border-radius: 8px;
+        }
+
+        .popup-content img {
+            max-height: 80vh;
+        }
+
+        .popup-close {
+            width: 28px;
+            height: 28px;
+            font-size: 16px;
+        }
+    }
+
+    /* Prevent horizontal layout shifting */
+    html,
+    body {
+        width: 100%;
+        overflow-x: clip;
+    }
+
+    .nav-menu-container {
+        max-width: 100%;
+    }
+
+    #topMobileMenu {
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+
+    #topMobileMenu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    #topMobileMenu {
+        transition: all 0.25s ease;
+    }
+
+    /* Fix Google search suggestions overlapping navbar */
+    .gsc-control-cse,
+    .gsc-control-cse * {
+        z-index: 9999999 !important;
+    }
+
+    .gsc-completion-container {
+        position: fixed !important;
+        z-index: 9999999 !important;
+    }
+
+    .gsc-results-wrapper-overlay {
+        z-index: 9999999 !important;
+    }
+</style>
+
+<header class="">
+    <!-- top strip -->
+    <!-- <div class="w-full bg-header text-white text-sm md:py-2">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center"> -->
+
+    <!-- Left Column: Contact Info -->
+    <!-- <ul class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <li class="flex items-center gap-1">
+            <i class="fa-solid fa-phone"></i>
+            <span>06274-251001</span>
+          </li>
+          <li class="flex items-center gap-1">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:mmhttc@gmail.com" class="hover:underline">mmhttc@gmail.com</a>
+          </li>
+          <li class="flex items-center gap-1">
+            <i class="fa fa-phone"></i>
+            <a href="contact_us.html" class="hover:underline">Contact Us</a>
+          </li>
+          <li class="flex items-center gap-1">
+            <i class="fa-solid fa-images"></i>
+            <a href="picture_gallery.html" class="hover:underline">Gallery</a>
+          </li>
+        </ul> -->
+
+    <!-- Right Column: LMS + Search -->
+    <!-- <div class="flex flex-wrap sm:justify-end items-center gap-4"> -->
+    <!-- LMS -->
+    <!-- <a href="./Elearning.php" class="text-blue-800 font-bold text-base hover:text-white sm:text-lg md:text-xl">
+            LMS
+          </a> -->
+
+    <!-- Search Box -->
+    <!-- <div class="text-black w-full sm:w-auto">
+            <div class="gcse-search"></div>
+          </div>
+        </div> -->
+
+    <!-- Right Column: SWAYAM + LMS + Search -->
+    <!-- <div class="flex flex-wrap sm:justify-end items-center gap-4"> -->
+
+    <!-- SWAYAM Logo -->
+    <!-- <a href="https://swayam.gov.in/" target="_blank"
+          class="flex items-center hover:opacity-90 transition">
+          <img src="./assets/img/SWAYAM.png"
+              alt="SWAYAM"
+              class="w-10 h-10 object-contain" />
+        </a> -->
+
+    <!-- LMS -->
+    <!-- <a href="./Elearning.php"
+          class="text-blue-800 font-bold text-base hover:text-white sm:text-lg md:text-xl">
+          LMS
+        </a> -->
+
+    <!-- Search Box -->
+    <!-- <div class="text-black w-full sm:w-auto">
+          <div class="gcse-search"></div>
+        </div>
+
+      </div>
+
+      </div>
+    </div> -->
+
+    <!-- new -->
+    <!-- TOP HEADER -->
+    <div class="w-full bg-header text-white h-[60px] flex items-center relative z-[1000000]">
+
+        <div class="max-w-7xl mx-auto px-4 w-full flex justify-between items-center">
+
+            <!-- LEFT: Desktop Contact -->
+            <ul class="hidden lg:flex items-center gap-6 text-sm">
+                <li class="flex items-center gap-1">
+                    <i class="fa-solid fa-phone"></i> 06274-251001
+                </li>
+                <li class="flex items-center gap-1">
+                    <i class="fa-solid fa-envelope"></i> mmhttc@gmail.com
+                </li>
+                <li><a href="contact_us.html" class="hover:underline">Contact Us</a></li>
+                <li><a href="picture_gallery.html" class="hover:underline">Gallery</a></li>
+            </ul>
+
+            <!-- RIGHT: Desktop Actions -->
+            <div class="hidden lg:flex items-center gap-5">
+                <a href="https://swayam.gov.in/" target="_blank">
+                    <img src="./assets/img/SWAYAM.png" class="h-[34px] object-contain" />
+                </a>
+
+                <a href="./Elearning.php" class="font-bold text-blue-900 hover:text-white">
+                    LMS
+                </a>
+                
+                <!-- <div class="text-black w-[220px]">
+                    <div class="gcse-search"></div>
+                </div> -->
+            </div>
+
+            <!-- MOBILE HAMBURGER -->
+            <button id="topToggle" class="lg:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+        <!-- MOBILE DROPDOWN -->
+        <div id="topMobileMenu"
+            class="hidden fixed top-[60px] left-0 w-full bg-header text-white shadow-lg p-4 space-y-4 z-[1000001]">
+            <div class="space-y-2 text-sm">
+                <div>📞 06274-251001</div>
+                <div>✉️ mmhttc@gmail.com</div>
+                <a href="contact_us.html" class="block">Contact Us</a>
+                <a href="picture_gallery.html" class="block">Gallery</a>
+            </div>
+
+            <hr class="border-white/30">
+
+            <div class="flex items-center gap-4">
+                <a href="https://swayam.gov.in/" target="_blank">
+                    <img src="./assets/img/SWAYAM.png" class="h-[32px]" />
+                </a>
+
+                <a href="./Elearning.php" class="font-bold text-blue-900">
+                    LMS
+                </a>
+            </div>
+
+            <!-- Mobile Search -->
+            <div class="text-black w-full">
+                <div class="gcse-search"></div>
+            </div>
+        </div>
+    </div>
+    <!-- top strip end -->
+
+
+
+    <!-- middle strip -->
+
+    <div class="w-full bg-white px-4 py-4 flex flex-col md:flex-row items-center gap-4 lg:pb-0 md:pb-2">
+        <!-- Left Logo -->
+        <div class="flex-shrink-0">
+            <img src="./assets/img/logo Mm.jpg.png" alt="Main Logo" class="w-20 h-auto object-contain" />
+        </div>
+
+        <!-- Middle Title Image -->
+        <div class="flex-grow flex justify-center md:justify-start">
+            <img src="./assets/img/MMHTTC Name for Website.png" alt="College Title"
+                class="max-w-full h-auto object-contain" />
+        </div>
+        <!-- <div class="flex-1 flex justify-center">
+        <img src="./assets/img/MMHTTC Name for Website.png" alt="College Title"
+          class="max-w-[650px] w-full h-auto object-contain" />
+      </div> -->
+
+        <!-- Right Logos -->
+        <div class="flex-shrink-0 flex flex-wrap justify-center md:justify-end items-center gap-2">
+            <img src="./assets/img/ncte.jpg" alt="NCTE" class="w-10 h-10 object-contain" />
+            <img src="./assets/img/aicte.jpeg" alt="AICTE" class="w-10 h-10 object-contain" />
+            <img src="./assets/img/LNMU.jpg" alt="LNMU" class="w-10 h-10 object-contain" />
+            <img src="./assets/img/BSEB.jpg" alt="BSEB" class="w-10 h-10 object-contain" />
+            <img src="./assets/img/ugc2.jpg" alt="UGC" class="w-10 h-10 object-contain" />
+            <img src="./assets/img/nac.jpeg" alt="NAAC" class="w-12 h-12 object-contain" />
+        </div>
+    </div>
+
+
+
+    <!-- middle strip end -->
+
+
+
+    <!-- nav bar strip -->
+    <div class="w-full bg-blue-950 ">
+        <nav class="nav-container bg-blue-950  text-white sticky top-0 z-50 shadow-lg">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex items-center gap-3">
+                    <!-- Left Scroll Button -->
+                    <button class="scroll-btn" id="left-scroll-btn" onclick="scrollNav('left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <!-- Navigation Menu -->
+                    <div class="flex-1 nav-menu-container overflow-x-auto" id="nav-menu">
+                        <ul class="flex items-center gap-6 py-4 whitespace-nowrap">
+                            <li><a href="./index.html" class="hover:underline transition-colors">Home</a></li>
+
+                            <!-- About Us Dropdown -->
+                            <li class="relative group">
+                                <button class="hover:underline transition-colors flex items-center gap-1">
+                                    About Us <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+                                <div class="nav-dropdown" data-dropdown="about">
+                                    <a href="./about_us.html">About Us</a>
+                                    <a href="./overview.html">Overview</a>
+                                    <a href="./act_and_statutes.html">Act and Statutes</a>
+                                    <a href="./institutional_development_plan.html">Development Plan</a>
+                                    <a href="./accreditation_naac.html">NAAC Accreditation</a>
+                                    <a href="./recognition_approval.html">Recognition/Approval</a>
+                                    <a href="./annual_reports.html">Annual Reports</a>
+                                    <a href="./annual_accounts_audit_report.html">Audit Reports</a>
+                                </div>
+                            </li>
+
+                            <!-- Administration Dropdown -->
+                            <li class="relative group">
+                                <button class="hover:underline transition-colors flex items-center gap-1">
+                                    Administration <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+                                <div class="nav-dropdown" data-dropdown="admin">
+                                    <a href="./principal.html">Principal</a>
+                                    <a href="./controller_of_examination.html">Controller of Examination</a>
+                                    <a href="./management_committee.html">Management Committee</a>
+                                    <a href="./board_of_studies.html">Board of Studies</a>
+                                    <a href="./examination_result.html">Examination Result</a>
+                                    <a href="./hod_of_departments.html">HoD of Departments</a>
+                                </div>
+                            </li>
+
+                            <!-- Academics Dropdown -->
+                            <li class="relative group">
+                                <button class="hover:underline transition-colors flex items-center gap-1">
+                                    Academics <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+                                <div class="nav-dropdown" data-dropdown="academics">
+                                    <a href="./academic_programs.html">Academic Programs</a>
+                                    <a href="./academic_calendar.html">Academic Calendar</a>
+                                    <a href="./statutes_ordinances.html">Statutes/Ordinances</a>
+                                    <a href="./departments.html">Departments</a>
+                                    <a href="./faculty_staff_details.html">Faculty/Staff Details</a>
+                                    <a href="./iqac.html">IQAC</a>
+                                    <a href="./library.html">Library</a>
+                                    <a href="./academic_collaborations.html">Academic Collaborations</a>
+                                </div>
+                            </li>
+
+                            <!-- Admissions & Fee Dropdown -->
+                            <li class="relative group">
+                                <button class="hover:underline transition-colors flex items-center gap-1">
+                                    Admissions & Fee <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+                                <div class="nav-dropdown" data-dropdown="admissions">
+                                    <a href="./prospectus.html">Prospectus</a>
+                                    <a href="./admission_process_guidelines.html">Admission Process</a>
+                                    <a href="./fee_refund_policy.html">Fee Structure and Refund Policy</a>
+                                </div>
+                            </li>
+
+                            <!-- NEW NAAC Dropdown -->
+                            <li class="relative group">
+                                <button class="hover:underline transition-colors flex items-center gap-1">
+                                    NAAC <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+
+                                <!-- Main dropdown -->
+                                <div class="nav-dropdown" data-dropdown="naac">
+                                    <!-- <a href="./dvv_clarification.html">DVV Clarification</a> -->
+                                    <a href="./aqar_report.html">AQAR Report</a>
+
+                                    <!-- AQAR submenu -->
+                                    <div class="relative aqar text-black">
+                                        <div
+                                            class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
+                                            AQAR <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                                        </div>
+                                        <div
+                                            class="aqar-submenu absolute left-full top-0 hidden bg-white text-black shadow-lg min-w-[180px] z-50">
+                                            <a href="AQAR1.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 1</a>
+                                            <a href="AQAR2.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 2</a>
+                                            <a href="AQAR3.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 3</a>
+                                            <a href="AQAR4.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 4</a>
+                                            <a href="AQAR5.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 5</a>
+                                            <a href="AQAR6.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 6</a>
+                                            <a href="AQAR7.html" class="block px-4 py-2 hover:bg-gray-100">AQAR 7</a>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- AQAR 2023-2024 submenu  -->
+                                    <div class="relative aqar23-24 text-black">
+                                        <div
+                                            class="w-full px-4 py-2 hover:bg-gray-100 flex items-center justify-between cursor-pointer">
+                                            AQAR 2023–2024 <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                                        </div>
+                                        <div
+                                            class="aqar23-24-submenu absolute left-full top-0 hidden bg-white text-black shadow-lg min-w-[200px] z-50">
+                                            <a href="AQAR23_24_1.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                23_24.1</a>
+                                            <a href="AQAR23_24_2.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                23_24.2</a>
+                                            <a href="AQAR23_24_3.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                23_24.3</a>
+                                            <a href="AQAR23_24_4.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                23_24.4</a>
+                                            <a href="AQAR23_24_5.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                23_24.5</a>
+                                            <a href="AQAR23_24_6.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                23_24.6</a>
+                                            <a href="AQAR23_24_7.html" class="block px-4 py-2 hover:bg-gray-100">AQAR
+                                                23_24.7</a>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Other criteria -->
+                                    <!-- <a href="criteria1.html">Criteria 1</a>
+                    <a href="criteria2.html">Criteria 2</a>
+                    <a href="criteria3.html">Criteria 3</a>
+                    <a href="criteria4.html">Criteria 4</a>
+                    <a href="criteria5.html">Criteria 5</a>
+                    <a href="criteria6.html">Criteria 6</a>
+                    <a href="criteria7.html">Criteria 7</a> -->
+                                </div>
+                            </li>
+
+
+
+
+                            <!-- Infrastructure Research Dropdown -->
+                            <li class="relative group">
+                                <button class="hover:underline transition-colors flex items-center gap-1">
+                                    Research <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+                                <div class="nav-dropdown" data-dropdown="infrastructure">
+                                    <a href="./research_development_cell.html">Research & Development Cell</a>
+                                    <a href="./incubation_entrepreneurship_cell.html">Incubation Centre</a>
+                                    <a href="./central_facilities.html">Central Facilities</a>
+                                </div>
+                            </li>
+
+                            <!-- Student Life Dropdown -->
+                            <li class="relative group">
+                                <button class="hover:underline transition-colors flex items-center gap-1">
+                                    Student Life <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+                                <div class="nav-dropdown" data-dropdown="student-life">
+                                    <a href="./sports_facilities.html">Sports Facilities</a>
+                                    <a href="./placement_cell.html">Placement Cell</a>
+                                    <a href="./student_grievance_redressal_committee.html">Student Grievance
+                                        Committee</a>
+                                    <a href="./health_facilities.html">Health Facilities</a>
+                                    <a href="./internal_complaint_committee.html">Internal Complaint Committee</a>
+                                    <a href="./anti_ragging_cell.html">Anti-Ragging Cell</a>
+                                    <a href="./equal_opportunity_cell.html">Equal Opportunity Cell</a>
+                                    <a href="./sedg_cell.html">SEDG Cell</a>
+                                    <a href="./facilities_for_differently_abled.html">Facilities for Differently
+                                        Abled</a>
+                                    <a href="./feedback_mechanism.html">Feedback Mechanism</a>
+                                    <!-- <a href="./Elearning.php">E-Learning</a> -->
+                                </div>
+                            </li>
+
+                            <!-- Alumni Dropdown -->
+                            <li class="relative group">
+                                <button class="hover:underline  transition-colors flex items-center gap-1">
+                                    Alumni <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+                                <div class="nav-dropdown" data-dropdown="alumni">
+                                    <a href="./alumni.html">Alumni</a>
+                                    <a href="./alumni_association.html">Alumni Association</a>
+                                </div>
+                            </li>
+
+                            <!-- Information Corner Dropdown -->
+                            <li class="relative group">
+                                <button class="hover:underline  transition-colors flex items-center gap-1">
+                                    Information Corner <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+                                <div class="nav-dropdown" data-dropdown="info">
+                                    <a href="./rti.html">RTI</a>
+                                    <a href="./circulars_notices.html">Circulars & Notices</a>
+                                    <a href="./announcements.html">Announcements</a>
+                                    <a href="./newsletters.html">Newsletters</a>
+                                    <a href="./recent_news_event_achievements.html">News & Events</a>
+                                    <a href="./job_openings.html">Job Openings</a>
+                                    <a href="./reservation_roster.html">Reservation Roster</a>
+                                </div>
+                            </li>
+
+                            <!-- Staff Dropdown -->
+                            <li class="relative group">
+                                <button class="hover:underline transition-colors flex items-center gap-1">
+                                    Staff <i class="fas fa-chevron-down text-xs"></i>
+                                </button>
+                                <div class="nav-dropdown" data-dropdown="staff">
+                                    <a href="./administrative_staff.html">Administrative Staff</a>
+                                    <a href="./teaching.html">Teaching</a>
+                                    <a href="./non_teaching.html">Non Teaching</a>
+                                    <a href="./library_staff.html">Library Staff</a>
+                                    <a href="./employee_zone.html">Employee Zone</a>
+                                </div>
+                            </li>
+
+                            <!-- Disclosure Dropdown -->
+                            <li><a href="./mandatory_disclosure.html"
+                                    class="hover:underline transition-colors">Mandatory
+                                    Disclosure</a></li>
+
+
+                            <li><a href="./picture_gallery.html" class="hover:underline transition-colors">Picture
+                                    Gallery</a></li>
+                            <li><a href="./contact_us.html" class="hover:underline transition-colors">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Scroll Button -->
+                    <button class="scroll-btn" id="right-scroll-btn" onclick="scrollNav('right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- nav strip end -->
+
+</header>
+
+
+<script>
+
+    // Navigation dropdown
+    // document.addEventListener('DOMContentLoaded', function () {
+    //   const dropdownButtons = document.querySelectorAll('.group button');
+    //   const dropdowns = document.querySelectorAll('.nav-dropdown');
+    //   let activeDropdown = null;
+
+    //   dropdownButtons.forEach(button => {
+    //     button.addEventListener('click', function (e) {
+    //       e.stopPropagation();
+    //       const dropdown = this.nextElementSibling;
+
+    //       if (activeDropdown && activeDropdown !== dropdown) {
+    //         activeDropdown.classList.remove('show');
+    //       }
+
+    //       dropdown.classList.toggle('show');
+    //       activeDropdown = dropdown.classList.contains('show') ? dropdown : null;
+
+    //       if (dropdown.classList.contains('show')) {
+    //         const rect = this.getBoundingClientRect();
+    //         dropdown.style.top = (rect.bottom + 5) + 'px';
+    //         dropdown.style.left = rect.left + 'px';
+    //         dropdown.style.minWidth = rect.width + 'px';
+    //       }
+    //     });
+    //   });
+
+    //   document.addEventListener('click', function (e) {
+    //     if (!e.target.closest('.nav-dropdown') && !e.target.closest('.group')) {
+    //       dropdowns.forEach(dropdown => dropdown.classList.remove('show'));
+    //       activeDropdown = null;
+    //     }
+    //   });
+
+    //   window.addEventListener('scroll', function () {
+    //     dropdowns.forEach(dropdown => dropdown.classList.remove('show'));
+    //   });
+
+    //   updateScrollButtons();
+    //   window.addEventListener('resize', updateScrollButtons);
+    // });
+
+    // function updateScrollButtons() {
+    //   const navMenu = document.getElementById('nav-menu');
+    //   const leftBtn = document.getElementById('left-scroll-btn');
+    //   const rightBtn = document.getElementById('right-scroll-btn');
+
+    //   if (!navMenu) return;
+
+    //   if (navMenu.scrollLeft > 0) leftBtn.classList.add('show');
+    //   else leftBtn.classList.remove('show');
+
+    //   if (navMenu.scrollLeft < (navMenu.scrollWidth - navMenu.clientWidth))
+    //     rightBtn.classList.add('show');
+    //   else rightBtn.classList.remove('show');
+    // }
+
+    // function scrollNav(direction) {
+    //   const navMenu = document.getElementById('nav-menu');
+    //   const scrollAmount = 200;
+
+    //   if (!navMenu) return;
+
+    //   navMenu.scrollLeft += direction === 'left' ? -scrollAmount : scrollAmount;
+
+    //   setTimeout(updateScrollButtons, 100);
+    // }
+
+</script>
