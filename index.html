@@ -362,10 +362,12 @@
     }
 
     /* Prevent horizontal layout shifting */
-    html, body {
+    html,
+    body {
       width: 100%;
       overflow-x: clip;
     }
+
     .nav-menu-container {
       max-width: 100%;
     }
@@ -906,11 +908,27 @@
           style="animation-play-state: running;">
 
           <!-- NEW Announcement (International Seminar) -->
-          <a href="https://forms.gle/wxxXaBj2jhJfF3Vy6" target="_blank"
+          <!-- <a href="https://forms.gle/wxxXaBj2jhJfF3Vy6" target="_blank"
             class="text-blue-600 text-sm mr-6 hover:underline">
             <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 mr-2">New</span>
             Two-Day International Seminar Hybrid Mode Date : 31 Jan. - 01 Feb., 2026.
             <span class="text-red-600 font-semibold ml-1">Click Here to Register</span>
+          </a> -->
+
+          <a href="./assets/d_el_ed/D_El_Ed_part2_2024-26.pdf" target="_blank"
+            class="text-blue-600 text-sm mr-6 hover:underline">
+            <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 mr-2">New</span>
+            D.El.Ed Part 2 Exam program 2024-26
+            <span class="text-red-600 font-semibold ml-1">Click Here</span>
+          </a>
+
+          <span class="mx-2 text-gray-400">|</span>
+
+          <a href="./assets/d_el_ed/D_El_Ed_part1_2025-27.pdf" target="_blank"
+            class="text-blue-600 text-sm mr-6 hover:underline">
+            <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 mr-2">New</span>
+            D.El.Ed Part 1 Exam program 2025-27
+            <span class="text-red-600 font-semibold ml-1">Click Here</span>
           </a>
 
           <!-- Separator -->
@@ -1017,9 +1035,10 @@
       <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
         <div id="peopleSlider" class="flex w-full h-full transition-transform duration-700 ease-in-out">
           <img src="./assets/img/droupadi.png" alt="President" class="w-full h-full object-fill flex-shrink-0" />
-          <img src="./assets/img/arif.png" alt="Governor" class="w-full h-full object-fill flex-shrink-0" />
-          <img src="./assets/img/nitish.png" alt="CM" class="w-full h-full object-fiil flex-shrink-0" />
-          <img src="./assets/img/sunil.png" alt="Education Minister" class="w-full h-full object-fill flex-shrink-0" />
+          <img src="./assets/img/governor.png" alt="Governor" class="w-full h-full object-fill flex-shrink-0" />
+          <img src="./assets/img/cm.png" alt="CM" class="w-full h-full object-fiil flex-shrink-0" />
+          <img src="./assets/img/EducationMinitster.png" alt="Education Minister"
+            class="w-full h-full object-fill flex-shrink-0" />
           <img src="./assets/img/sanjay.png" alt="Vice Chancellor" class="w-full h-full object-fill flex-shrink-0" />
         </div>
 
@@ -1134,6 +1153,16 @@
           <div class="h-64 overflow-hidden relative group">
             <div class="absolute inset-0 animate-scroll group-hover:pause">
               <ul class="space-y-4 text-sm">
+                <li>
+                  <h6 class="font-bold">D.El.Ed Part 2 Exam program 2024-26</h6>
+                  <a href="./assets/d_el_ed/D_El_Ed_part2_2024-26.pdf" target="_blank"
+                    class="text-blue-600 underline">Download PDF</a>
+                </li>
+                <li>
+                  <h6 class="font-bold">D.El.Ed Part 1 Exam program 2025-27</h6>
+                  <a href="./assets/d_el_ed/D_El_Ed_part1_2025-27.pdf" target="_blank"
+                    class="text-blue-600 underline">Download PDF</a>
+                </li>
                 <li>
                   <h6 class="font-bold">D.El.Ed face to face 23-25 2025 exam</h6>
                   <a href="./assets/pdf_1/D.El.Ed face to face 23-25 2025 exam.pdf" target="_blank"
@@ -1984,26 +2013,26 @@
   //   aqar23Submenu.classList.toggle('hidden');
   // });
 
-const topToggle = document.getElementById("topToggle");
-const topMobileMenu = document.getElementById("topMobileMenu");
+  const topToggle = document.getElementById("topToggle");
+  const topMobileMenu = document.getElementById("topMobileMenu");
 
-topToggle.addEventListener("click", () => {
-  topMobileMenu.classList.toggle("hidden");
+  topToggle.addEventListener("click", () => {
+    topMobileMenu.classList.toggle("hidden");
 
-  const searchBox = document.querySelector(".gcse-search");
-  const mobileContainer = document.getElementById("mobile-search-container");
-  const desktopContainer = document.querySelector(".hidden.lg\\:flex .gcse-search")?.parentElement;
+    const searchBox = document.querySelector(".gcse-search");
+    const mobileContainer = document.getElementById("mobile-search-container");
+    const desktopContainer = document.querySelector(".hidden.lg\\:flex .gcse-search")?.parentElement;
 
-  if (!topMobileMenu.classList.contains("hidden")) {
-    if (searchBox) {
-      mobileContainer.appendChild(searchBox);
+    if (!topMobileMenu.classList.contains("hidden")) {
+      if (searchBox) {
+        mobileContainer.appendChild(searchBox);
+      }
+    } else {
+      if (searchBox && desktopContainer) {
+        desktopContainer.appendChild(searchBox);
+      }
     }
-  } else {
-    if (searchBox && desktopContainer) {
-      desktopContainer.appendChild(searchBox);
-    }
-  }
-});
+  });
 
 </script>
 
